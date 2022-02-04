@@ -51,7 +51,11 @@ namespace Adventure.Story.Editor
                 ProcessEvents();
                 foreach (StoryNode node in selectedStory.GetAllNodes())
                 {
-                    OnGuiNode(node);
+                    DrawConnections(node);
+                }
+                foreach (StoryNode node in selectedStory.GetAllNodes())
+                {
+                    DrawNode(node);
                 }
             }
         }
@@ -78,7 +82,7 @@ namespace Adventure.Story.Editor
             }
         }
 
-        private void OnGuiNode(StoryNode node)
+        private void DrawNode(StoryNode node)
         {
             GUILayout.BeginArea(node.rect, nodeStyle);
             EditorGUI.BeginChangeCheck();
@@ -95,6 +99,19 @@ namespace Adventure.Story.Editor
             }
 
             GUILayout.EndArea();
+        }
+
+        private void DrawConnections(StoryNode node)
+        {
+            Vector3 startPosition = new Vector2(node.rect.xMax, node.rect.center.y);
+            foreach (StoryNode childNode in selectedStory.GetAllChildren(node))
+            {
+                Vector3 endPosition = new Vector2(childNode.rect.xMin, childNode.rect.center.y);
+                Vector3 controlPointOffset = endPosition - startPosition;
+                controlPointOffset.y = 0.0f;
+                controlPointOffset.x *= 0.8f;
+                Handles.DrawBezier(startPosition, endPosition, startPosition + controlPointOffset, endPosition - controlPointOffset, Color.white, null, 4f);
+            }
         }
 
         private void OnSelectionChanged()

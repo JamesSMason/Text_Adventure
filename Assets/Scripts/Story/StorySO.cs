@@ -1,4 +1,3 @@
-using System;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -9,15 +8,27 @@ namespace Adventure.Story
     {
         [SerializeField] List<StoryNode> nodes = new List<StoryNode>();
 
-#if UNITY_EDITOR
+        Dictionary<string, StoryNode> nodeLookup = new Dictionary<string, StoryNode>();
+
         void Awake()
         {
+#if UNITY_EDITOR
             if (nodes.Count == 0)
             {
                 nodes.Add(new StoryNode());
             }
-        }
 #endif
+            OnValidate();
+        }
+
+        void OnValidate()
+        {
+            nodeLookup.Clear();
+            foreach (StoryNode node in GetAllNodes())
+            {
+                nodeLookup[node.uniqueID] = node;
+            }
+        }
 
         public IEnumerable<StoryNode> GetAllNodes()
         {
@@ -27,6 +38,17 @@ namespace Adventure.Story
         public StoryNode GetRootNode()
         {
             return nodes[0];
+        }
+
+        public IEnumerable<StoryNode> GetAllChildren(StoryNode parentNode)
+        {
+            foreach (string childID in parentNode.children)
+            {
+                if (nodeLookup.ContainsKey(childID))
+                {
+                    yield return nodeLookup[childID];
+                }
+            }
         }
     }
 }

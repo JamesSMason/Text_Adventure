@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -15,7 +16,9 @@ namespace Adventure.Story
 #if UNITY_EDITOR
             if (nodes.Count == 0)
             {
-                nodes.Add(new StoryNode());
+                StoryNode rootNode = new StoryNode();
+                rootNode.uniqueID = Guid.NewGuid().ToString();
+                nodes.Add(rootNode);
             }
 #endif
             OnValidate();
@@ -49,6 +52,15 @@ namespace Adventure.Story
                     yield return nodeLookup[childID];
                 }
             }
+        }
+
+        public void CreateNode(StoryNode parent)
+        {
+            StoryNode newNode = new StoryNode();
+            newNode.uniqueID = Guid.NewGuid().ToString();
+            parent.children.Add(newNode.uniqueID);
+            nodes.Add(newNode);
+            OnValidate();
         }
     }
 }

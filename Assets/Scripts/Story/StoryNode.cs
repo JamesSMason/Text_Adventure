@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using UnityEngine;
 
 namespace Adventure.Story
@@ -8,7 +9,7 @@ namespace Adventure.Story
     {
         public string uniqueID;
         public string storyText;
-        public string[] children;
+        public List<string> children = new List<string>();
         public Rect rect = new Rect(0, 0, 200, 100);
     }
 }

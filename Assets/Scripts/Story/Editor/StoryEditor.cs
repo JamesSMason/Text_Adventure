@@ -1,3 +1,4 @@
+using System;
 using UnityEditor;
 using UnityEditor.Callbacks;
 using UnityEngine;
@@ -7,10 +8,10 @@ namespace Adventure.Story.Editor
     public class StoryEditor : EditorWindow
     {
         StorySO selectedStory = null;
-        GUIStyle nodeStyle = null;
-
-        StoryNode draggingNode = null;
-        Vector2 draggingOffset;
+        [NonSerialized] GUIStyle nodeStyle = null;
+        [NonSerialized] StoryNode draggingNode = null;
+        [NonSerialized] Vector2 draggingOffset;
+        [NonSerialized] StoryNode creatingNode = null;
 
         [MenuItem("Window/Text Adventure/Story Editor")]
         public static void ShowEditorWindow()
@@ -57,6 +58,13 @@ namespace Adventure.Story.Editor
                 {
                     DrawNode(node);
                 }
+
+                if (creatingNode != null)
+                {
+                    Undo.RecordObject(selectedStory, "Added Story Node");
+                    selectedStory.CreateNode(creatingNode);
+                    creatingNode = null;
+                }
             }
         }
 
@@ -87,15 +95,17 @@ namespace Adventure.Story.Editor
             GUILayout.BeginArea(node.rect, nodeStyle);
             EditorGUI.BeginChangeCheck();
 
-            EditorGUILayout.LabelField("Node:", EditorStyles.whiteLabel);
-            string newUniqueID = EditorGUILayout.TextField(node.uniqueID);
             string newText = EditorGUILayout.TextField(node.storyText);
 
             if (EditorGUI.EndChangeCheck())
             {
                 Undo.RecordObject(selectedStory, "Update Story Text");
                 node.storyText = newText;
-                node.uniqueID = newUniqueID;
+            }
+
+            if (GUILayout.Button("+"))
+            {
+                creatingNode = node;
             }
 
             GUILayout.EndArea();

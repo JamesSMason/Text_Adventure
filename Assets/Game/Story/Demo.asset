@@ -13,32 +13,12 @@ MonoBehaviour:
   m_Name: Demo
   m_EditorClassIdentifier: 
   nodes:
-  - uniqueID: a
-    storyText: Hello
-    children:
-    - b
-    - c
-    position:
-      serializedVersion: 2
-      x: 10
-      y: 10
-      width: 200
-      height: 100
-  - uniqueID: b
-    storyText: Hello yourself. How you doing?
+  - uniqueID: 52de7a8f-81aa-4e4c-9d88-dd8a37099c94
+    storyText: 
     children: []
-    position:
+    rect:
       serializedVersion: 2
-      x: 200
-      y: 220
-      width: 200
-      height: 100
-  - uniqueID: c
-    storyText: Jog on!
-    children: []
-    position:
-      serializedVersion: 2
-      x: 10
-      y: 420
+      x: 0
+      y: 0
       width: 200
       height: 100

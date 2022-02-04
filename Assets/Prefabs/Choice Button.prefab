@@ -32,10 +32,10 @@ RectTransform:
   m_Father: {fileID: 1321771561058303252}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 0.13700001}
+  m_AnchorMax: {x: 0.9106286, y: 1}
+  m_AnchoredPosition: {x: 13.992997, y: -12.565}
+  m_SizeDelta: {x: -27.986, y: -25.131}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1321771560806933173
 CanvasRenderer:
@@ -65,7 +65,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Turn Left
+  m_text: Turn Right
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 6835d6efdbcf73e4aae86aef1715ad9c, type: 2}
   m_sharedMaterial: {fileID: 6515023660030342317, guid: 6835d6efdbcf73e4aae86aef1715ad9c, type: 2}
@@ -92,10 +92,10 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 55
+  m_fontSize: 53.55
   m_fontSizeBase: 55
   m_fontWeight: 400
-  m_enableAutoSizing: 0
+  m_enableAutoSizing: 1
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 1
@@ -161,7 +161,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1321771561058303255}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -269,7 +269,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_IgnoreLayout: 0
-  m_MinWidth: 200
+  m_MinWidth: 350
   m_MinHeight: 175
   m_PreferredWidth: -1
   m_PreferredHeight: -1

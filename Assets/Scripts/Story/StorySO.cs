@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -21,6 +22,11 @@ namespace Adventure.Story
         public IEnumerable<StoryNode> GetAllNodes()
         {
             return nodes;
+        }
+
+        public StoryNode GetRootNode()
+        {
+            return nodes[0];
         }
     }
 }

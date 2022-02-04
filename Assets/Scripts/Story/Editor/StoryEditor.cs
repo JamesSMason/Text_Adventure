@@ -7,6 +7,10 @@ namespace Adventure.Story.Editor
     public class StoryEditor : EditorWindow
     {
         StorySO selectedStory = null;
+        GUIStyle nodeStyle = null;
+
+        StoryNode draggingNode = null;
+        Vector2 draggingOffset;
 
         [MenuItem("Window/Text Adventure/Story Editor")]
         public static void ShowEditorWindow()
@@ -29,6 +33,11 @@ namespace Adventure.Story.Editor
         void OnEnable()
         {
             Selection.selectionChanged += OnSelectionChanged;
+
+            nodeStyle = new GUIStyle();
+            nodeStyle.normal.background = EditorGUIUtility.Load("node0") as Texture2D;
+            nodeStyle.padding = new RectOffset(20, 20, 20, 20);
+            nodeStyle.border = new RectOffset(12, 12, 12, 12);
         }
 
         void OnGUI()
@@ -39,11 +48,53 @@ namespace Adventure.Story.Editor
             }
             else
             {
+                ProcessEvents();
                 foreach (StoryNode node in selectedStory.GetAllNodes())
                 {
-                    EditorGUILayout.LabelField($"{node.storyText}");
+                    OnGuiNode(node);
                 }
             }
+        }
+
+        private void ProcessEvents()
+        {
+            if (Event.current.type == EventType.MouseDown && draggingNode == null)
+            {
+                draggingNode = GetNodeAtPoint(Event.current.mousePosition);
+                if (draggingNode != null)
+                {
+                    draggingOffset = draggingNode.rect.position - Event.current.mousePosition;
+                }
+            }
+            else if (Event.current.type == EventType.MouseDrag && draggingNode != null)
+            {
+                Undo.RecordObject(selectedStory, "Move Story Node");
+                draggingNode.rect.position = Event.current.mousePosition + draggingOffset;
+                GUI.changed = true;
+            }
+            else if (Event.current.type == EventType.MouseUp && draggingNode != null)
+            {
+                draggingNode = null;
+            }
+        }
+
+        private void OnGuiNode(StoryNode node)
+        {
+            GUILayout.BeginArea(node.rect, nodeStyle);
+            EditorGUI.BeginChangeCheck();
+
+            EditorGUILayout.LabelField("Node:", EditorStyles.whiteLabel);
+            string newUniqueID = EditorGUILayout.TextField(node.uniqueID);
+            string newText = EditorGUILayout.TextField(node.storyText);
+
+            if (EditorGUI.EndChangeCheck())
+            {
+                Undo.RecordObject(selectedStory, "Update Story Text");
+                node.storyText = newText;
+                node.uniqueID = newUniqueID;
+            }
+
+            GUILayout.EndArea();
         }
 
         private void OnSelectionChanged()
@@ -54,6 +105,19 @@ namespace Adventure.Story.Editor
                 selectedStory = newStory;
             }
             Repaint();
+        }
+
+        private StoryNode GetNodeAtPoint(Vector2 point)
+        {
+            StoryNode foundNode = null;
+            foreach (StoryNode node in selectedStory.GetAllNodes())
+            {
+                if (node.rect.Contains(point))
+                {
+                    foundNode = node;
+                }
+            }
+            return foundNode;
         }
     }
 }

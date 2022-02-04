@@ -12,4 +12,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 59e0aa2815b28ff4e85e5b42c7e00439, type: 3}
   m_Name: Demo
   m_EditorClassIdentifier: 
-  nodes: []
+  nodes:
+  - uniqueID: a
+    storyText: Hello
+    children:
+    - b
+    - c
+    position:
+      serializedVersion: 2
+      x: 10
+      y: 10
+      width: 200
+      height: 100
+  - uniqueID: b
+    storyText: Hello yourself. How you doing?
+    children: []
+    position:
+      serializedVersion: 2
+      x: 200
+      y: 220
+      width: 200
+      height: 100
+  - uniqueID: c
+    storyText: Jog on!
+    children: []
+    position:
+      serializedVersion: 2
+      x: 10
+      y: 420
+      width: 200
+      height: 100

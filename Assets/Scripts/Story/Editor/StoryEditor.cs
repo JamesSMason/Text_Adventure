@@ -6,6 +6,8 @@ namespace Adventure.Story.Editor
 {
     public class StoryEditor : EditorWindow
     {
+        StorySO selectedStory = null;
+
         [MenuItem("Window/Text Adventure/Story Editor")]
         public static void ShowEditorWindow()
         {
@@ -22,6 +24,36 @@ namespace Adventure.Story.Editor
                 return true;
             }
             return false;
+        }
+
+        void OnEnable()
+        {
+            Selection.selectionChanged += OnSelectionChanged;
+        }
+
+        void OnGUI()
+        {
+            if (selectedStory == null)
+            {
+                EditorGUILayout.LabelField("No story file selected.");
+            }
+            else
+            {
+                foreach (StoryNode node in selectedStory.GetAllNodes())
+                {
+                    EditorGUILayout.LabelField($"{node.storyText}");
+                }
+            }
+        }
+
+        private void OnSelectionChanged()
+        {
+            StorySO newStory = Selection.activeObject as StorySO;
+            if (newStory != null)
+            {
+                selectedStory = newStory;
+            }
+            Repaint();
         }
     }
 }

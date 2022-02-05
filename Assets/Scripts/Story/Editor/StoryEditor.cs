@@ -14,6 +14,12 @@ namespace Adventure.Story.Editor
         [NonSerialized] StoryNode creatingNode = null;
         [NonSerialized] StoryNode deletingNode = null;
         [NonSerialized] StoryNode linkingParentNode = null;
+        Vector2 scrollPosition;
+        [NonSerialized] bool draggingCanvas = false;
+        [NonSerialized] Vector2 draggingCanvasOffset;
+
+        const float canvasSize = 4000;
+        const float backgroundSize = 50;
 
         [MenuItem("Window/Text Adventure/Story Editor")]
         public static void ShowEditorWindow()
@@ -52,6 +58,14 @@ namespace Adventure.Story.Editor
             else
             {
                 ProcessEvents();
+
+                scrollPosition = EditorGUILayout.BeginScrollView(scrollPosition);
+
+                Rect canvas = GUILayoutUtility.GetRect(canvasSize, canvasSize);
+                Texture2D backgroundTex = Resources.Load("background") as Texture2D;
+                Rect texCoords = new Rect(0, 0, canvasSize / backgroundSize, canvasSize / backgroundSize);
+                GUI.DrawTextureWithTexCoords(canvas, backgroundTex, texCoords);
+                
                 foreach (StoryNode node in selectedStory.GetAllNodes())
                 {
                     DrawConnections(node);
@@ -60,6 +74,8 @@ namespace Adventure.Story.Editor
                 {
                     DrawNode(node);
                 }
+
+                EditorGUILayout.EndScrollView();
 
                 if (creatingNode != null)
                 {
@@ -81,21 +97,37 @@ namespace Adventure.Story.Editor
         {
             if (Event.current.type == EventType.MouseDown && draggingNode == null)
             {
-                draggingNode = GetNodeAtPoint(Event.current.mousePosition);
+                draggingNode = GetNodeAtPoint(Event.current.mousePosition + scrollPosition);
                 if (draggingNode != null)
                 {
                     draggingOffset = draggingNode.rect.position - Event.current.mousePosition;
+                }
+                else
+                {
+                    draggingCanvas = true;
+                    draggingCanvasOffset = Event.current.mousePosition + scrollPosition;
                 }
             }
             else if (Event.current.type == EventType.MouseDrag && draggingNode != null)
             {
                 Undo.RecordObject(selectedStory, "Move Story Node");
                 draggingNode.rect.position = Event.current.mousePosition + draggingOffset;
+
+                GUI.changed = true;
+            }
+            else if (Event.current.type == EventType.MouseDrag && draggingCanvas)
+            {
+                scrollPosition = draggingCanvasOffset - Event.current.mousePosition;
+
                 GUI.changed = true;
             }
             else if (Event.current.type == EventType.MouseUp && draggingNode != null)
             {
                 draggingNode = null;
+            }
+            else if (Event.current.type == EventType.MouseUp && draggingCanvas)
+            {
+                draggingCanvas = false;
             }
         }
 

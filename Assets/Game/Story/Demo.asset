@@ -14,11 +14,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodes:
   - uniqueID: 52de7a8f-81aa-4e4c-9d88-dd8a37099c94
-    storyText: 
+    storyText: a
+    children:
+    - 82055673-e480-40ef-84d2-d62e67d1fc97
+    rect:
+      serializedVersion: 2
+      x: 126
+      y: 85
+      width: 200
+      height: 100
+  - uniqueID: 82055673-e480-40ef-84d2-d62e67d1fc97
+    storyText: b
     children: []
     rect:
       serializedVersion: 2
-      x: 0
-      y: 0
+      x: 493
+      y: 222
       width: 200
       height: 100

@@ -1,11 +1,12 @@
 using System;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
 
 namespace Adventure.Story
 {
     [CreateAssetMenu(fileName = "New Story", menuName = "Adventure/New Story", order = 0)]
-    public class StorySO : ScriptableObject
+    public class StorySO : ScriptableObject, ISerializationCallbackReceiver
     {
         [SerializeField] List<StoryNode> nodes = new List<StoryNode>();
 
@@ -16,9 +17,7 @@ namespace Adventure.Story
 #if UNITY_EDITOR
             if (nodes.Count == 0)
             {
-                StoryNode rootNode = new StoryNode();
-                rootNode.uniqueID = Guid.NewGuid().ToString();
-                nodes.Add(rootNode);
+                CreateNode(null);
             }
 #endif
             OnValidate();
@@ -29,7 +28,7 @@ namespace Adventure.Story
             nodeLookup.Clear();
             foreach (StoryNode node in GetAllNodes())
             {
-                nodeLookup[node.uniqueID] = node;
+                nodeLookup[node.name] = node;
             }
         }
 
@@ -56,9 +55,13 @@ namespace Adventure.Story
 
         public void CreateNode(StoryNode parent)
         {
-            StoryNode newNode = new StoryNode();
-            newNode.uniqueID = Guid.NewGuid().ToString();
-            parent.children.Add(newNode.uniqueID);
+            StoryNode newNode = CreateInstance<StoryNode>();
+            newNode.name = Guid.NewGuid().ToString();
+            Undo.RegisterCreatedObjectUndo(newNode, "Created Story Node");
+            if (parent != null)
+            {
+                parent.children.Add(newNode.name);
+            }
             nodes.Add(newNode);
             OnValidate();
         }
@@ -68,14 +71,39 @@ namespace Adventure.Story
             nodes.Remove(nodeToDelete);
             OnValidate();
             CleanDanglingChildren(nodeToDelete);
+            Undo.DestroyObjectImmediate(nodeToDelete);
         }
 
         private void CleanDanglingChildren(StoryNode nodeToDelete)
         {
             foreach (StoryNode node in GetAllNodes())
             {
-                node.children.Remove(nodeToDelete.uniqueID);
+                node.children.Remove(nodeToDelete.name);
             }
+        }
+
+        public void OnBeforeSerialize()
+        {
+            if (nodes.Count == 0)
+            {
+                CreateNode(null);
+            }
+
+            if (AssetDatabase.GetAssetPath(this) != "")
+            {
+                foreach (StoryNode node in GetAllNodes())
+                {
+                    if (AssetDatabase.GetAssetPath(node) == "")
+                    {
+                        AssetDatabase.AddObjectToAsset(node, this);
+                    }
+                }
+            }
+        }
+
+        public void OnAfterDeserialize()
+        {
+
         }
     }
 }

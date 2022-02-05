@@ -101,11 +101,13 @@ namespace Adventure.Story.Editor
                 if (draggingNode != null)
                 {
                     draggingOffset = draggingNode.rect.position - Event.current.mousePosition;
+                    Selection.activeObject = draggingNode;
                 }
                 else
                 {
                     draggingCanvas = true;
                     draggingCanvasOffset = Event.current.mousePosition + scrollPosition;
+                    Selection.activeObject = selectedStory;
                 }
             }
             else if (Event.current.type == EventType.MouseDrag && draggingNode != null)
@@ -179,12 +181,12 @@ namespace Adventure.Story.Editor
                     linkingParentNode = null;
                 }
             }
-            else if (linkingParentNode.children.Contains(node.uniqueID))
+            else if (linkingParentNode.children.Contains(node.name))
             {
                 if (GUILayout.Button("Unlink"))
                 {
                     Undo.RecordObject(selectedStory, "Remove Story Link");
-                    linkingParentNode.children.Remove(node.uniqueID);
+                    linkingParentNode.children.Remove(node.name);
                     linkingParentNode = null;
                 }
             }
@@ -193,7 +195,7 @@ namespace Adventure.Story.Editor
                 if (GUILayout.Button("Child"))
                 {
                     Undo.RecordObject(selectedStory, "Add Story Link");
-                    linkingParentNode.children.Add(node.uniqueID);
+                    linkingParentNode.children.Add(node.name);
                     linkingParentNode = null;
                 }
             }

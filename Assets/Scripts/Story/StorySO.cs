@@ -62,5 +62,20 @@ namespace Adventure.Story
             nodes.Add(newNode);
             OnValidate();
         }
+
+        public void DeleteNode(StoryNode nodeToDelete)
+        {
+            nodes.Remove(nodeToDelete);
+            OnValidate();
+            CleanDanglingChildren(nodeToDelete);
+        }
+
+        private void CleanDanglingChildren(StoryNode nodeToDelete)
+        {
+            foreach (StoryNode node in GetAllNodes())
+            {
+                node.children.Remove(nodeToDelete.uniqueID);
+            }
+        }
     }
 }

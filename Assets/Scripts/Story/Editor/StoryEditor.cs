@@ -12,6 +12,8 @@ namespace Adventure.Story.Editor
         [NonSerialized] StoryNode draggingNode = null;
         [NonSerialized] Vector2 draggingOffset;
         [NonSerialized] StoryNode creatingNode = null;
+        [NonSerialized] StoryNode deletingNode = null;
+        [NonSerialized] StoryNode linkingParentNode = null;
 
         [MenuItem("Window/Text Adventure/Story Editor")]
         public static void ShowEditorWindow()
@@ -65,6 +67,13 @@ namespace Adventure.Story.Editor
                     selectedStory.CreateNode(creatingNode);
                     creatingNode = null;
                 }
+
+                if (deletingNode != null)
+                {
+                    Undo.RecordObject(selectedStory, "Deleted Story Node");
+                    selectedStory.DeleteNode(deletingNode);
+                    deletingNode = null;
+                }
             }
         }
 
@@ -103,12 +112,59 @@ namespace Adventure.Story.Editor
                 node.storyText = newText;
             }
 
+            GUILayout.BeginHorizontal();
+
             if (GUILayout.Button("+"))
             {
                 creatingNode = node;
             }
 
+            DrawLinkButtons(node);
+
+            if (GUILayout.Button("x"))
+            {
+                deletingNode = node;
+            }
+
+            GUILayout.EndHorizontal();
+
             GUILayout.EndArea();
+        }
+
+        private void DrawLinkButtons(StoryNode node)
+        {
+            if (linkingParentNode == null)
+            {
+                if (GUILayout.Button("Link"))
+                {
+                    linkingParentNode = node;
+                }
+            }
+            else if (linkingParentNode == node)
+            {
+                if (GUILayout.Button("Cancel"))
+                {
+                    linkingParentNode = null;
+                }
+            }
+            else if (linkingParentNode.children.Contains(node.uniqueID))
+            {
+                if (GUILayout.Button("Unlink"))
+                {
+                    Undo.RecordObject(selectedStory, "Remove Story Link");
+                    linkingParentNode.children.Remove(node.uniqueID);
+                    linkingParentNode = null;
+                }
+            }
+            else
+            {
+                if (GUILayout.Button("Child"))
+                {
+                    Undo.RecordObject(selectedStory, "Add Story Link");
+                    linkingParentNode.children.Add(node.uniqueID);
+                    linkingParentNode = null;
+                }
+            }
         }
 
         private void DrawConnections(StoryNode node)

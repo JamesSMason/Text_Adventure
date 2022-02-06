@@ -928,6 +928,7 @@ GameObject:
   - component: {fileID: 2077710535168170376}
   - component: {fileID: 2077710535168170378}
   - component: {fileID: 2077710535168170375}
+  - component: {fileID: 564422144494179651}
   m_Layer: 5
   m_Name: Button Panel
   m_TagString: Untagged
@@ -1013,6 +1014,19 @@ MonoBehaviour:
   m_FlexibleWidth: -1
   m_FlexibleHeight: 5
   m_LayoutPriority: 1
+--- !u!114 &564422144494179651
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2077710535168170380}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f93fe81bf62fd8446af751086bb48075, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buttonPrefab: {fileID: 1321771561058303250, guid: 9497f337ea20c824caf2335066a01502, type: 3}
 --- !u!1 &2077710535269151481
 GameObject:
   m_ObjectHideFlags: 0
@@ -1178,6 +1192,7 @@ GameObject:
   - component: {fileID: 2077710535427102386}
   - component: {fileID: 2077710535427102388}
   - component: {fileID: 2077710535427102387}
+  - component: {fileID: 6630230403841861494}
   m_Layer: 5
   m_Name: Story Panel
   m_TagString: Untagged
@@ -1259,6 +1274,19 @@ MonoBehaviour:
   m_FlexibleWidth: -1
   m_FlexibleHeight: 95
   m_LayoutPriority: 1
+--- !u!114 &6630230403841861494
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2077710535427102390}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a9d47d353fa62246a1f0a3e60efbf9b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  storyTextPanel: {fileID: 2077710536041069182}
 --- !u!1 &2077710535440896224
 GameObject:
   m_ObjectHideFlags: 0
@@ -1976,7 +2004,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 2077710536224049945}
   m_Direction: 2
   m_Value: 1
-  m_Size: 0.060284358
+  m_Size: 0.060284354
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:

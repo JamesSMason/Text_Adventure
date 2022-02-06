@@ -14,12 +14,6 @@ namespace Adventure.Story
 
         void Awake()
         {
-#if UNITY_EDITOR
-            if (nodes.Count == 0)
-            {
-                CreateNode(null);
-            }
-#endif
             OnValidate();
         }
 
@@ -44,7 +38,7 @@ namespace Adventure.Story
 
         public IEnumerable<StoryNode> GetAllChildren(StoryNode parentNode)
         {
-            foreach (string childID in parentNode.children)
+            foreach (string childID in parentNode.GetChildren())
             {
                 if (nodeLookup.ContainsKey(childID))
                 {
@@ -53,40 +47,58 @@ namespace Adventure.Story
             }
         }
 
+#if UNITY_EDITOR
         public void CreateNode(StoryNode parent)
         {
-            StoryNode newNode = CreateInstance<StoryNode>();
-            newNode.name = Guid.NewGuid().ToString();
+            StoryNode newNode = MakeNode(parent);
             Undo.RegisterCreatedObjectUndo(newNode, "Created Story Node");
-            if (parent != null)
-            {
-                parent.children.Add(newNode.name);
-            }
+            Undo.RecordObject(this, "Added Story Node");
+            AddNode(newNode);
+        }
+
+        private void AddNode(StoryNode newNode)
+        {
             nodes.Add(newNode);
             OnValidate();
         }
 
         public void DeleteNode(StoryNode nodeToDelete)
         {
+            Undo.RecordObject(this, "Deleted Story Node");
             nodes.Remove(nodeToDelete);
             OnValidate();
             CleanDanglingChildren(nodeToDelete);
             Undo.DestroyObjectImmediate(nodeToDelete);
         }
 
+        private StoryNode MakeNode(StoryNode parent)
+        {
+            StoryNode newNode = CreateInstance<StoryNode>();
+            newNode.name = Guid.NewGuid().ToString();
+            if (parent != null)
+            {
+                parent.AddChild(newNode.name);
+            }
+
+            return newNode;
+        }
+
         private void CleanDanglingChildren(StoryNode nodeToDelete)
         {
             foreach (StoryNode node in GetAllNodes())
             {
-                node.children.Remove(nodeToDelete.name);
+                node.RemoveChild(nodeToDelete.name);
             }
         }
+#endif
 
         public void OnBeforeSerialize()
         {
+#if UNITY_EDITOR
             if (nodes.Count == 0)
             {
-                CreateNode(null);
+                StoryNode newNode = MakeNode(null);
+                AddNode(newNode);
             }
 
             if (AssetDatabase.GetAssetPath(this) != "")
@@ -99,11 +111,11 @@ namespace Adventure.Story
                     }
                 }
             }
+#endif
         }
 
         public void OnAfterDeserialize()
         {
-
         }
     }
 }

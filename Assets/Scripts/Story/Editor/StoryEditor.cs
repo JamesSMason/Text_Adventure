@@ -79,14 +79,12 @@ namespace Adventure.Story.Editor
 
                 if (creatingNode != null)
                 {
-                    Undo.RecordObject(selectedStory, "Added Story Node");
                     selectedStory.CreateNode(creatingNode);
                     creatingNode = null;
                 }
 
                 if (deletingNode != null)
                 {
-                    Undo.RecordObject(selectedStory, "Deleted Story Node");
                     selectedStory.DeleteNode(deletingNode);
                     deletingNode = null;
                 }
@@ -100,7 +98,7 @@ namespace Adventure.Story.Editor
                 draggingNode = GetNodeAtPoint(Event.current.mousePosition + scrollPosition);
                 if (draggingNode != null)
                 {
-                    draggingOffset = draggingNode.rect.position - Event.current.mousePosition;
+                    draggingOffset = draggingNode.GetRect().position - Event.current.mousePosition;
                     Selection.activeObject = draggingNode;
                 }
                 else
@@ -112,8 +110,7 @@ namespace Adventure.Story.Editor
             }
             else if (Event.current.type == EventType.MouseDrag && draggingNode != null)
             {
-                Undo.RecordObject(selectedStory, "Move Story Node");
-                draggingNode.rect.position = Event.current.mousePosition + draggingOffset;
+                draggingNode.SetPosition(Event.current.mousePosition + draggingOffset) ;
 
                 GUI.changed = true;
             }
@@ -135,17 +132,10 @@ namespace Adventure.Story.Editor
 
         private void DrawNode(StoryNode node)
         {
-            GUILayout.BeginArea(node.rect, nodeStyle);
-            EditorGUI.BeginChangeCheck();
+            GUILayout.BeginArea(node.GetRect(), nodeStyle);
 
-            string newText = EditorGUILayout.TextField(node.storyText);
-
-            if (EditorGUI.EndChangeCheck())
-            {
-                Undo.RecordObject(selectedStory, "Update Story Text");
-                node.storyText = newText;
-            }
-
+            node.SetStoryText(EditorGUILayout.TextField(node.GetStoryText()));
+            
             GUILayout.BeginHorizontal();
 
             if (GUILayout.Button("+"))
@@ -181,12 +171,11 @@ namespace Adventure.Story.Editor
                     linkingParentNode = null;
                 }
             }
-            else if (linkingParentNode.children.Contains(node.name))
+            else if (linkingParentNode.GetChildren().Contains(node.name))
             {
                 if (GUILayout.Button("Unlink"))
                 {
-                    Undo.RecordObject(selectedStory, "Remove Story Link");
-                    linkingParentNode.children.Remove(node.name);
+                    linkingParentNode.RemoveChild(node.name);
                     linkingParentNode = null;
                 }
             }
@@ -194,8 +183,7 @@ namespace Adventure.Story.Editor
             {
                 if (GUILayout.Button("Child"))
                 {
-                    Undo.RecordObject(selectedStory, "Add Story Link");
-                    linkingParentNode.children.Add(node.name);
+                    linkingParentNode.AddChild(node.name);
                     linkingParentNode = null;
                 }
             }
@@ -203,10 +191,10 @@ namespace Adventure.Story.Editor
 
         private void DrawConnections(StoryNode node)
         {
-            Vector3 startPosition = new Vector2(node.rect.xMax, node.rect.center.y);
+            Vector3 startPosition = new Vector2(node.GetRect().xMax, node.GetRect().center.y);
             foreach (StoryNode childNode in selectedStory.GetAllChildren(node))
             {
-                Vector3 endPosition = new Vector2(childNode.rect.xMin, childNode.rect.center.y);
+                Vector3 endPosition = new Vector2(childNode.GetRect().xMin, childNode.GetRect().center.y);
                 Vector3 controlPointOffset = endPosition - startPosition;
                 controlPointOffset.y = 0.0f;
                 controlPointOffset.x *= 0.8f;
@@ -229,7 +217,7 @@ namespace Adventure.Story.Editor
             StoryNode foundNode = null;
             foreach (StoryNode node in selectedStory.GetAllNodes())
             {
-                if (node.rect.Contains(point))
+                if (node.GetRect().Contains(point))
                 {
                     foundNode = node;
                 }

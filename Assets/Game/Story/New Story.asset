@@ -1,0 +1,104 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8242246394388379686
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc9cbbaf9a74462499b5b12c1eef8149, type: 3}
+  m_Name: cd638099-e884-4b38-ba50-f385c4ab2094
+  m_EditorClassIdentifier: 
+  storyText: It was fun
+  children:
+  - 3079bc93-fe23-427f-bd6b-d17de989ea36
+  rect:
+    serializedVersion: 2
+    x: 714
+    y: 170
+    width: 200
+    height: 100
+--- !u!114 &-8095034085270385734
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc9cbbaf9a74462499b5b12c1eef8149, type: 3}
+  m_Name: 65e97153-b70b-4f34-910a-df9bd5bb5a94
+  m_EditorClassIdentifier: 
+  storyText: This should be fun!
+  children:
+  - cd638099-e884-4b38-ba50-f385c4ab2094
+  rect:
+    serializedVersion: 2
+    x: 389
+    y: 275
+    width: 200
+    height: 100
+--- !u!114 &-7981317457554042604
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc9cbbaf9a74462499b5b12c1eef8149, type: 3}
+  m_Name: 3079bc93-fe23-427f-bd6b-d17de989ea36
+  m_EditorClassIdentifier: 
+  storyText: Welcome to the Text Adventure Demo
+  children:
+  - 65e97153-b70b-4f34-910a-df9bd5bb5a94
+  - a8915a61-29f2-4030-958a-d9eaf27159c0
+  rect:
+    serializedVersion: 2
+    x: 89
+    y: 151
+    width: 200
+    height: 100
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59e0aa2815b28ff4e85e5b42c7e00439, type: 3}
+  m_Name: New Story
+  m_EditorClassIdentifier: 
+  nodes:
+  - {fileID: -7981317457554042604}
+  - {fileID: -8095034085270385734}
+  - {fileID: 9037447722618207358}
+  - {fileID: -8242246394388379686}
+--- !u!114 &9037447722618207358
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc9cbbaf9a74462499b5b12c1eef8149, type: 3}
+  m_Name: a8915a61-29f2-4030-958a-d9eaf27159c0
+  m_EditorClassIdentifier: 
+  storyText: Turn Left
+  children:
+  - cd638099-e884-4b38-ba50-f385c4ab2094
+  rect:
+    serializedVersion: 2
+    x: 431
+    y: 68
+    width: 200
+    height: 100

@@ -1,6 +1,5 @@
 using Adventure.Story;
 using System;
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -38,6 +37,11 @@ namespace Adventure.Main
         {
             currentStoryNode = currentStory.GetStoryNode(childID);
             OnStoryUpdate();
+        }
+
+        public bool GetIsEncounter()
+        {
+            return currentStoryNode.GetEncounter() != null;
         }
     }
 }

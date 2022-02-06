@@ -33,10 +33,11 @@ MonoBehaviour:
   children:
   - childID: 633632de-fefc-4632-9954-2973001a7126
     optionText: Start again
+  encounter: {fileID: 0}
   rect:
     serializedVersion: 2
-    x: 800
-    y: 191
+    x: 801
+    y: 189
     width: 200
     height: 100
 --- !u!114 &2699869282041359023
@@ -55,9 +56,10 @@ MonoBehaviour:
   children:
   - childID: 8673fffe-8b1e-4cee-b669-34094cdea6c8
     optionText: Turn left
+  encounter: {fileID: 11400000, guid: ce26e903adb3e75489099dbad73b5ea9, type: 2}
   rect:
     serializedVersion: 2
-    x: 492
+    x: 493
     y: 283
     width: 200
     height: 100
@@ -77,6 +79,7 @@ MonoBehaviour:
   children:
   - childID: 8673fffe-8b1e-4cee-b669-34094cdea6c8
     optionText: Turn Right
+  encounter: {fileID: 0}
   rect:
     serializedVersion: 2
     x: 500
@@ -101,9 +104,12 @@ MonoBehaviour:
     optionText: Turn Left
   - childID: ddfa0abe-ab95-4fdd-b739-3bda369af78f
     optionText: Turn right
+  - childID: 8673fffe-8b1e-4cee-b669-34094cdea6c8
+    optionText: Straight On
+  encounter: {fileID: 0}
   rect:
     serializedVersion: 2
-    x: 131
+    x: 133
     y: 193
     width: 200
     height: 100

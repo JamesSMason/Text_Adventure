@@ -1,4 +1,4 @@
-using System;
+using Adventure.Core;
 using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
@@ -9,6 +9,7 @@ namespace Adventure.Story
     {
         [SerializeField] string storyText;
         [SerializeField] List<ChildNode> children = new List<ChildNode>();
+        [SerializeField] EncounterSO encounter = null;
         [SerializeField] Rect rect = new Rect(0, 0, 200, 100);
 
         const string newOptionText = "New option";
@@ -43,6 +44,11 @@ namespace Adventure.Story
                 }
             }
             return null;
+        }
+
+        public EncounterSO GetEncounter()
+        {
+            return encounter;
         }
 
 #if UNITY_EDITOR

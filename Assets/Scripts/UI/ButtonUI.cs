@@ -1,6 +1,7 @@
 using Adventure.Main;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -42,6 +43,8 @@ namespace Adventure.UI
             foreach (string childID in storyPresenter.GetAllChildren())
             {
                 Button newButton = Instantiate(buttonPrefab, this.transform);
+                newButton.GetComponentInChildren<TextMeshProUGUI>().text = storyPresenter.GetOptionText(childID);
+                newButton.onClick.AddListener(() => storyPresenter.MoveToNextNode(childID));
             }
         }
     }

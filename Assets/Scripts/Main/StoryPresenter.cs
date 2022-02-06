@@ -28,5 +28,16 @@ namespace Adventure.Main
         {
             return currentStoryNode.GetChildren();
         }
+
+        public string GetOptionText(string childID)
+        {
+            return currentStoryNode.GetOption(childID);
+        }
+
+        public void MoveToNextNode(string childID)
+        {
+            currentStoryNode = currentStory.GetStoryNode(childID);
+            OnStoryUpdate();
+        }
     }
 }

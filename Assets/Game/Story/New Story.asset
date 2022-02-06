@@ -1,69 +1,5 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-8242246394388379686
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fc9cbbaf9a74462499b5b12c1eef8149, type: 3}
-  m_Name: cd638099-e884-4b38-ba50-f385c4ab2094
-  m_EditorClassIdentifier: 
-  storyText: It was fun
-  children:
-  - 3079bc93-fe23-427f-bd6b-d17de989ea36
-  rect:
-    serializedVersion: 2
-    x: 714
-    y: 170
-    width: 200
-    height: 100
---- !u!114 &-8095034085270385734
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fc9cbbaf9a74462499b5b12c1eef8149, type: 3}
-  m_Name: 65e97153-b70b-4f34-910a-df9bd5bb5a94
-  m_EditorClassIdentifier: 
-  storyText: This should be fun!
-  children:
-  - cd638099-e884-4b38-ba50-f385c4ab2094
-  rect:
-    serializedVersion: 2
-    x: 389
-    y: 275
-    width: 200
-    height: 100
---- !u!114 &-7981317457554042604
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fc9cbbaf9a74462499b5b12c1eef8149, type: 3}
-  m_Name: 3079bc93-fe23-427f-bd6b-d17de989ea36
-  m_EditorClassIdentifier: 
-  storyText: Welcome to the Text Adventure Demo
-  children:
-  - 65e97153-b70b-4f34-910a-df9bd5bb5a94
-  - a8915a61-29f2-4030-958a-d9eaf27159c0
-  rect:
-    serializedVersion: 2
-    x: 89
-    y: 151
-    width: 200
-    height: 100
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -77,11 +13,11 @@ MonoBehaviour:
   m_Name: New Story
   m_EditorClassIdentifier: 
   nodes:
-  - {fileID: -7981317457554042604}
-  - {fileID: -8095034085270385734}
-  - {fileID: 9037447722618207358}
-  - {fileID: -8242246394388379686}
---- !u!114 &9037447722618207358
+  - {fileID: 4416342976507410288}
+  - {fileID: 2754681176322193975}
+  - {fileID: 2699869282041359023}
+  - {fileID: 2485399739710201651}
+--- !u!114 &2485399739710201651
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -91,14 +27,83 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fc9cbbaf9a74462499b5b12c1eef8149, type: 3}
-  m_Name: a8915a61-29f2-4030-958a-d9eaf27159c0
+  m_Name: 8673fffe-8b1e-4cee-b669-34094cdea6c8
   m_EditorClassIdentifier: 
-  storyText: Turn Left
+  storyText: You are at the end!
   children:
-  - cd638099-e884-4b38-ba50-f385c4ab2094
+  - childID: 633632de-fefc-4632-9954-2973001a7126
+    optionText: Start again
   rect:
     serializedVersion: 2
-    x: 431
+    x: 800
+    y: 191
+    width: 200
+    height: 100
+--- !u!114 &2699869282041359023
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc9cbbaf9a74462499b5b12c1eef8149, type: 3}
+  m_Name: ddfa0abe-ab95-4fdd-b739-3bda369af78f
+  m_EditorClassIdentifier: 
+  storyText: You turned right
+  children:
+  - childID: 8673fffe-8b1e-4cee-b669-34094cdea6c8
+    optionText: Turn left
+  rect:
+    serializedVersion: 2
+    x: 492
+    y: 283
+    width: 200
+    height: 100
+--- !u!114 &2754681176322193975
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc9cbbaf9a74462499b5b12c1eef8149, type: 3}
+  m_Name: bd08c810-50ac-4d7a-a2ac-4feca737aebe
+  m_EditorClassIdentifier: 
+  storyText: You turned left
+  children:
+  - childID: 8673fffe-8b1e-4cee-b669-34094cdea6c8
+    optionText: Turn Right
+  rect:
+    serializedVersion: 2
+    x: 500
     y: 68
+    width: 200
+    height: 100
+--- !u!114 &4416342976507410288
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc9cbbaf9a74462499b5b12c1eef8149, type: 3}
+  m_Name: 633632de-fefc-4632-9954-2973001a7126
+  m_EditorClassIdentifier: 
+  storyText: New story
+  children:
+  - childID: bd08c810-50ac-4d7a-a2ac-4feca737aebe
+    optionText: Turn Left
+  - childID: ddfa0abe-ab95-4fdd-b739-3bda369af78f
+    optionText: Turn right
+  rect:
+    serializedVersion: 2
+    x: 131
+    y: 193
     width: 200
     height: 100

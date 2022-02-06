@@ -47,6 +47,15 @@ namespace Adventure.Story
             }
         }
 
+        public StoryNode GetStoryNode(string childID)
+        {
+            if (nodeLookup.ContainsKey(childID))
+            {
+                return nodeLookup[childID];
+            }
+            return null;
+        }
+
 #if UNITY_EDITOR
         public void CreateNode(StoryNode parent)
         {

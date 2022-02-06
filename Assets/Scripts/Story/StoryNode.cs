@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
@@ -7,11 +8,10 @@ namespace Adventure.Story
     public class StoryNode : ScriptableObject
     {
         [SerializeField] string storyText;
-        [SerializeField] List<string> children = new List<string>();
-        [SerializeField] List<string> optionText = new List<string>();
+        [SerializeField] List<ChildNode> children = new List<ChildNode>();
         [SerializeField] Rect rect = new Rect(0, 0, 200, 100);
 
-        Dictionary<string, string> childrenLookup = new Dictionary<string, string>();
+        const string newOptionText = "New option";
 
         public string GetStoryText()
         {
@@ -20,12 +20,29 @@ namespace Adventure.Story
 
         public List<string> GetChildren()
         {
-            return children;
+            List<string> childIDs = new List<string>();
+            foreach (ChildNode child in children)
+            {
+                childIDs.Add(child.GetChildID());
+            }
+            return childIDs;
         }
 
         public Rect GetRect()
         {
             return rect;
+        }
+
+        public string GetOption(string childID)
+        {
+            foreach (ChildNode child in children)
+            {
+                if (child.GetChildID() == childID)
+                { 
+                    return child.GetOptionText();
+                }
+            }
+            return null;
         }
 
 #if UNITY_EDITOR
@@ -48,18 +65,22 @@ namespace Adventure.Story
         public void AddChild(string childID)
         {
             Undo.RecordObject(this, "Add Story Link");
-            children.Add(childID);
-            optionText.Add("New option");
-            childrenLookup.Add(childID, "New option");
+            ChildNode newNode = new ChildNode(childID, newOptionText);
+            children.Add(newNode);
             EditorUtility.SetDirty(this);
         }
 
         public void RemoveChild(string childID)
         {
             Undo.RecordObject(this, "Remove Story Link");
-            children.Remove(childID);
-            optionText.Remove(childrenLookup[childID]);
-            childrenLookup.Remove(childID);
+            foreach (ChildNode childNode in children)
+            {
+                if (childNode.GetChildID() == childID)
+                {
+                    children.Remove(childNode);
+                    break;
+                }
+            }
             EditorUtility.SetDirty(this);
         }
 #endif

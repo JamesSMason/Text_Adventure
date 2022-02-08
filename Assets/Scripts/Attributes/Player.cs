@@ -1,15 +1,52 @@
+using Adventure.Core;
+using Adventure.Saving;
+using System;
 using System.Collections.Generic;
+using UnityEngine;
 
 namespace Adventure.Attributes
 {
-    public class Player
+    public class Player : MonoBehaviour, ISaveable
     {
+        [Header("---Initial Settings---")]
+        [SerializeField] int initialGold = 0;
+        [SerializeField] int initialProvisions = 10;
+        [SerializeField] int initialJewellery = 0;
+        [Header("---TEST VARIABLES---")]
+        [SerializeField] bool useTestStats = false;
+        [SerializeField] int testSkillValue = 1;
+        [SerializeField] int testStaminaValue = 1;
+        [SerializeField] int testLuckValue = 1;
+
+        DiceRoller diceRoller = null;
         Dictionary<Stats, int> playerStats = new Dictionary<Stats, int>();
 
-        public Player(int skill, int stamina, int luck,
+        public Action OnStatisticLoad;
+
+        void Awake()
+        {
+            diceRoller = FindObjectOfType<DiceRoller>();
+        }
+
+        void Start()
+        {
+            if (useTestStats)
+            {
+                GenerateStats(testSkillValue, testStaminaValue, testLuckValue, initialGold, initialProvisions, initialJewellery);
+            }
+            else
+            {
+                int skill = diceRoller.GenerateDiceRollResult(1) + 6;
+                int stamina = diceRoller.GenerateDiceRollResult(2) + 12;
+                int luck = diceRoller.GenerateDiceRollResult(1) + 6;
+                GenerateStats(skill, stamina, luck, initialGold, initialProvisions, initialJewellery);
+            }
+            OnStatisticLoad();
+        }
+
+        private void GenerateStats(int skill, int stamina, int luck,
                         int initialGold, int initialProvisions, int initialJewellery)
         {
-            playerStats.Clear();
             SetStat(Stats.InitialSkill, skill);
             SetStat(Stats.Skill, skill);
             SetStat(Stats.InitialStamina, stamina);
@@ -27,11 +64,6 @@ namespace Adventure.Attributes
             return playerStats[stat];
         }
 
-        public void SetStat(Stats stat, int value)
-        {
-            playerStats[stat] = value;
-        }
-
         public void AdjustStat(Stats stat, int adjustmentValue)
         {
             if (playerStats.ContainsKey(stat))
@@ -40,9 +72,21 @@ namespace Adventure.Attributes
             }
         }
 
-        public void ClearStats()
+        public void SetStat(Stats stat, int value)
+        {
+            playerStats[stat] = value;
+        }
+
+        public object CaptureState()
+        {
+            return playerStats;
+        }
+
+        public void RestoreState(object state)
         {
             playerStats.Clear();
+            playerStats = (Dictionary<Stats, int>)state;
+            OnStatisticLoad();
         }
     }
 }

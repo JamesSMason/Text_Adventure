@@ -49,7 +49,7 @@ namespace Adventure.Main
         public void AdjustStat(Stats stat, int value)
         {
             player.AdjustStat(stat, value);
-            OnStatisticChange();
+            RefreshStats();
         }
     }
 }

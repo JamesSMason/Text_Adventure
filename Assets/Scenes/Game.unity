@@ -189,6 +189,50 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &516235740 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3649845002808113827, guid: e566f54b0ffe1c646bd4f0e46c1ee334, type: 3}
+  m_PrefabInstance: {fileID: 3649845002594532842}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &516235741
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 516235740}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b2f56647b0cc7448968d9af9bf0660b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  action: AdjustStats
+  onTrigger:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 516235743}
+        m_TargetAssemblyTypeName: Adventure.Main.StoryPresenter, Assembly-CSharp
+        m_MethodName: AdjustStats
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &516235743 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3649845002808113824, guid: e566f54b0ffe1c646bd4f0e46c1ee334, type: 3}
+  m_PrefabInstance: {fileID: 3649845002594532842}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 516235740}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7529a28a9698f84c815f9e3bedee3b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -272,6 +316,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1143117158 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 506448019454636610, guid: f4bebc5565e4aa147be9a65f25255309, type: 3}
+  m_PrefabInstance: {fileID: 506448018183713624}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &506448018183713624
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -431,6 +480,22 @@ PrefabInstance:
     - target: {fileID: 1045506374487145754, guid: 34bb732838dd8c045b537b28986768e8, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1045506375393627464, guid: 34bb732838dd8c045b537b28986768e8, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1045506375393627464, guid: 34bb732838dd8c045b537b28986768e8, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1045506375393627464, guid: 34bb732838dd8c045b537b28986768e8, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1143117158}
+    - target: {fileID: 1045506375393627464, guid: 34bb732838dd8c045b537b28986768e8, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1045506375393627470, guid: 34bb732838dd8c045b537b28986768e8, type: 3}
       propertyPath: m_AnchorMax.y
@@ -2452,6 +2517,34 @@ PrefabInstance:
     - target: {fileID: 226297674, guid: e566f54b0ffe1c646bd4f0e46c1ee334, type: 3}
       propertyPath: uniqueIdentifier
       value: 0f96078f-a486-427d-98ac-d94768ec0405
+      objectReference: {fileID: 0}
+    - target: {fileID: 3649845002808113824, guid: e566f54b0ffe1c646bd4f0e46c1ee334, type: 3}
+      propertyPath: myEvent.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3649845002808113824, guid: e566f54b0ffe1c646bd4f0e46c1ee334, type: 3}
+      propertyPath: myEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3649845002808113824, guid: e566f54b0ffe1c646bd4f0e46c1ee334, type: 3}
+      propertyPath: myEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 516235743}
+    - target: {fileID: 3649845002808113824, guid: e566f54b0ffe1c646bd4f0e46c1ee334, type: 3}
+      propertyPath: myEvent.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3649845002808113824, guid: e566f54b0ffe1c646bd4f0e46c1ee334, type: 3}
+      propertyPath: myEvent.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: AdjustStats
+      objectReference: {fileID: 0}
+    - target: {fileID: 3649845002808113824, guid: e566f54b0ffe1c646bd4f0e46c1ee334, type: 3}
+      propertyPath: myEvent.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Adventure.Main.StoryPresenter, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 3649845002808113824, guid: e566f54b0ffe1c646bd4f0e46c1ee334, type: 3}
+      propertyPath: myEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 3649845002808113825, guid: e566f54b0ffe1c646bd4f0e46c1ee334, type: 3}
       propertyPath: m_RootOrder

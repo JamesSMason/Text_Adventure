@@ -11,10 +11,10 @@ namespace Adventure.Main
     {
         [SerializeField] StorySO currentStory = null;
 
-        public Action OnStoryUpdate;
-
         StoryNode currentStoryNode = null;
         StoryTracker storyTracker = null;
+
+        public Action OnStoryUpdate;
 
         void Awake()
         {
@@ -25,6 +25,9 @@ namespace Adventure.Main
         {
             currentStoryNode = currentStory.GetRootNode();
             storyTracker.AddNode(currentStoryNode);
+
+            TriggerEnterAction();
+
             OnStoryUpdate();
         }
 
@@ -48,14 +51,28 @@ namespace Adventure.Main
 
         public void MoveToNextNode(string childID)
         {
+            TriggerExitAction();
             currentStoryNode = currentStory.GetStoryNode(childID);
             storyTracker.AddNode(currentStoryNode);
+
+            TriggerEnterAction();
+
             OnStoryUpdate();
         }
 
         public bool GetIsEncounter()
         {
             return currentStoryNode.GetEncounter() != null;
+        }
+
+        public void AdjustStats()
+        {
+            PlayerPresenter playerPresenter = FindObjectOfType<PlayerPresenter>();
+            for (int i = 0; i < currentStoryNode.GetStatsCount(); i++)
+            {
+                playerPresenter.AdjustStat(currentStoryNode.GetStatsToAdjust(i), currentStoryNode.GetAdjustmentValue(i));
+                Debug.Log($"Adjust {currentStoryNode.GetStatsToAdjust(i)} by {currentStoryNode.GetAdjustmentValue(i)}");
+            }
         }
 
         private IEnumerable<ChildNode> FilterOnCondition(IEnumerable<ChildNode> inputNode)
@@ -72,6 +89,31 @@ namespace Adventure.Main
         private IEnumerable<IPredicateEvaluator> GetEvaluators()
         {
             return GetComponents<IPredicateEvaluator>();
+        }
+
+        private void TriggerEnterAction()
+        {
+            if (currentStoryNode != null)
+            {
+                TriggerAction(currentStoryNode.GetOnEnterAction());
+            }
+        }
+
+        private void TriggerExitAction()
+        {
+            if (currentStoryNode != null)
+            {
+                TriggerAction(currentStoryNode.GetOnExitAction());
+            }
+        }
+
+        private void TriggerAction(string action)
+        {
+            if (action == "") {  return; }
+            foreach (StoryTrigger trigger in GetComponents<StoryTrigger>())
+            {
+                trigger.Trigger(action);
+            }
         }
 
         public object CaptureState()

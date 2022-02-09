@@ -19,11 +19,13 @@ MonoBehaviour:
     condition:
       predicate: 
       parameters: []
+      negate: 0
   - childID: 633632de-fefc-4632-9954-2973001a7126
     optionText: Return
     condition:
       predicate: 
       parameters: []
+      negate: 0
   encounter: {fileID: 0}
   rect:
     serializedVersion: 2
@@ -31,6 +33,10 @@ MonoBehaviour:
     y: 30
     width: 200
     height: 100
+  onEnterAction: 
+  onExitAction: 
+  statToAdjust: 
+  adjustmentValue: 
 --- !u!114 &-6079704273884226037
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -50,6 +56,7 @@ MonoBehaviour:
     condition:
       predicate: 
       parameters: []
+      negate: 0
   encounter: {fileID: 0}
   rect:
     serializedVersion: 2
@@ -57,6 +64,10 @@ MonoBehaviour:
     y: 213
     width: 200
     height: 100
+  onEnterAction: 
+  onExitAction: 
+  statToAdjust: 
+  adjustmentValue: 
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -98,6 +109,7 @@ MonoBehaviour:
     condition:
       predicate: 
       parameters: []
+      negate: 0
   encounter: {fileID: 0}
   rect:
     serializedVersion: 2
@@ -105,6 +117,10 @@ MonoBehaviour:
     y: 156
     width: 200
     height: 100
+  onEnterAction: 
+  onExitAction: 
+  statToAdjust: 
+  adjustmentValue: 
 --- !u!114 &2485399739710201651
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -124,23 +140,30 @@ MonoBehaviour:
     condition:
       predicate: 
       parameters: []
+      negate: 0
   - childID: 58f0c7d6-9aad-4d12-9afd-26a8b12be1c6
     optionText: Back north
     condition:
       predicate: 
       parameters: []
+      negate: 0
   - childID: d09e8455-0a1b-4db6-b1cb-91b0629ad800
     optionText: Back south
     condition:
       predicate: 
       parameters: []
+      negate: 0
   encounter: {fileID: 0}
   rect:
     serializedVersion: 2
-    x: 1024
+    x: 1025
     y: 107
     width: 200
     height: 100
+  onEnterAction: 
+  onExitAction: 
+  statToAdjust: 
+  adjustmentValue: 
 --- !u!114 &2485415182743427053
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -160,11 +183,13 @@ MonoBehaviour:
     condition:
       predicate: 
       parameters: []
+      negate: 0
   - childID: 8673fffe-8b1e-4cee-b669-34094cdea6c8
     optionText: Almost finished
     condition:
       predicate: 
       parameters: []
+      negate: 0
   encounter: {fileID: 0}
   rect:
     serializedVersion: 2
@@ -172,6 +197,10 @@ MonoBehaviour:
     y: 524
     width: 200
     height: 100
+  onEnterAction: 
+  onExitAction: 
+  statToAdjust: 
+  adjustmentValue: 
 --- !u!114 &2699869282041359023
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -191,13 +220,18 @@ MonoBehaviour:
     condition:
       predicate: 
       parameters: []
+      negate: 0
   encounter: {fileID: 11400000, guid: ce26e903adb3e75489099dbad73b5ea9, type: 2}
   rect:
     serializedVersion: 2
-    x: 272
+    x: 275
     y: 624
     width: 200
     height: 100
+  onEnterAction: AdjustStats
+  onExitAction: 
+  statToAdjust: 0300000008000000
+  adjustmentValue: feffffffffffffff
 --- !u!114 &2754681176322193975
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -217,13 +251,18 @@ MonoBehaviour:
     condition:
       predicate: 
       parameters: []
+      negate: 0
   encounter: {fileID: 0}
   rect:
     serializedVersion: 2
-    x: 277
-    y: -7
+    x: 278
+    y: -8
     width: 200
     height: 100
+  onEnterAction: 
+  onExitAction: 
+  statToAdjust: 
+  adjustmentValue: 
 --- !u!114 &4416342976507410288
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -241,43 +280,56 @@ MonoBehaviour:
   - childID: bd08c810-50ac-4d7a-a2ac-4feca737aebe
     optionText: Turn Left
     condition:
-      predicate: 
-      parameters: []
+      predicate: HasVisited
+      parameters:
+      - bd08c810-50ac-4d7a-a2ac-4feca737aebe
+      negate: 1
   - childID: ddfa0abe-ab95-4fdd-b739-3bda369af78f
     optionText: Turn right
     condition:
-      predicate: 
-      parameters: []
+      predicate: HasVisited
+      parameters:
+      - ddfa0abe-ab95-4fdd-b739-3bda369af78f
+      negate: 1
   - childID: dcf2cea1-b138-4ec1-8744-330a7bfc46a4
     optionText: Open door
     condition:
-      predicate: 
-      parameters: []
+      predicate: HasVisited
+      parameters:
+      - dcf2cea1-b138-4ec1-8744-330a7bfc46a4
+      negate: 1
   - childID: 58f0c7d6-9aad-4d12-9afd-26a8b12be1c6
     optionText: Left After Fight
     condition:
       predicate: HasVisited
       parameters:
       - bd08c810-50ac-4d7a-a2ac-4feca737aebe
+      negate: 0
   - childID: d09e8455-0a1b-4db6-b1cb-91b0629ad800
     optionText: Right After Fight
     condition:
       predicate: HasVisited
       parameters:
       - ddfa0abe-ab95-4fdd-b739-3bda369af78f
+      negate: 0
   - childID: 37258c70-683e-4d5d-a7f4-559bc3a31a96
     optionText: Door after Fight
     condition:
       predicate: HasVisited
       parameters:
       - dcf2cea1-b138-4ec1-8744-330a7bfc46a4
+      negate: 0
   encounter: {fileID: 0}
   rect:
     serializedVersion: 2
-    x: 14
+    x: 13
     y: 498
     width: 200
     height: 100
+  onEnterAction: 
+  onExitAction: 
+  statToAdjust: 
+  adjustmentValue: 
 --- !u!114 &6395815620068621738
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -297,10 +349,15 @@ MonoBehaviour:
     condition:
       predicate: 
       parameters: []
+      negate: 0
   encounter: {fileID: 0}
   rect:
     serializedVersion: 2
-    x: 462
-    y: 312
+    x: 461
+    y: 314
     width: 200
     height: 100
+  onEnterAction: 
+  onExitAction: 
+  statToAdjust: 
+  adjustmentValue: 

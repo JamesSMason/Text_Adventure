@@ -1,3 +1,4 @@
+using Adventure.Attributes;
 using Adventure.Core;
 using System.Collections.Generic;
 using UnityEditor;
@@ -11,6 +12,10 @@ namespace Adventure.Story
         [SerializeField] List<ChildNode> children = new List<ChildNode>();
         [SerializeField] EncounterSO encounter = null;
         [SerializeField] Rect rect = new Rect(0, 0, 200, 100);
+        [SerializeField] string onEnterAction = "";
+        [SerializeField] string onExitAction = "";
+        [SerializeField] Stats[] statToAdjust;
+        [SerializeField] int[] adjustmentValue;
 
         const string newOptionText = "New option";
 
@@ -57,6 +62,31 @@ namespace Adventure.Story
         public EncounterSO GetEncounter()
         {
             return encounter;
+        }
+
+        public string GetOnEnterAction()
+        { 
+            return onEnterAction;
+        }
+
+        public string GetOnExitAction()
+        {
+            return onExitAction;
+        }
+
+        public Stats GetStatsToAdjust(int index)
+        {
+            return statToAdjust[index];
+        }
+
+        public int GetAdjustmentValue(int index)
+        {
+            return adjustmentValue[index];
+        }
+
+        public int GetStatsCount()
+        {
+            return statToAdjust.Length;
         }
 
 #if UNITY_EDITOR

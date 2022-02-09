@@ -1,5 +1,6 @@
 using Adventure.Core;
 using Adventure.Saving;
+using Adventure.SceneLoader;
 using System;
 using System.Collections.Generic;
 using UnityEngine;
@@ -21,7 +22,7 @@ namespace Adventure.Attributes
         DiceRoller diceRoller = null;
         Dictionary<Stats, int> playerStats = new Dictionary<Stats, int>();
 
-        public Action OnStatisticLoad;
+        public Action OnStatisticsChange;
 
         void Awake()
         {
@@ -41,7 +42,7 @@ namespace Adventure.Attributes
                 int luck = diceRoller.GenerateDiceRollResult(1) + 6;
                 GenerateStats(skill, stamina, luck, initialGold, initialProvisions, initialJewellery);
             }
-            OnStatisticLoad();
+            OnStatisticsChange();
         }
 
         private void GenerateStats(int skill, int stamina, int luck,
@@ -58,6 +59,22 @@ namespace Adventure.Attributes
             SetStat(Stats.Jewellery, initialJewellery);
         }
 
+        private void SetStat(Stats stat, int value)
+        {
+            playerStats[stat] = value;
+        }
+
+        private void CheckForLoseCondition(Stats stat)
+        {
+            if (playerStats[stat] > 0) { return; }
+            Debug.Log("You lose!");
+            LoadScene sceneLoader = FindObjectOfType<LoadScene>();
+            if (sceneLoader != null)
+            {
+                sceneLoader.LoadGameOverScene();
+            }
+        }
+
         public int GetStat(Stats stat)
         {
             if (!playerStats.ContainsKey(stat)) { return -1; }
@@ -66,15 +83,48 @@ namespace Adventure.Attributes
 
         public void AdjustStat(Stats stat, int adjustmentValue)
         {
-            if (playerStats.ContainsKey(stat))
+            if (!playerStats.ContainsKey(stat))
             {
-                playerStats[stat] += adjustmentValue;
+                SetStat(stat, adjustmentValue);
+                return;
+            }
+
+            int newValue = 0;
+
+            switch (stat)
+            {
+                case Stats.Skill:
+                    newValue = MaximiseStat(Stats.InitialSkill, adjustmentValue);
+                    break;
+                case Stats.Stamina:
+                    newValue = MaximiseStat(Stats.InitialStamina, adjustmentValue);
+                    break;
+                case Stats.Luck:
+                    newValue = MaximiseStat(Stats.InitialLuck, adjustmentValue);
+                    break;
+                default:
+                    newValue = playerStats[stat] + adjustmentValue;
+                    break;
+            }
+
+            if (newValue < 0) { newValue = 0; }
+
+            playerStats[stat] = newValue;
+
+            if (stat == Stats.Skill || stat == Stats.Stamina || stat == Stats.Luck)
+            {
+                CheckForLoseCondition(stat);
             }
         }
 
-        public void SetStat(Stats stat, int value)
+        private int MaximiseStat(Stats stat, int adjustmentValue)
         {
-            playerStats[stat] = value;
+            int newValue = playerStats[stat] + adjustmentValue;
+            if (newValue > playerStats[stat])
+            {
+                newValue = playerStats[stat];
+            }
+            return newValue;
         }
 
         public object CaptureState()
@@ -86,7 +136,7 @@ namespace Adventure.Attributes
         {
             playerStats.Clear();
             playerStats = (Dictionary<Stats, int>)state;
-            OnStatisticLoad();
+            OnStatisticsChange();
         }
     }
 }

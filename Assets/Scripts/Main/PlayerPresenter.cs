@@ -19,7 +19,7 @@ namespace Adventure.Main
         {
             if (player != null)
             {
-                player.OnStatisticLoad += RefreshStats;
+                player.OnStatisticsChange += RefreshStats;
             }
         }
 
@@ -27,7 +27,7 @@ namespace Adventure.Main
         {
             if (player != null)
             {
-                player.OnStatisticLoad -= RefreshStats;
+                player.OnStatisticsChange -= RefreshStats;
             }
         }
 

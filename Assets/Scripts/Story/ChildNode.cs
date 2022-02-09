@@ -1,4 +1,6 @@
+using Adventure.Core;
 using System;
+using System.Collections.Generic;
 using UnityEngine;
 
 namespace Adventure.Story
@@ -8,6 +10,7 @@ namespace Adventure.Story
     {
         [SerializeField] string childID;
         [SerializeField] string optionText;
+        [SerializeField] Condition condition;
 
         public ChildNode(string childID, string optionText)
         {
@@ -19,5 +22,10 @@ namespace Adventure.Story
         public string GetOptionText() { return optionText; }
 
         public void SetOptionText(string optionText) { this.optionText = optionText; }
+
+        public bool CheckCondition(IEnumerable<IPredicateEvaluator> evaluators)
+        {
+            return condition.Check(evaluators);
+        }
     }
 }

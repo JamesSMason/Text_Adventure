@@ -19,7 +19,7 @@ namespace Adventure.UI
         {
             if (storyPresenter != null)
             {
-                storyPresenter.OnStoryUpdate += RefreshUI;
+                storyPresenter.OnStoryUpdate += RefreshStoryButtons;
             }
         }
 
@@ -27,22 +27,27 @@ namespace Adventure.UI
         {
             if (storyPresenter != null)
             {
-                storyPresenter.OnStoryUpdate -= RefreshUI;
+                storyPresenter.OnStoryUpdate -= RefreshStoryButtons;
             }
         }
 
-        private void RefreshUI()
+        private void RefreshStoryButtons()
         {
-            foreach (Button button in GetComponentsInChildren<Button>())
-            {
-                Destroy(button.gameObject);
-            }
+            DestroyButtons();
 
-            foreach (string childID in storyPresenter.GetAllChildren())
+            foreach (string childID in storyPresenter.GetAllChildrenIDs())
             {
                 Button newButton = Instantiate(buttonPrefab, this.transform);
                 newButton.GetComponentInChildren<TextMeshProUGUI>().text = storyPresenter.GetOptionText(childID);
                 newButton.onClick.AddListener(() => storyPresenter.MoveToNextNode(childID));
+            }
+        }
+
+        private void DestroyButtons()
+        {
+            foreach (Button button in GetComponentsInChildren<Button>())
+            {
+                Destroy(button.gameObject);
             }
         }
     }

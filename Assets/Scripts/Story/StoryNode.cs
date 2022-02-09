@@ -29,6 +29,14 @@ namespace Adventure.Story
             return childIDs;
         }
 
+        public IEnumerable<ChildNode> GetChildNodes()
+        {
+            foreach (ChildNode child in children)
+            {
+                yield return child;
+            }
+        }
+
         public Rect GetRect()
         {
             return rect;

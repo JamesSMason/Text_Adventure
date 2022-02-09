@@ -1,3 +1,4 @@
+using Adventure.Core;
 using Adventure.Saving;
 using Adventure.Story;
 using System;
@@ -32,9 +33,12 @@ namespace Adventure.Main
             return currentStoryNode.GetStoryText();
         }
 
-        public List<string> GetAllChildren()
+        public IEnumerable<string> GetAllChildrenIDs()
         {
-            return currentStoryNode.GetChildren();
+            foreach (ChildNode child in FilterOnCondition(currentStoryNode.GetChildNodes()))
+            {
+                yield return child.GetChildID();
+            }
         }
 
         public string GetOptionText(string childID)
@@ -52,6 +56,22 @@ namespace Adventure.Main
         public bool GetIsEncounter()
         {
             return currentStoryNode.GetEncounter() != null;
+        }
+
+        private IEnumerable<ChildNode> FilterOnCondition(IEnumerable<ChildNode> inputNode)
+        {
+            foreach (ChildNode node in inputNode)
+            {
+                if (node.CheckCondition(GetEvaluators()))
+                {
+                    yield return node;
+                }
+            }
+        }
+
+        private IEnumerable<IPredicateEvaluator> GetEvaluators()
+        {
+            return GetComponents<IPredicateEvaluator>();
         }
 
         public object CaptureState()

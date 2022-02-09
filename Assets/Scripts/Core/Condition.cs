@@ -9,7 +9,7 @@ namespace Adventure.Core
     {
         [SerializeField] string predicate;
         [SerializeField] string[] parameters;
-        [SerializeField] bool negate;
+        [SerializeField] bool negate = false;
 
         public bool Check(IEnumerable<IPredicateEvaluator> evaluators)
         {
@@ -20,12 +20,12 @@ namespace Adventure.Core
                 {
                     continue;
                 }
-                if (result == false)
+                if (result == negate)
                 {
-                    return negate ? true : false;
+                    return false;
                 }
             }
-            return negate ? false : true;
+            return true;
         }
     }
 }

@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace Adventure.UI.Inventories
 {
-    public class InventorySlotUI : MonoBehaviour
+    public class InventorySlotUI : MonoBehaviour, IItemHolder
     {
         // CONFIG DATA
         [SerializeField] InventoryItemIcon icon = null;

@@ -12,7 +12,7 @@ namespace Adventure.Inventories
     /// In practice, you are likely to use a subclass such as `ActionItem` or
     /// `EquipableItem`.
     /// </remarks>
-    [CreateAssetMenu(menuName = ("GameDevTV/Inventory/Item"))]
+    [CreateAssetMenu(menuName = ("Adventure/New Item"))]
     public class InventoryItem : ScriptableObject, ISerializationCallbackReceiver
     {
         // CONFIG DATA

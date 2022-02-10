@@ -50,18 +50,12 @@ MonoBehaviour:
   m_Name: 955bf5a5-ec02-4410-ac3d-0602ea6ee283
   m_EditorClassIdentifier: 
   storyText: 9 Game won
-  children:
-  - childID: 633632de-fefc-4632-9954-2973001a7126
-    optionText: Start again
-    condition:
-      predicate: 
-      parameters: []
-      negate: 0
+  children: []
   encounter: {fileID: 0}
   rect:
     serializedVersion: 2
-    x: 1207
-    y: 213
+    x: 1427
+    y: 151
     width: 200
     height: 100
   onEnterAction: 
@@ -113,8 +107,8 @@ MonoBehaviour:
   encounter: {fileID: 0}
   rect:
     serializedVersion: 2
-    x: 785
-    y: 156
+    x: 754
+    y: 159
     width: 200
     height: 100
   onEnterAction: 
@@ -156,8 +150,8 @@ MonoBehaviour:
   encounter: {fileID: 0}
   rect:
     serializedVersion: 2
-    x: 1025
-    y: 107
+    x: 1160
+    y: 152
     width: 200
     height: 100
   onEnterAction: 
@@ -224,8 +218,8 @@ MonoBehaviour:
   encounter: {fileID: 11400000, guid: ce26e903adb3e75489099dbad73b5ea9, type: 2}
   rect:
     serializedVersion: 2
-    x: 275
-    y: 624
+    x: 396
+    y: 319
     width: 200
     height: 100
   onEnterAction: AdjustStats

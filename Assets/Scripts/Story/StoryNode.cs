@@ -8,7 +8,7 @@ namespace Adventure.Story
 {
     public class StoryNode : ScriptableObject
     {
-        [SerializeField] string storyText;
+        [SerializeField][TextArea(5,10)] string storyText;
         [SerializeField] List<ChildNode> children = new List<ChildNode>();
         [SerializeField] EncounterSO encounter = null;
         [SerializeField] Rect rect = new Rect(0, 0, 200, 100);

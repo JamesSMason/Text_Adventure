@@ -20,7 +20,7 @@ namespace Adventure.Attributes
         [SerializeField] int testLuckValue = 1;
 
         DiceRoller diceRoller = null;
-        Dictionary<Stats, int> playerStats = new Dictionary<Stats, int>();
+        Dictionary<Stats, int> playerStats = null;
 
         public Action OnStatisticsChange;
 
@@ -31,16 +31,20 @@ namespace Adventure.Attributes
 
         void Start()
         {
-            if (useTestStats)
+            if (playerStats == null)
             {
-                GenerateStats(testSkillValue, testStaminaValue, testLuckValue, initialGold, initialProvisions, initialJewellery);
-            }
-            else
-            {
-                int skill = diceRoller.GenerateDiceRollResult(1) + 6;
-                int stamina = diceRoller.GenerateDiceRollResult(2) + 12;
-                int luck = diceRoller.GenerateDiceRollResult(1) + 6;
-                GenerateStats(skill, stamina, luck, initialGold, initialProvisions, initialJewellery);
+                playerStats = new Dictionary<Stats, int>();
+                if (useTestStats)
+                {
+                    GenerateStats(testSkillValue, testStaminaValue, testLuckValue, initialGold, initialProvisions, initialJewellery);
+                }
+                else
+                {
+                    int skill = diceRoller.GenerateDiceRollResult(1) + 6;
+                    int stamina = diceRoller.GenerateDiceRollResult(2) + 12;
+                    int luck = diceRoller.GenerateDiceRollResult(1) + 6;
+                    GenerateStats(skill, stamina, luck, initialGold, initialProvisions, initialJewellery);
+                }
             }
             OnStatisticsChange();
         }
@@ -134,7 +138,10 @@ namespace Adventure.Attributes
 
         public void RestoreState(object state)
         {
-            playerStats.Clear();
+            if (playerStats != null)
+            {
+                playerStats.Clear();
+            }
             playerStats = (Dictionary<Stats, int>)state;
             OnStatisticsChange();
         }

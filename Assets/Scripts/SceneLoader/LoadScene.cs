@@ -39,7 +39,7 @@ namespace Adventure.SceneLoader
 
         public void LoadSaveGame()
         {
-            GetComponent<SavingWrapper>().Load();
+            GetComponent<SavingWrapper>().ContinueGame();
         }
     }
 }

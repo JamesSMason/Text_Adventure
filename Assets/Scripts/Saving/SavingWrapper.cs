@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 namespace Adventure.Saving
@@ -5,6 +6,12 @@ namespace Adventure.Saving
     public class SavingWrapper : MonoBehaviour
     {
         const string defaultSaveFile = "save";
+
+        public void ContinueGame()
+        {
+            StartCoroutine(GetComponent<SavingSystem>().LoadLastScene(defaultSaveFile));
+        }
+
         void Update()
         {
             if (Input.GetKeyDown(KeyCode.S))
@@ -24,7 +31,7 @@ namespace Adventure.Saving
 
         public void Load()
         {
-            StartCoroutine(GetComponent<SavingSystem>().LoadLastScene(defaultSaveFile));
+            GetComponent<SavingSystem>().Load(defaultSaveFile);
         }
     }
 }

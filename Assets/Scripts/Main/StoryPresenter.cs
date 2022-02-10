@@ -23,12 +23,10 @@ namespace Adventure.Main
 
         void Start()
         {
-            currentStoryNode = currentStory.GetRootNode();
-            storyTracker.AddNode(currentStoryNode);
-
-            TriggerEnterAction();
-
-            OnStoryUpdate();
+            if (currentStoryNode == null)
+            {
+                MoveToNextNode(currentStory.GetRootNode().name);
+            }
         }
 
         public string GetStoryText()
@@ -123,7 +121,7 @@ namespace Adventure.Main
 
         public void RestoreState(object state)
         {
-            currentStoryNode = currentStory.GetStoryNode((string)state);
+            MoveToNextNode((string)state);
             OnStoryUpdate();
         }
     }

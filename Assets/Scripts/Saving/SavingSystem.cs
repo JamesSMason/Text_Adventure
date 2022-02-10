@@ -12,10 +12,13 @@ namespace Adventure.Saving
         public IEnumerator LoadLastScene(string saveFile)
         {
             Dictionary<string, object> state = LoadFile(saveFile);
-            int buildIndex = (int)state["lastSceneBuildIndex"];
-            if (buildIndex != SceneManager.GetActiveScene().buildIndex)
+            if (state.ContainsKey("lastSceneBuildIndex"))
             {
-                yield return SceneManager.LoadSceneAsync(buildIndex);
+                int buildIndex = (int)state["lastSceneBuildIndex"];
+                if (buildIndex != SceneManager.GetActiveScene().buildIndex)
+                {
+                    yield return SceneManager.LoadSceneAsync(buildIndex);
+                }
             }
             RestoreState(state);
         }

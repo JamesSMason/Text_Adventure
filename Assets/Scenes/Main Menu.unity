@@ -2278,7 +2278,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 1460302198}
   m_Direction: 2
   m_Value: 1
-  m_Size: 0.61957806
+  m_Size: 0.6195781
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -2328,17 +2328,9 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1438728475, guid: f4bebc5565e4aa147be9a65f25255309, type: 3}
-      propertyPath: useTestStats
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 506448019454636610, guid: f4bebc5565e4aa147be9a65f25255309, type: 3}
       propertyPath: m_Name
       value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 506448019454636610, guid: f4bebc5565e4aa147be9a65f25255309, type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 506448019454636612, guid: f4bebc5565e4aa147be9a65f25255309, type: 3}
       propertyPath: m_RootOrder
@@ -2383,10 +2375,6 @@ PrefabInstance:
     - target: {fileID: 506448019454636612, guid: f4bebc5565e4aa147be9a65f25255309, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5450719244598482922, guid: f4bebc5565e4aa147be9a65f25255309, type: 3}
-      propertyPath: uniqueIdentifier
-      value: 7f6772a1-035f-4035-a7e0-bfa3d4e2c512
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f4bebc5565e4aa147be9a65f25255309, type: 3}

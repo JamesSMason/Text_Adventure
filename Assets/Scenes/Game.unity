@@ -327,9 +327,17 @@ PrefabInstance:
       propertyPath: useTestStats
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2122888612, guid: f4bebc5565e4aa147be9a65f25255309, type: 3}
+      propertyPath: inventorySize
+      value: 12
+      objectReference: {fileID: 0}
     - target: {fileID: 506448019454636610, guid: f4bebc5565e4aa147be9a65f25255309, type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 506448019454636610, guid: f4bebc5565e4aa147be9a65f25255309, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 506448019454636612, guid: f4bebc5565e4aa147be9a65f25255309, type: 3}
       propertyPath: m_RootOrder
@@ -1488,6 +1496,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4678439028242596317, guid: 34bb732838dd8c045b537b28986768e8, type: 3}
+      propertyPath: InventoryItemPrefab
+      value: 
+      objectReference: {fileID: 1318737683638851784, guid: e15e4c9bfaded204f892f177f4377d9f, type: 3}
     - target: {fileID: 4706528703932395810, guid: 34bb732838dd8c045b537b28986768e8, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0

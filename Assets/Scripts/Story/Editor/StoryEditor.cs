@@ -134,7 +134,7 @@ namespace Adventure.Story.Editor
         {
             GUILayout.BeginArea(node.GetRect(), nodeStyle);
 
-            node.SetStoryText(EditorGUILayout.TextField(node.GetStoryText()));
+            node.SetStoryTitle(EditorGUILayout.TextField(node.GetStoryTitle()));
             
             GUILayout.BeginHorizontal();
 

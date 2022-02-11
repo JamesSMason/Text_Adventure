@@ -51,6 +51,20 @@ namespace Adventure.Inventories
             return slots.Length;
         }
 
+        public int GetItemSlot(InventoryItem item)
+        {
+            if (HasItem(item))
+            {
+                for (int i = 0; i < slots.Length; i++)
+                {
+                    if (object.ReferenceEquals(slots[i], item))
+                    {
+                        return i;
+                    }
+                }
+            }
+            return -1;
+        }
         /// <summary>
         /// Attempt to add the items to the first available slot.
         /// </summary>

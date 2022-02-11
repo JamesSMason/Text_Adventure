@@ -1,4 +1,5 @@
 using Adventure.Core;
+using Adventure.Inventories;
 using Adventure.Saving;
 using Adventure.Story;
 using System;
@@ -63,16 +64,6 @@ namespace Adventure.Main
             return currentStoryNode.GetEncounter() != null;
         }
 
-        public void AdjustStats()
-        {
-            PlayerPresenter playerPresenter = FindObjectOfType<PlayerPresenter>();
-            for (int i = 0; i < currentStoryNode.GetStatsCount(); i++)
-            {
-                playerPresenter.AdjustStat(currentStoryNode.GetStatsToAdjust(i), currentStoryNode.GetAdjustmentValue(i));
-                Debug.Log($"Adjust {currentStoryNode.GetStatsToAdjust(i)} by {currentStoryNode.GetAdjustmentValue(i)}");
-            }
-        }
-
         private IEnumerable<ChildNode> FilterOnCondition(IEnumerable<ChildNode> inputNode)
         {
             foreach (ChildNode node in inputNode)
@@ -113,6 +104,42 @@ namespace Adventure.Main
                 trigger.Trigger(action);
             }
         }
+
+        // Events
+        public void AdjustStats()
+        {
+            PlayerPresenter playerPresenter = FindObjectOfType<PlayerPresenter>();
+            for (int i = 0; i < currentStoryNode.GetStatsCount(); i++)
+            {
+                playerPresenter.AdjustStat(currentStoryNode.GetStatsToAdjust(i), currentStoryNode.GetAdjustmentValue(i));
+            }
+        }
+
+        public void AddItemToInventory()
+        {
+            Inventory inventory = FindObjectOfType<Inventory>();
+            InventoryItem[] items = currentStoryNode.GetItems();
+            for (int i = 0; i < items.Length; i++)
+            {
+                inventory.AddToFirstEmptySlot(items[i]);
+            }
+        }
+
+        public void RemoveItemFromInventory()
+        {
+            Inventory inventory = FindObjectOfType<Inventory>();
+            InventoryItem[] items = currentStoryNode.GetItems();
+            for (int i = 0; i < items.Length; i++)
+            {
+                int slot = inventory.GetItemSlot(items[i]);
+                if (slot >= 0)
+                {
+                    inventory.RemoveFromSlot(slot);
+                }
+            }
+        }
+
+        // Interfaces
 
         public object CaptureState()
         {

@@ -12,6 +12,9 @@ GameObject:
   - component: {fileID: 3649845002808113824}
   - component: {fileID: 226297674}
   - component: {fileID: 5456287561787703054}
+  - component: {fileID: 516235741}
+  - component: {fileID: 516235742}
+  - component: {fileID: 7277617367290934864}
   m_Layer: 0
   m_Name: Story Presenter
   m_TagString: Untagged
@@ -45,7 +48,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c7529a28a9698f84c815f9e3bedee3b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentStory: {fileID: 11400000, guid: 8267b0ceaf1627d4bafa69d3bd1c2ddf, type: 2}
+  currentStory: {fileID: 11400000, guid: f7a2d2772c9007349b1b9ff01802f482, type: 2}
 --- !u!114 &226297674
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -58,7 +61,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6bb5ab0d877e8ec4b8af198c2a04d3f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  uniqueIdentifier: 
+  uniqueIdentifier: 0f96078f-a486-427d-98ac-d94768ec0405
 --- !u!114 &5456287561787703054
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -71,3 +74,87 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f26a6f24b6d37aa42a6a0c27efdf4f99, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &516235741
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3649845002808113827}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b2f56647b0cc7448968d9af9bf0660b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  action: AdjustStats
+  onTrigger:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 3649845002808113824}
+        m_TargetAssemblyTypeName: Adventure.Main.StoryPresenter, Assembly-CSharp
+        m_MethodName: AdjustStats
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &516235742
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3649845002808113827}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b2f56647b0cc7448968d9af9bf0660b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  action: PickUpItem
+  onTrigger:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 3649845002808113824}
+        m_TargetAssemblyTypeName: Adventure.Main.StoryPresenter, Assembly-CSharp
+        m_MethodName: AddItemToInventory
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &7277617367290934864
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3649845002808113827}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b2f56647b0cc7448968d9af9bf0660b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  action: DropItem
+  onTrigger:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 3649845002808113824}
+        m_TargetAssemblyTypeName: Adventure.Main.StoryPresenter, Assembly-CSharp
+        m_MethodName: RemoveItemFromInventory
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2

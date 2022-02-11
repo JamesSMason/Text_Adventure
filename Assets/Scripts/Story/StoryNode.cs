@@ -1,5 +1,6 @@
 using Adventure.Attributes;
 using Adventure.Core;
+using Adventure.Inventories;
 using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
@@ -8,6 +9,7 @@ namespace Adventure.Story
 {
     public class StoryNode : ScriptableObject
     {
+        [SerializeField] string title;
         [SerializeField][TextArea(5,10)] string storyText;
         [SerializeField] List<ChildNode> children = new List<ChildNode>();
         [SerializeField] EncounterSO encounter = null;
@@ -16,8 +18,14 @@ namespace Adventure.Story
         [SerializeField] string onExitAction = "";
         [SerializeField] Stats[] statToAdjust;
         [SerializeField] int[] adjustmentValue;
+        [SerializeField] InventoryItem[] items;
 
         const string newOptionText = "New option";
+
+        public string GetStoryTitle()
+        {
+            return title;
+        }
 
         public string GetStoryText()
         {
@@ -89,7 +97,22 @@ namespace Adventure.Story
             return statToAdjust.Length;
         }
 
+        public InventoryItem[] GetItems()
+        {
+            return items;
+        }
+
 #if UNITY_EDITOR
+        public void SetStoryTitle(string newText)
+        {
+            if (newText != title)
+            {
+                Undo.RecordObject(this, "Update Story Title");
+                title = newText;
+                EditorUtility.SetDirty(this);
+            }
+        }
+
         public void SetStoryText(string newText)
         {
             if (newText != storyText)

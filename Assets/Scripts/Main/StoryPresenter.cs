@@ -15,11 +15,14 @@ namespace Adventure.Main
         StoryNode currentStoryNode = null;
         StoryTracker storyTracker = null;
 
+        CombatPresenter currentEncounter = null;
+
         public Action OnStoryUpdate;
 
         void Awake()
         {
             storyTracker = GetComponent<StoryTracker>();
+            currentEncounter = FindObjectOfType<CombatPresenter>();
         }
 
         void Start()
@@ -57,6 +60,11 @@ namespace Adventure.Main
             TriggerEnterAction();
 
             OnStoryUpdate();
+
+            if (GetIsEncounter())
+            {
+                currentEncounter.SetEncounter(currentStoryNode.GetEncounter());
+            } 
         }
 
         public bool GetIsEncounter()

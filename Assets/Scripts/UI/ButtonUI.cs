@@ -1,5 +1,6 @@
 using Adventure.Main;
 using Adventure.SceneLoader;
+using System;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -35,6 +36,30 @@ namespace Adventure.UI
         private void RefreshStoryButtons()
         {
             DestroyButtons();
+
+            if (storyPresenter.GetIsEncounter())
+            {
+                PresentCombatButtons();
+            }
+            else
+            {
+                PresentStoryButtons();
+            }
+        }
+
+        private void PresentCombatButtons()
+        {
+            Debug.Log("Combat Buttons Appear Here.");
+            foreach (string childID in storyPresenter.GetAllChildrenIDs())
+            {
+                Button newButton = Instantiate(buttonPrefab, this.transform);
+                newButton.GetComponentInChildren<TextMeshProUGUI>().text = storyPresenter.GetOptionText(childID);
+                newButton.onClick.AddListener(() => storyPresenter.MoveToNextNode(childID));
+            }
+        }
+
+        private void PresentStoryButtons()
+        {
             int buttonCount = 0;
             foreach (string childID in storyPresenter.GetAllChildrenIDs())
             {

@@ -479,7 +479,7 @@ MonoBehaviour:
     optionText: Victory
     condition:
       and: []
-  encounter: {fileID: 0}
+  encounter: {fileID: 11400000, guid: dcdce664bb14b664ca34ce41c2366c8d, type: 2}
   rect:
     serializedVersion: 2
     x: 1695
@@ -545,7 +545,7 @@ MonoBehaviour:
     optionText: Fight
     condition:
       and: []
-  encounter: {fileID: 0}
+  encounter: {fileID: 11400000, guid: 1148217b2df142243a5634ba58e081f5, type: 2}
   rect:
     serializedVersion: 2
     x: 1701

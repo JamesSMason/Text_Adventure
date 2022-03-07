@@ -1,5 +1,5 @@
 using Adventure.Attributes;
-using Adventure.Core;
+using Adventure.Combat;
 using Adventure.Inventories;
 using System.Collections.Generic;
 using UnityEditor;

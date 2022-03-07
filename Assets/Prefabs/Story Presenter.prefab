@@ -50,6 +50,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentStory: {fileID: 11400000, guid: f7a2d2772c9007349b1b9ff01802f482, type: 2}
+  combatPrefab: {fileID: 4155832721561863188, guid: c4d7efac45f55da438ec81626b5779b6, type: 3}
 --- !u!114 &226297674
 MonoBehaviour:
   m_ObjectHideFlags: 0

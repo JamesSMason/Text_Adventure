@@ -16,12 +16,14 @@ MonoBehaviour:
   - monsterName: Skeleton 1
     monsterSkill: 5
     monsterStamina: 6
-    monsterImage: {fileID: 0}
+    monsterImage: {fileID: 21300000, guid: 7f4dea96fe8eb5a439197cf4445c52ed, type: 3}
   - monsterName: Skeleton 2
     monsterSkill: 6
     monsterStamina: 6
-    monsterImage: {fileID: 0}
+    monsterImage: {fileID: 21300000, guid: 7f4dea96fe8eb5a439197cf4445c52ed, type: 3}
   - monsterName: Skeleton 3
     monsterSkill: 6
     monsterStamina: 5
-    monsterImage: {fileID: 0}
+    monsterImage: {fileID: 21300000, guid: 7f4dea96fe8eb5a439197cf4445c52ed, type: 3}
+  canEscape: 0
+  escapeRound: 0

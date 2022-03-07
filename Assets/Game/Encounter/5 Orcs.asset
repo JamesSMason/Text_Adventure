@@ -13,15 +13,25 @@ MonoBehaviour:
   m_Name: 5 Orcs
   m_EditorClassIdentifier: 
   monsters:
-  - monsterName: Skeleton 1
+  - monsterName: Orc 1
     monsterSkill: 5
     monsterStamina: 6
     monsterImage: {fileID: 0}
-  - monsterName: Skeleton 2
+  - monsterName: Orc 2
     monsterSkill: 6
     monsterStamina: 6
     monsterImage: {fileID: 0}
-  - monsterName: Skeleton 3
+  - monsterName: Orc 3
     monsterSkill: 6
     monsterStamina: 5
     monsterImage: {fileID: 0}
+  - monsterName: Orc 4
+    monsterSkill: 7
+    monsterStamina: 4
+    monsterImage: {fileID: 0}
+  - monsterName: Orc 5
+    monsterSkill: 4
+    monsterStamina: 7
+    monsterImage: {fileID: 0}
+  canEscape: 0
+  escapeRound: 0

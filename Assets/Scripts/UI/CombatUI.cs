@@ -1,3 +1,4 @@
+using Adventure.Combat;
 using Adventure.Main;
 using UnityEngine;
 
@@ -5,32 +6,45 @@ namespace Adventure.UI
 {
     public class CombatUI : MonoBehaviour
     {
-        StoryPresenter storyPresenter = null;
+        [SerializeField] HeadersUI headerPrefab = null;
+        CombatPresenter combatPresenter = null;
 
         void Awake()
         {
-            storyPresenter = FindObjectOfType<StoryPresenter>();
+            combatPresenter = FindObjectOfType<CombatPresenter>();
         }
 
         void OnEnable()
         {
-            if (storyPresenter != null)
+            if (combatPresenter != null)
             {
-                storyPresenter.OnStoryUpdate += RefreshUI;
+                combatPresenter.OnCombatUpdate += RefreshUI;
             }
         }
 
         void OnDisable()
         {
-            if (storyPresenter != null)
+            if (combatPresenter != null)
             {
-                storyPresenter.OnStoryUpdate -= RefreshUI;
+                combatPresenter.OnCombatUpdate -= RefreshUI;
             }
         }
 
         private void RefreshUI()
         {
-            
+            foreach (Transform header in transform)
+            {
+                Destroy(header.gameObject);
+            }
+
+            foreach (Monster monster in combatPresenter.GetMonsters())
+            {
+                HeadersUI newHeader = Instantiate(headerPrefab, transform);
+                newHeader.SetMonsterIcon(monster.GetMonsterImage());
+                newHeader.SetMonsterName(monster.GetMonsterName());
+                newHeader.SetMonsterSkill(monster.GetMonsterSkill());
+                newHeader.SetMonsterStamina(monster.GetMonsterStamina());
+            }
         }
     }
 }

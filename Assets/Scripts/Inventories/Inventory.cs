@@ -1,6 +1,7 @@
 using System;
 using UnityEngine;
 using Adventure.Saving;
+using Adventure.Core;
 
 namespace Adventure.Inventories
 {
@@ -10,7 +11,7 @@ namespace Adventure.Inventories
     ///
     /// This component should be placed on the GameObject tagged "Player".
     /// </summary>
-    public class Inventory : MonoBehaviour, ISaveable
+    public class Inventory : MonoBehaviour, ISaveable, IPredicateEvaluator
     {
         // CONFIG DATA
         [Tooltip("Allowed size")]
@@ -31,7 +32,7 @@ namespace Adventure.Inventories
         /// </summary>
         public static Inventory GetPlayerInventory()
         {
-            var player = GameObject.FindWithTag("Player");
+            var player = GameObject.FindWithTag("Story");
             return player.GetComponent<Inventory>();
         }
 
@@ -202,6 +203,16 @@ namespace Adventure.Inventories
             {
                 inventoryUpdated();
             }
+        }
+
+        public bool? Evaluate(string predicate, string[] parameters)
+        {
+            switch (predicate)
+            {
+                case "HasInventoryItem":
+                    return HasItem(InventoryItem.GetFromID(parameters[0]));
+            }
+            return null;
         }
     }
 }

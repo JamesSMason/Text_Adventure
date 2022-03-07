@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 736a65646d299484b8a19b7b02655c81, type: 3}
+  m_Name: 5 Orcs
+  m_EditorClassIdentifier: 
+  monsters:
+  - monsterName: Skeleton 1
+    monsterSkill: 5
+    monsterStamina: 6
+    monsterImage: {fileID: 0}
+  - monsterName: Skeleton 2
+    monsterSkill: 6
+    monsterStamina: 6
+    monsterImage: {fileID: 0}
+  - monsterName: Skeleton 3
+    monsterSkill: 6
+    monsterStamina: 5
+    monsterImage: {fileID: 0}

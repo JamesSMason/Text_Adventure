@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 516235741}
   - component: {fileID: 516235742}
   - component: {fileID: 7277617367290934864}
+  - component: {fileID: 8659572917586801328}
   m_Layer: 0
   m_Name: Story Presenter
   m_TagString: Untagged
@@ -158,3 +159,16 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &8659572917586801328
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3649845002808113827}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: abd728376cf226346a35ec8434bec823, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inventorySize: 16

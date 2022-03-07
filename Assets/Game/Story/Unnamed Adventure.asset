@@ -1,0 +1,676 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-3204825811593258058
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc9cbbaf9a74462499b5b12c1eef8149, type: 3}
+  m_Name: d4791b72-f9f5-469d-9469-415924e28591
+  m_EditorClassIdentifier: 
+  title: Victory
+  storyText: You are victorious. Sifting through the bones, you find a small key.
+  children:
+  - childID: d9de8653-80f3-4529-956b-ae2fce25f8c8
+    optionText: Next
+    condition:
+      and: []
+  encounter: {fileID: 0}
+  rect:
+    serializedVersion: 2
+    x: 1212
+    y: 221
+    width: 200
+    height: 100
+  onEnterAction: PickUpItem
+  onExitAction: 
+  statToAdjust: 
+  adjustmentValue: 
+  items:
+  - {fileID: 11400000, guid: 6e14c42c65398c943aedb7528771065d, type: 2}
+--- !u!114 &-3203464804237396736
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc9cbbaf9a74462499b5b12c1eef8149, type: 3}
+  m_Name: 1ca43d32-c5f6-474e-ab7e-0ee838ffcc8e
+  m_EditorClassIdentifier: 
+  title: SW Corner
+  storyText: You are at the end of the N/S corridor where it bends to the east. The
+    air is foul with the stink of 5 orc corpses. Do you go North or East?
+  children:
+  - childID: 2eabc1ad-2fa3-441a-b7e0-153feb8e167e
+    optionText: North
+    condition:
+      and: []
+  - childID: 821bacac-069a-46e5-869e-800b141d43ca
+    optionText: East
+    condition:
+      and: []
+  encounter: {fileID: 0}
+  rect:
+    serializedVersion: 2
+    x: 2262
+    y: 29
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  statToAdjust: 
+  adjustmentValue: 
+  items: []
+--- !u!114 &-2242952652481920610
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc9cbbaf9a74462499b5b12c1eef8149, type: 3}
+  m_Name: 14051280-94f0-48dd-aa70-bc7bcdd56026
+  m_EditorClassIdentifier: 
+  title: Victory
+  storyText: Panting, you lean on your sword, surveying the corpses and wincing at
+    the ache in your arms. Gain 2 Luck for your stunning victory. Searching the bodies,
+    you find a golden key. Pocketing it, and blessing your luck, you take a look
+    at your surroundings.
+  children:
+  - childID: 1ca43d32-c5f6-474e-ab7e-0ee838ffcc8e
+    optionText: Next
+    condition:
+      and: []
+  encounter: {fileID: 0}
+  rect:
+    serializedVersion: 2
+    x: 1944
+    y: 6
+    width: 200
+    height: 100
+  onEnterAction: PickUpItem
+  onExitAction: 
+  statToAdjust: 05000000
+  adjustmentValue: 02000000
+  items:
+  - {fileID: 11400000, guid: d74b405560dadbd43814d23b575da259, type: 2}
+--- !u!114 &-2053065026285422244
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc9cbbaf9a74462499b5b12c1eef8149, type: 3}
+  m_Name: d9de8653-80f3-4529-956b-ae2fce25f8c8
+  m_EditorClassIdentifier: 
+  title: Splintered Bones
+  storyText: You stand in the room among a bile of splintered bones - the end result
+    of your victory. Finding nothing else of value, you return to the corridor.
+  children:
+  - childID: c8524b7f-38bc-490a-88ca-511fdcdf7681
+    optionText: Exit Room
+    condition:
+      and: []
+  encounter: {fileID: 0}
+  rect:
+    serializedVersion: 2
+    x: 1440
+    y: 146
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  statToAdjust: 
+  adjustmentValue: 
+  items: []
+--- !u!114 &-1953071906231904383
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc9cbbaf9a74462499b5b12c1eef8149, type: 3}
+  m_Name: 1fbf09ab-32c3-4f9b-9be6-2933d70676be
+  m_EditorClassIdentifier: 
+  title: East end of corridor
+  storyText: At the end of the corridor, it bends to the South. Will you carry on
+    South, or return West?
+  children:
+  - childID: acd32f93-964d-4b12-ba90-584bea719e50
+    optionText: South
+    condition:
+      and:
+      - or:
+        - predicate: HasVisited
+          parameters:
+          - 8aea6c15-e3a7-4848-864c-1a4b739878f8
+          negate: 1
+  - childID: c8524b7f-38bc-490a-88ca-511fdcdf7681
+    optionText: West
+    condition:
+      and: []
+  - childID: 8aea6c15-e3a7-4848-864c-1a4b739878f8
+    optionText: South
+    condition:
+      and:
+      - or:
+        - predicate: HasVisited
+          parameters:
+          - 8aea6c15-e3a7-4848-864c-1a4b739878f8
+          negate: 0
+  encounter: {fileID: 0}
+  rect:
+    serializedVersion: 2
+    x: 620
+    y: 386
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  statToAdjust: 
+  adjustmentValue: 
+  items: []
+--- !u!114 &-1914508707916534251
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc9cbbaf9a74462499b5b12c1eef8149, type: 3}
+  m_Name: 8aea6c15-e3a7-4848-864c-1a4b739878f8
+  m_EditorClassIdentifier: 
+  title: SE Corner
+  storyText: ' Decision time. Do you go back North, or follow the corridor west?'
+  children:
+  - childID: 1fbf09ab-32c3-4f9b-9be6-2933d70676be
+    optionText: North
+    condition:
+      and: []
+  - childID: 821bacac-069a-46e5-869e-800b141d43ca
+    optionText: West
+    condition:
+      and: []
+  encounter: {fileID: 0}
+  rect:
+    serializedVersion: 2
+    x: 2260
+    y: 347
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  statToAdjust: 
+  adjustmentValue: 
+  items: []
+--- !u!114 &-1647423386825845314
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc9cbbaf9a74462499b5b12c1eef8149, type: 3}
+  m_Name: 5325bfe3-c605-427a-89de-f035a7dd89ca
+  m_EditorClassIdentifier: 
+  title: Musty room
+  storyText: You enter a musty room. As you walk in, 3 skeletons turn to face you.
+    Will you fight or flee?
+  children:
+  - childID: d1361813-dc59-45c9-b2c7-17401b3b8906
+    optionText: Fight
+    condition:
+      and: []
+  - childID: c8524b7f-38bc-490a-88ca-511fdcdf7681
+    optionText: Flee
+    condition:
+      and: []
+  encounter: {fileID: 0}
+  rect:
+    serializedVersion: 2
+    x: 653
+    y: 227
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  statToAdjust: 
+  adjustmentValue: 
+  items: []
+--- !u!114 &-1454270099023162151
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc9cbbaf9a74462499b5b12c1eef8149, type: 3}
+  m_Name: 2eabc1ad-2fa3-441a-b7e0-153feb8e167e
+  m_EditorClassIdentifier: 
+  title: West end of corridor
+  storyText: You reach te end of the corridor, at which point is turns south. Do
+    you go back East? Or turn South?
+  children:
+  - childID: 058b4be1-26de-45b5-944c-3e2874645c1b
+    optionText: South
+    condition:
+      and:
+      - or:
+        - predicate: HasVisited
+          parameters:
+          - 1ca43d32-c5f6-474e-ab7e-0ee838ffcc8e
+          negate: 1
+  - childID: c8524b7f-38bc-490a-88ca-511fdcdf7681
+    optionText: East
+    condition:
+      and: []
+  - childID: 1ca43d32-c5f6-474e-ab7e-0ee838ffcc8e
+    optionText: South
+    condition:
+      and:
+      - or:
+        - predicate: HasVisited
+          parameters:
+          - 1ca43d32-c5f6-474e-ab7e-0ee838ffcc8e
+          negate: 0
+  encounter: {fileID: 0}
+  rect:
+    serializedVersion: 2
+    x: 654
+    y: 1
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  statToAdjust: 
+  adjustmentValue: 
+  items: []
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59e0aa2815b28ff4e85e5b42c7e00439, type: 3}
+  m_Name: Unnamed Adventure
+  m_EditorClassIdentifier: 
+  nodes:
+  - {fileID: 6228723894619933840}
+  - {fileID: 3223018125788489861}
+  - {fileID: -1454270099023162151}
+  - {fileID: -1647423386825845314}
+  - {fileID: -1953071906231904383}
+  - {fileID: 7733823561967924079}
+  - {fileID: -3204825811593258058}
+  - {fileID: -2053065026285422244}
+  - {fileID: 7841855673386165830}
+  - {fileID: 8752234957805619625}
+  - {fileID: -1914508707916534251}
+  - {fileID: 8543803293885566499}
+  - {fileID: 7446158044931808451}
+  - {fileID: -2242952652481920610}
+  - {fileID: -3203464804237396736}
+  - {fileID: 925518412723037157}
+  newNodeOffset: {x: 250, y: 0}
+--- !u!114 &925518412723037157
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc9cbbaf9a74462499b5b12c1eef8149, type: 3}
+  m_Name: 33b88313-1f8b-4fe6-a59e-b2fb8b55957b
+  m_EditorClassIdentifier: 
+  title: Game Over
+  storyText: 'You unlock the door and emerge, victorious, into the bright sunlight.
+    Blinking your eyes, you reflect back on your hard journey and look forward to
+    a life of luxury, spending the gold you have won.
+
+
+    Congratulations! You
+    have completed your Unnamed Adventure.'
+  children: []
+  encounter: {fileID: 0}
+  rect:
+    serializedVersion: 2
+    x: 2838
+    y: 170
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  statToAdjust: 
+  adjustmentValue: 
+  items: []
+--- !u!114 &3223018125788489861
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc9cbbaf9a74462499b5b12c1eef8149, type: 3}
+  m_Name: c8524b7f-38bc-490a-88ca-511fdcdf7681
+  m_EditorClassIdentifier: 
+  title: East/West Corridor
+  storyText: You are in a corridor that runs from East to West. In the south wall
+    is a door. Will you go West? East? Or open the door and enter the room beyond?
+  children:
+  - childID: 2eabc1ad-2fa3-441a-b7e0-153feb8e167e
+    optionText: Go West
+    condition:
+      and: []
+  - childID: 5325bfe3-c605-427a-89de-f035a7dd89ca
+    optionText: Open Door
+    condition:
+      and:
+      - or:
+        - predicate: HasVisited
+          parameters:
+          - d9de8653-80f3-4529-956b-ae2fce25f8c8
+          negate: 1
+  - childID: 1fbf09ab-32c3-4f9b-9be6-2933d70676be
+    optionText: Go East
+    condition:
+      and: []
+  - childID: d9de8653-80f3-4529-956b-ae2fce25f8c8
+    optionText: Open Door
+    condition:
+      and:
+      - or:
+        - predicate: HasVisited
+          parameters:
+          - d9de8653-80f3-4529-956b-ae2fce25f8c8
+          negate: 0
+  encounter: {fileID: 0}
+  rect:
+    serializedVersion: 2
+    x: 312
+    y: 145
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  statToAdjust: 
+  adjustmentValue: 
+  items: []
+--- !u!114 &6228723894619933840
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc9cbbaf9a74462499b5b12c1eef8149, type: 3}
+  m_Name: 09d44e7b-e1fe-43a8-9e4e-7660807ff798
+  m_EditorClassIdentifier: 
+  title: Introduction
+  storyText: Welcome to the "Unnamed Adventure". This is a technical prototype of
+    the final game. The aim of the game is to navigate the "dungeon", making allies,
+    defeating powerful enemies and collecting the treasure. Will you be able to survive
+    and escape with your ill-gotten gains?
+  children:
+  - childID: c8524b7f-38bc-490a-88ca-511fdcdf7681
+    optionText: Start Game
+    condition:
+      and: []
+  encounter: {fileID: 0}
+  rect:
+    serializedVersion: 2
+    x: 35
+    y: 145
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  statToAdjust: 
+  adjustmentValue: 
+  items: []
+--- !u!114 &7446158044931808451
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc9cbbaf9a74462499b5b12c1eef8149, type: 3}
+  m_Name: 058b4be1-26de-45b5-944c-3e2874645c1b
+  m_EditorClassIdentifier: 
+  title: 5 Orcs
+  storyText: "The corridor bends east at this point. While interesting, this isn't
+    as interesting as the 5 orcs grinning at you, scimitars in hand. \n\n\"Ah. Deliveroo
+    has brought our dinner, \" they laugh. And with that, they rush at you en masse.
+    Drawing your sword, you prepare for battle."
+  children:
+  - childID: 14051280-94f0-48dd-aa70-bc7bcdd56026
+    optionText: Victory
+    condition:
+      and: []
+  encounter: {fileID: 0}
+  rect:
+    serializedVersion: 2
+    x: 1695
+    y: 7
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  statToAdjust: 
+  adjustmentValue: 
+  items: []
+--- !u!114 &7733823561967924079
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc9cbbaf9a74462499b5b12c1eef8149, type: 3}
+  m_Name: d1361813-dc59-45c9-b2c7-17401b3b8906
+  m_EditorClassIdentifier: 
+  title: Fight
+  storyText: You draw your sword and with a yell, engage the skeletons!
+  children:
+  - childID: d4791b72-f9f5-469d-9469-415924e28591
+    optionText: Victory
+    condition:
+      and: []
+  encounter: {fileID: 11400000, guid: ce26e903adb3e75489099dbad73b5ea9, type: 2}
+  rect:
+    serializedVersion: 2
+    x: 930
+    y: 222
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  statToAdjust: 
+  adjustmentValue: 
+  items: []
+--- !u!114 &7841855673386165830
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc9cbbaf9a74462499b5b12c1eef8149, type: 3}
+  m_Name: acd32f93-964d-4b12-ba90-584bea719e50
+  m_EditorClassIdentifier: 
+  title: Goblin
+  storyText: You have reached the southern end of the north/south corridor. At this
+    point, the corridor takes a sharp turn west. A loud snore startles you (as it
+    does the sleeper) and a hitherto unseen goblin, blinking sleep out of its eyes,
+    leans out of a shadowy recess in the corner. "Intruder" it yells and turns to
+    raise the alarm. You must stop it. And quickly.
+  children:
+  - childID: 8d51d114-d667-4995-a916-ecf91ec28f45
+    optionText: Fight
+    condition:
+      and: []
+  encounter: {fileID: 0}
+  rect:
+    serializedVersion: 2
+    x: 1701
+    y: 495
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  statToAdjust: 
+  adjustmentValue: 
+  items: []
+--- !u!114 &8543803293885566499
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc9cbbaf9a74462499b5b12c1eef8149, type: 3}
+  m_Name: 821bacac-069a-46e5-869e-800b141d43ca
+  m_EditorClassIdentifier: 
+  title: Escape Door
+  storyText: Halfway along the E/W corridor, you see a heavily locked iron door.
+    There are three keyholes in it. Do you have 3 keys? If so, unlock the door. If
+    not, you can go East or West.
+  children:
+  - childID: 8aea6c15-e3a7-4848-864c-1a4b739878f8
+    optionText: East
+    condition:
+      and:
+      - or:
+        - predicate: HasVisited
+          parameters:
+          - 8aea6c15-e3a7-4848-864c-1a4b739878f8
+          negate: 0
+  - childID: 1ca43d32-c5f6-474e-ab7e-0ee838ffcc8e
+    optionText: West
+    condition:
+      and:
+      - or:
+        - predicate: HasVisited
+          parameters:
+          - 1ca43d32-c5f6-474e-ab7e-0ee838ffcc8e
+          negate: 0
+  - childID: 058b4be1-26de-45b5-944c-3e2874645c1b
+    optionText: West
+    condition:
+      and:
+      - or:
+        - predicate: HasVisited
+          parameters:
+          - 1ca43d32-c5f6-474e-ab7e-0ee838ffcc8e
+          negate: 1
+  - childID: acd32f93-964d-4b12-ba90-584bea719e50
+    optionText: East
+    condition:
+      and:
+      - or:
+        - predicate: HasVisited
+          parameters:
+          - 8aea6c15-e3a7-4848-864c-1a4b739878f8
+          negate: 1
+  - childID: 33b88313-1f8b-4fe6-a59e-b2fb8b55957b
+    optionText: Unlock Door
+    condition:
+      and:
+      - or:
+        - predicate: HasInventoryItem
+          parameters:
+          - ff5afea9-8b06-47d5-9bce-aa23c4f012dd
+          negate: 0
+      - or:
+        - predicate: HasInventoryItem
+          parameters:
+          - 53bfffdd-e205-4c16-8cb1-79b436611e80
+          negate: 0
+      - or:
+        - predicate: HasInventoryItem
+          parameters:
+          - 4c9f5e2d-3785-415e-bedb-62a47103117b
+          negate: 0
+  encounter: {fileID: 0}
+  rect:
+    serializedVersion: 2
+    x: 2575
+    y: 170
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  statToAdjust: 
+  adjustmentValue: 
+  items: []
+--- !u!114 &8752234957805619625
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc9cbbaf9a74462499b5b12c1eef8149, type: 3}
+  m_Name: 8d51d114-d667-4995-a916-ecf91ec28f45
+  m_EditorClassIdentifier: 
+  title: Victory
+  storyText: You stand over the fallen goblin. You check its body and the little
+    nook it was hiding in. On a hook, you see a rusty key. You pocket it.
+  children:
+  - childID: 8aea6c15-e3a7-4848-864c-1a4b739878f8
+    optionText: Next
+    condition:
+      and: []
+  encounter: {fileID: 0}
+  rect:
+    serializedVersion: 2
+    x: 1994
+    y: 489
+    width: 200
+    height: 100
+  onEnterAction: PickUpItem
+  onExitAction: 
+  statToAdjust: 
+  adjustmentValue: 
+  items:
+  - {fileID: 11400000, guid: 854eb30d844ea8c40bebfaddac10bb95, type: 2}

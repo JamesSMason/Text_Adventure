@@ -10,12 +10,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 736a65646d299484b8a19b7b02655c81, type: 3}
-  m_Name: Encounter 1
+  m_Name: 3 Skeletons
   m_EditorClassIdentifier: 
   monsters:
   - monsterName: Skeleton 1
     monsterSkill: 5
     monsterStamina: 6
+    monsterImage: {fileID: 0}
   - monsterName: Skeleton 2
     monsterSkill: 6
     monsterStamina: 6
+    monsterImage: {fileID: 0}
+  - monsterName: Skeleton 3
+    monsterSkill: 6
+    monsterStamina: 5
+    monsterImage: {fileID: 0}

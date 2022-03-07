@@ -58,7 +58,7 @@ namespace Adventure.UI
 
         private void DestroyButtons()
         {
-            foreach (Button button in GetComponentsInChildren<Button>())
+            foreach (Transform button in transform)
             {
                 Destroy(button.gameObject);
             }

@@ -1,4 +1,5 @@
 using Adventure.Combat;
+using Adventure.Core;
 using System;
 using System.Collections.Generic;
 using UnityEngine;
@@ -8,8 +9,16 @@ namespace Adventure.Main
     public class CombatPresenter : MonoBehaviour
     {
         Encounter currentEncounter = null;
+        DiceRoller diceRoller = null;
+        PlayerPresenter player = null;
 
         public Action OnCombatUpdate;
+
+        void Awake()
+        {
+            diceRoller = FindObjectOfType<DiceRoller>();
+            player = FindObjectOfType<PlayerPresenter>();
+        }
 
         public void SetEncounter(EncounterSO encounterSO)
         {
@@ -37,13 +46,8 @@ namespace Adventure.Main
 
         public void FightOn()
         {
-            currentEncounter.ApplyDamageToMonster(currentEncounter.GetDefaultDamage());
+            CombatRound newRound = new CombatRound(player, currentEncounter, diceRoller);
             OnCombatUpdate();
-        }
-
-        public void Escape()
-        {
-            Debug.Log("Escape");
         }
 
         public void Death()
@@ -51,14 +55,11 @@ namespace Adventure.Main
             Debug.Log("You dead");
         }
 
-        public void Victory()
-        {
-            Debug.Log("You won!");
-        }
-
         public void TestYourLuck()
         {
             Debug.Log("You feeling lucky, punk?");
+            currentEncounter.SetPlayerWonRound(null);
+            OnCombatUpdate();
         }
 
         public void SetTarget()

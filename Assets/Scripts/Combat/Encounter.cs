@@ -83,9 +83,9 @@ namespace Adventure.Combat
             return roundNumber;
         }
 
-        public int GetPlayerTarget()
+        public Opponent GetPlayerTarget()
         {
-            return playersTargetIndex;
+            return encounterLookup[playersTargetIndex];
         }
 
         public bool? GetHasPlayerWonRound()
@@ -143,6 +143,7 @@ namespace Adventure.Combat
                 {
                     encounterLookup[i] = tempList[i];
                 }
+                SetPlayerWonRound(null);
             }
         }
     }

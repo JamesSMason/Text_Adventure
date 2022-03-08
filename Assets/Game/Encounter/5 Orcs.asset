@@ -16,22 +16,22 @@ MonoBehaviour:
   - monsterName: Orc 1
     monsterSkill: 5
     monsterStamina: 6
-    monsterImage: {fileID: 0}
+    monsterImage: {fileID: 21300000, guid: 9b28c55489ce02345bb6bc2d1059afe5, type: 3}
   - monsterName: Orc 2
     monsterSkill: 6
     monsterStamina: 6
-    monsterImage: {fileID: 0}
+    monsterImage: {fileID: 21300000, guid: 9b28c55489ce02345bb6bc2d1059afe5, type: 3}
   - monsterName: Orc 3
     monsterSkill: 6
     monsterStamina: 5
-    monsterImage: {fileID: 0}
+    monsterImage: {fileID: 21300000, guid: 9b28c55489ce02345bb6bc2d1059afe5, type: 3}
   - monsterName: Orc 4
     monsterSkill: 7
     monsterStamina: 4
-    monsterImage: {fileID: 0}
+    monsterImage: {fileID: 21300000, guid: 9b28c55489ce02345bb6bc2d1059afe5, type: 3}
   - monsterName: Orc 5
     monsterSkill: 4
     monsterStamina: 7
-    monsterImage: {fileID: 0}
+    monsterImage: {fileID: 21300000, guid: 9b28c55489ce02345bb6bc2d1059afe5, type: 3}
   canEscape: 0
   escapeRound: 0

@@ -37,7 +37,7 @@ namespace Adventure.UI
                 Destroy(header.gameObject);
             }
 
-            foreach (Monster monster in combatPresenter.GetMonsters())
+            foreach (Opponent monster in combatPresenter.GetMonsters())
             {
                 HeadersUI newHeader = Instantiate(headerPrefab, transform);
                 newHeader.SetMonsterIcon(monster.GetMonsterImage());

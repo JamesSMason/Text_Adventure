@@ -11,7 +11,7 @@ namespace Adventure.Attributes
         {
             if (player == null) { return false; }
             int rollResult = GetComponent<DiceRoller>().GenerateDiceRollResult(numberOfDiceUsedInTest);
-            bool hasPassedTest = rollResult <= player.GetStat(stat);
+            bool hasPassedTest = (rollResult <= player.GetStat(stat));
             if (decrementStat)
             {
                 player.AdjustStat(stat, -1);

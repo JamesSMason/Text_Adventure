@@ -20,17 +20,25 @@ namespace Adventure.Main
             }
         }
 
-        public IEnumerable<Monster> GetMonsters()
+        public IEnumerable<Opponent> GetMonsters()
         {
-            foreach (Monster monster in currentEncounter.GetMonsters())
+            foreach (Opponent monster in currentEncounter.GetMonsters())
             {
                 yield return monster;
             }
         }
 
+        public List<string> GetOptions()
+        {
+            if (currentEncounter == null) { return null; }
+            CombatOptions options = new CombatOptions();
+            return options.BuildOptions(currentEncounter);
+        }
+
         public void FightOn()
         {
-            Debug.Log("Fight on");
+            currentEncounter.ApplyDamageToMonster(currentEncounter.GetDefaultDamage());
+            OnCombatUpdate();
         }
 
         public void Escape()

@@ -112,11 +112,6 @@ namespace Adventure.UI
                     newButton.GetComponentInChildren<TextMeshProUGUI>().text = storyPresenter.GetOptionText(childIDs[1]);
                     newButton.onClick.AddListener(() => storyPresenter.MoveToNextNode(childIDs[1]));
                 }
-                if (option == "Dead")
-                {
-                    newButton.GetComponentInChildren<TextMeshProUGUI>().text = "You Dead";
-                    newButton.onClick.AddListener(() => combatPresenter.Death());
-                }
                 if (option == "Victory")
                 {
                     int childIndex = 0;

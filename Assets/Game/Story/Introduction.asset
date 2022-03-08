@@ -16,15 +16,13 @@ MonoBehaviour:
   storyText: This is entry 2
   children:
   - childID: ce0d0de6-84c4-4fc9-b10b-cb587c4221e0
-    optionText: New option
+    optionText: Next...
     condition:
-      predicate: 
-      parameters: []
-      negate: 0
+      and: []
   encounter: {fileID: 0}
   rect:
     serializedVersion: 2
-    x: 325
+    x: 326
     y: 124
     width: 200
     height: 100
@@ -49,6 +47,7 @@ MonoBehaviour:
   - {fileID: 1029187219957496305}
   - {fileID: -6270866970141919487}
   - {fileID: 1909091526474054798}
+  newNodeOffset: {x: 250, y: 0}
 --- !u!114 &1029187219957496305
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -65,11 +64,9 @@ MonoBehaviour:
   storyText: This is episode 1
   children:
   - childID: 6ee49d21-15ed-4264-9d91-b1ed816bef78
-    optionText: New option
+    optionText: Next...
     condition:
-      predicate: 
-      parameters: []
-      negate: 0
+      and: []
   encounter: {fileID: 0}
   rect:
     serializedVersion: 2
@@ -100,8 +97,8 @@ MonoBehaviour:
   encounter: {fileID: 0}
   rect:
     serializedVersion: 2
-    x: 601
-    y: 177
+    x: 602
+    y: 176
     width: 200
     height: 100
   onEnterAction: 

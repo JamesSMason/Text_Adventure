@@ -71,7 +71,6 @@ namespace Adventure.Attributes
         private void CheckForLoseCondition(Stats stat)
         {
             if (playerStats[stat] > 0) { return; }
-            Debug.Log("You lose!");
             LoadScene sceneLoader = FindObjectOfType<LoadScene>();
             if (sceneLoader != null)
             {
@@ -98,35 +97,33 @@ namespace Adventure.Attributes
             switch (stat)
             {
                 case Stats.Skill:
-                    newValue = MaximiseStat(Stats.InitialSkill, adjustmentValue);
+                    newValue = MaximiseStat(Stats.Skill, Stats.InitialSkill, adjustmentValue);
                     break;
                 case Stats.Stamina:
-                    newValue = MaximiseStat(Stats.InitialStamina, adjustmentValue);
+                    newValue = MaximiseStat(Stats.Stamina, Stats.InitialStamina, adjustmentValue);
                     break;
                 case Stats.Luck:
-                    newValue = MaximiseStat(Stats.InitialLuck, adjustmentValue);
+                    newValue = MaximiseStat(Stats.Luck, Stats.InitialLuck, adjustmentValue);
                     break;
                 default:
                     newValue = playerStats[stat] + adjustmentValue;
                     break;
             }
-
             if (newValue < 0) { newValue = 0; }
 
             playerStats[stat] = newValue;
-
             if (stat == Stats.Skill || stat == Stats.Stamina || stat == Stats.Luck)
             {
                 CheckForLoseCondition(stat);
             }
         }
 
-        private int MaximiseStat(Stats stat, int adjustmentValue)
+        private int MaximiseStat(Stats stat, Stats initialStat, int adjustmentValue)
         {
             int newValue = playerStats[stat] + adjustmentValue;
-            if (newValue > playerStats[stat])
+            if (newValue > playerStats[initialStat])
             {
-                newValue = playerStats[stat];
+                newValue = playerStats[initialStat];
             }
             return newValue;
         }

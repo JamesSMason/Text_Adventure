@@ -297,7 +297,7 @@ MonoBehaviour:
   encounter: {fileID: 0}
   rect:
     serializedVersion: 2
-    x: 654
+    x: 655
     y: 1
     width: 200
     height: 100
@@ -336,6 +336,7 @@ MonoBehaviour:
   - {fileID: -3203464804237396736}
   - {fileID: 925518412723037157}
   - {fileID: 1390070456337320053}
+  - {fileID: 8645553494954972355}
   newNodeOffset: {x: 250, y: 0}
 --- !u!114 &925518412723037157
 MonoBehaviour:
@@ -514,10 +515,14 @@ MonoBehaviour:
     optionText: Victory
     condition:
       and: []
+  - childID: 4b17b8ff-b123-4c76-810b-521275afbcb3
+    optionText: Escape
+    condition:
+      and: []
   encounter: {fileID: 11400000, guid: dcdce664bb14b664ca34ce41c2366c8d, type: 2}
   rect:
     serializedVersion: 2
-    x: 1695
+    x: 1696
     y: 7
     width: 200
     height: 100
@@ -678,6 +683,40 @@ MonoBehaviour:
   onEnterAction: 
   onExitAction: 
   statToAdjust: 
+  adjustmentValue: 
+  items: []
+--- !u!114 &8645553494954972355
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc9cbbaf9a74462499b5b12c1eef8149, type: 3}
+  m_Name: 4b17b8ff-b123-4c76-810b-521275afbcb3
+  m_EditorClassIdentifier: 
+  title: Escape
+  storyText: The fight descends into a swirling melee with swords coming at you from
+    all angles. Somewhere in the middle of it all you manage to make a break for
+    it, up the corridor to the North. Followed by their cruel laughter (and a last
+    blow) you escape. For now.
+  children:
+  - childID: 2eabc1ad-2fa3-441a-b7e0-153feb8e167e
+    optionText: Next
+    condition:
+      and: []
+  encounter: {fileID: 0}
+  rect:
+    serializedVersion: 2
+    x: 1945
+    y: 125
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  statToAdjust: 03000000
   adjustmentValue: 
   items: []
 --- !u!114 &8752234957805619625

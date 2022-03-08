@@ -25,7 +25,7 @@ namespace Adventure.Combat
 
         public void ApplyDamage(int damage)
         {
-            monsterStamina -= damage;
+            monsterStamina += damage;
         }
     }
 
@@ -41,7 +41,7 @@ namespace Adventure.Combat
         int playersTargetIndex = 0;
         bool? hasPlayerWonRound = null;
         // Damage
-        int defaultDamage = 2;
+        int defaultDamage = -2;
 
         // Encounter constructor
         public Encounter(EncounterSO encounterSO)
@@ -124,7 +124,7 @@ namespace Adventure.Combat
             defaultDamage = damage;
         }
 
-        public void ApplyDamageToMonster(int damage)
+        public bool ApplyDamageToMonster(int damage)
         {
             encounterLookup[playersTargetIndex].ApplyDamage(damage);
             if (encounterLookup[playersTargetIndex].GetMonsterStamina() <= 0)
@@ -144,7 +144,9 @@ namespace Adventure.Combat
                     encounterLookup[i] = tempList[i];
                 }
                 SetPlayerWonRound(null);
+                return true;
             }
+            return false;
         }
     }
 }

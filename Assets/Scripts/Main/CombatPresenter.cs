@@ -11,13 +11,16 @@ namespace Adventure.Main
         Encounter currentEncounter = null;
         DiceRoller diceRoller = null;
         PlayerPresenter player = null;
+        CombatMessages combatMessages = null;
 
         public Action OnCombatUpdate;
+        public Action OnCombatReportUpdate;
 
         void Awake()
         {
             diceRoller = FindObjectOfType<DiceRoller>();
             player = FindObjectOfType<PlayerPresenter>();
+            combatMessages = GetComponent<CombatMessages>();
         }
 
         public void SetEncounter(EncounterSO encounterSO)
@@ -44,15 +47,16 @@ namespace Adventure.Main
             return options.BuildOptions(currentEncounter);
         }
 
-        public void FightOn()
+        public string GetCombatMessages()
         {
-            CombatRound newRound = new CombatRound(player, currentEncounter, diceRoller);
-            OnCombatUpdate();
+            return combatMessages.GetMessageUpdate();
         }
 
-        public void Death()
+        public void FightOn()
         {
-            Debug.Log("You dead");
+            CombatRound newRound = new CombatRound(player, currentEncounter, diceRoller, combatMessages);
+            OnCombatUpdate();
+            OnCombatReportUpdate();
         }
 
         public void TestYourLuck()
@@ -60,6 +64,7 @@ namespace Adventure.Main
             Debug.Log("You feeling lucky, punk?");
             currentEncounter.SetPlayerWonRound(null);
             OnCombatUpdate();
+            //OnCombatReportUpdate();
         }
 
         public void SetTarget()

@@ -12,15 +12,14 @@ namespace Adventure.Combat
                 options.Add("Victory");
                 return options;
             }
-            if (currentEncounter.GetHasPlayerWonRound() != null)
-            {
-                options.Add("TYL");
-                return options;
-            }
             if (currentEncounter.GetIsSimultaneous())
             {
                 options.Add("SetTarget");
                 return options;
+            }
+            if (currentEncounter.GetHasPlayerWonRound() != null)
+            {
+                options.Add("TYL");
             }
             if (currentEncounter.GetCanEscape())
             {

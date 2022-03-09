@@ -1,3 +1,4 @@
+using Adventure.Attributes;
 using Adventure.Combat;
 using Adventure.Core;
 using System;
@@ -14,7 +15,6 @@ namespace Adventure.Main
         CombatMessages combatMessages = null;
 
         public Action OnCombatUpdate;
-        public Action OnCombatReportUpdate;
 
         void Awake()
         {
@@ -56,15 +56,13 @@ namespace Adventure.Main
         {
             CombatRound newRound = new CombatRound(player, currentEncounter, diceRoller, combatMessages);
             OnCombatUpdate();
-            OnCombatReportUpdate();
         }
 
         public void TestYourLuck()
         {
-            Debug.Log("You feeling lucky, punk?");
+            new CombatLuck(player, currentEncounter, combatMessages);
             currentEncounter.SetPlayerWonRound(null);
             OnCombatUpdate();
-            //OnCombatReportUpdate();
         }
 
         public void SetTarget()

@@ -7,12 +7,14 @@ namespace Adventure.Main
     public class PlayerPresenter : MonoBehaviour
     {
         Player player;
+        StatTests statTest;
 
         public Action OnStatisticChange;
 
         void Awake()
         {
             player = GetComponent<Player>();
+            statTest = FindObjectOfType<StatTests>();
         }
 
         private void OnEnable()
@@ -50,6 +52,13 @@ namespace Adventure.Main
         {
             player.AdjustStat(stat, value);
             RefreshStats();
+        }
+
+        public bool TestStat(Stats stat, bool decrementStat)
+        {
+            bool hasPassed = statTest.TestStat(player, stat, decrementStat);
+            RefreshStats();
+            return hasPassed;
         }
     }
 }

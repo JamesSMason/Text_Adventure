@@ -52,4 +52,31 @@ public class CombatMessages : MonoBehaviour
     {
         messageUpdate += "The monster falls to the ground...dead!\n";
     }
+
+    public void ReportLuckResult(bool gotLucky, bool? playerWonRound)
+    {
+        ResetMessageUpdate();
+        if (gotLucky)
+        {
+            if (playerWonRound == true)
+            {
+                messageUpdate += "You strike a mighty blow!\n";
+            }
+            else
+            {
+                messageUpdate += "Just a nick!\n";
+            }
+        }
+        else
+        {
+            if (playerWonRound == true)
+            {
+                messageUpdate += "You barely scratch it!\n";
+            }
+            else
+            {
+                messageUpdate += "An unfortunate slip leads to the monster hitting you hard!\n";
+            }
+        }
+    }
 }

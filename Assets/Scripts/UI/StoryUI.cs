@@ -29,7 +29,7 @@ namespace Adventure.UI
             }
             if (combatPresenter != null)
             {
-                combatPresenter.OnCombatReportUpdate += RefreshCombatReportUI;
+                combatPresenter.OnCombatUpdate += RefreshCombatReportUI;
             }
         }
 
@@ -41,7 +41,7 @@ namespace Adventure.UI
             }
             if (combatPresenter != null)
             {
-                combatPresenter.OnCombatReportUpdate -= RefreshCombatReportUI;
+                combatPresenter.OnCombatUpdate -= RefreshCombatReportUI;
             }
         }
 

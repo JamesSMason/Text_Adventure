@@ -18,5 +18,12 @@ namespace Adventure.Attributes
             }
             return hasPassedTest;
         }
+
+        public bool TestStat(Player player, Stats stat1, Stats stat2)
+        {
+            if (player == null) { return false; }
+            int rollResult = GetComponent<DiceRoller>().GenerateDiceRollResult(numberOfDiceUsedInTest);
+            return ((rollResult <= player.GetStat(stat1)) && (rollResult <= player.GetStat(stat2)));
+        }
     }
 }

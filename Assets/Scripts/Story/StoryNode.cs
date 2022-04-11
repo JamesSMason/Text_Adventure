@@ -14,11 +14,14 @@ namespace Adventure.Story
         [SerializeField] List<ChildNode> children = new List<ChildNode>();
         [SerializeField] EncounterSO encounter = null;
         [SerializeField] Rect rect = new Rect(0, 0, 200, 100);
-        [SerializeField] string onEnterAction = "";
-        [SerializeField] string onExitAction = "";
+        [SerializeField] string[] onEnterAction;
+        [SerializeField] string[] onExitAction;
         [SerializeField] Stats[] statToAdjust;
+        [SerializeField] bool isAdjustmentValueRandom = false;
+        [SerializeField] int randomDiceToRoll = 1;
         [SerializeField] int[] adjustmentValue;
         [SerializeField] InventoryItem[] items;
+        [SerializeField] Stats[] statsToTest;
 
         const string newOptionText = "New option";
 
@@ -72,12 +75,12 @@ namespace Adventure.Story
             return encounter;
         }
 
-        public string GetOnEnterAction()
+        public string[] GetOnEnterAction()
         { 
             return onEnterAction;
         }
 
-        public string GetOnExitAction()
+        public string[] GetOnExitAction()
         {
             return onExitAction;
         }
@@ -85,6 +88,16 @@ namespace Adventure.Story
         public Stats GetStatsToAdjust(int index)
         {
             return statToAdjust[index];
+        }
+
+        public bool GetIsAdjustmentValueRandom()
+        {
+            return isAdjustmentValueRandom;
+        }
+
+        public int GetRandomDiceToRoll()
+        {
+            return randomDiceToRoll;
         }
 
         public int GetAdjustmentValue(int index)
@@ -100,6 +113,11 @@ namespace Adventure.Story
         public InventoryItem[] GetItems()
         {
             return items;
+        }
+
+        public Stats[] GetStatsToTest()
+        {
+            return statsToTest;
         }
 
 #if UNITY_EDITOR

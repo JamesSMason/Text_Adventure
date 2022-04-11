@@ -25,6 +25,7 @@ namespace Adventure.Main
 
         public void SetEncounter(EncounterSO encounterSO)
         {
+            combatMessages.ResetMessageUpdate();
             currentEncounter = new Encounter(encounterSO);
             if (OnCombatUpdate != null)
             {

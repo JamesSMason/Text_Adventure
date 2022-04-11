@@ -1,5 +1,62 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8293767673728502444
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc9cbbaf9a74462499b5b12c1eef8149, type: 3}
+  m_Name: 52c4eebb-73ca-4e9d-931c-834acbc9496a
+  m_EditorClassIdentifier: 
+  title: East/West Corridor
+  storyText: You are in a corridor that runs from East to West. Will you go West?
+    East? Or use the secret door you discovered in the south wall?
+  children:
+  - childID: d9de8653-80f3-4529-956b-ae2fce25f8c8
+    optionText: Open Door
+    condition:
+      and:
+      - or:
+        - predicate: HasVisited
+          parameters:
+          - d9de8653-80f3-4529-956b-ae2fce25f8c8
+          negate: 0
+  - childID: 2eabc1ad-2fa3-441a-b7e0-153feb8e167e
+    optionText: West
+    condition:
+      and: []
+  - childID: 1fbf09ab-32c3-4f9b-9be6-2933d70676be
+    optionText: East
+    condition:
+      and: []
+  - childID: 3e76fe33-d370-4f90-beb6-d6ab0b51381c
+    optionText: Open Door
+    condition:
+      and:
+      - or:
+        - predicate: HasVisited
+          parameters:
+          - d9de8653-80f3-4529-956b-ae2fce25f8c8
+          negate: 1
+  encounter: {fileID: 0}
+  rect:
+    serializedVersion: 2
+    x: 318
+    y: 166
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  statToAdjust: 
+  isAdjustmentValueRandom: 0
+  randomDiceToRoll: 1
+  adjustmentValue: 
+  items: []
+  statsToTest: 
 --- !u!114 &-3204825811593258058
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13,7 +70,8 @@ MonoBehaviour:
   m_Name: d4791b72-f9f5-469d-9469-415924e28591
   m_EditorClassIdentifier: 
   title: Victory
-  storyText: You are victorious. Sifting through the bones, you find a small key.
+  storyText: You are victorious. Sifting through the bones, you find a small key
+    and 2d6 gold.
   children:
   - childID: d9de8653-80f3-4529-956b-ae2fce25f8c8
     optionText: Next
@@ -22,16 +80,19 @@ MonoBehaviour:
   encounter: {fileID: 0}
   rect:
     serializedVersion: 2
-    x: 1212
-    y: 221
+    x: 1209
+    y: 248
     width: 200
     height: 100
   onEnterAction: PickUpItem
-  onExitAction: 
-  statToAdjust: 
+  onExitAction: AdjustStats
+  statToAdjust: 06000000
+  isAdjustmentValueRandom: 1
+  randomDiceToRoll: 2
   adjustmentValue: 
   items:
   - {fileID: 11400000, guid: 6e14c42c65398c943aedb7528771065d, type: 2}
+  statsToTest: 
 --- !u!114 &-3203464804237396736
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -66,8 +127,11 @@ MonoBehaviour:
   onEnterAction: 
   onExitAction: 
   statToAdjust: 
+  isAdjustmentValueRandom: 0
+  randomDiceToRoll: 1
   adjustmentValue: 
   items: []
+  statsToTest: 
 --- !u!114 &-2242952652481920610
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -100,9 +164,12 @@ MonoBehaviour:
   onEnterAction: PickUpItem
   onExitAction: 
   statToAdjust: 05000000
+  isAdjustmentValueRandom: 0
+  randomDiceToRoll: 1
   adjustmentValue: 02000000
   items:
   - {fileID: 11400000, guid: d74b405560dadbd43814d23b575da259, type: 2}
+  statsToTest: 
 --- !u!114 &-2053065026285422244
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -119,22 +186,25 @@ MonoBehaviour:
   storyText: You stand in the room among a bile of splintered bones - the end result
     of your victory. Finding nothing else of value, you return to the corridor.
   children:
-  - childID: c8524b7f-38bc-490a-88ca-511fdcdf7681
-    optionText: Exit Room
+  - childID: 52c4eebb-73ca-4e9d-931c-834acbc9496a
+    optionText: Leave
     condition:
       and: []
   encounter: {fileID: 0}
   rect:
     serializedVersion: 2
-    x: 1440
-    y: 146
+    x: 1473
+    y: 175
     width: 200
     height: 100
   onEnterAction: 
   onExitAction: 
   statToAdjust: 
+  isAdjustmentValueRandom: 0
+  randomDiceToRoll: 1
   adjustmentValue: 
   items: []
+  statsToTest: 
 --- !u!114 &-1953071906231904383
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -176,15 +246,18 @@ MonoBehaviour:
   encounter: {fileID: 0}
   rect:
     serializedVersion: 2
-    x: 606
-    y: 448
+    x: 501
+    y: 544
     width: 200
     height: 100
   onEnterAction: 
   onExitAction: 
   statToAdjust: 
+  isAdjustmentValueRandom: 0
+  randomDiceToRoll: 1
   adjustmentValue: 
   items: []
+  statsToTest: 
 --- !u!114 &-1914508707916534251
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -218,8 +291,11 @@ MonoBehaviour:
   onEnterAction: 
   onExitAction: 
   statToAdjust: 
+  isAdjustmentValueRandom: 0
+  randomDiceToRoll: 1
   adjustmentValue: 
   items: []
+  statsToTest: 
 --- !u!114 &-1647423386825845314
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -233,29 +309,36 @@ MonoBehaviour:
   m_Name: 5325bfe3-c605-427a-89de-f035a7dd89ca
   m_EditorClassIdentifier: 
   title: Musty room
-  storyText: You enter a musty room. As you walk in, 3 skeletons turn to face you.
-    Will you fight or flee?
+  storyText: 'You spot a secret door. You pull it open and move in.
+
+
+    You enter
+    a musty room. As you walk in, 3 skeletons turn to face you. Will you fight or
+    flee?'
   children:
   - childID: d1361813-dc59-45c9-b2c7-17401b3b8906
     optionText: Fight
     condition:
       and: []
-  - childID: c8524b7f-38bc-490a-88ca-511fdcdf7681
+  - childID: 52c4eebb-73ca-4e9d-931c-834acbc9496a
     optionText: Flee
     condition:
       and: []
   encounter: {fileID: 0}
   rect:
     serializedVersion: 2
-    x: 653
-    y: 227
+    x: 643
+    y: 423
     width: 200
     height: 100
-  onEnterAction: 
+  onEnterAction: AdjustStats
   onExitAction: 
-  statToAdjust: 
-  adjustmentValue: 
+  statToAdjust: 05000000
+  isAdjustmentValueRandom: 0
+  randomDiceToRoll: 1
+  adjustmentValue: ffffffff
   items: []
+  statsToTest: 
 --- !u!114 &-1454270099023162151
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -304,8 +387,11 @@ MonoBehaviour:
   onEnterAction: 
   onExitAction: 
   statToAdjust: 
+  isAdjustmentValueRandom: 0
+  randomDiceToRoll: 1
   adjustmentValue: 
   items: []
+  statsToTest: 
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -337,6 +423,9 @@ MonoBehaviour:
   - {fileID: 925518412723037157}
   - {fileID: 1390070456337320053}
   - {fileID: 8645553494954972355}
+  - {fileID: 7375302116890723889}
+  - {fileID: -8293767673728502444}
+  - {fileID: 7326662085701974665}
   newNodeOffset: {x: 250, y: 0}
 --- !u!114 &925518412723037157
 MonoBehaviour:
@@ -369,8 +458,11 @@ MonoBehaviour:
   onEnterAction: 
   onExitAction: 
   statToAdjust: 
+  isAdjustmentValueRandom: 0
+  randomDiceToRoll: 1
   adjustmentValue: 
   items: []
+  statsToTest: 
 --- !u!114 &1390070456337320053
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -389,22 +481,25 @@ MonoBehaviour:
     you, you lean back on it in relief. You notice that all sound within the room
     has stopped again. Take two damage from your collision.
   children:
-  - childID: c8524b7f-38bc-490a-88ca-511fdcdf7681
+  - childID: 52c4eebb-73ca-4e9d-931c-834acbc9496a
     optionText: Next
     condition:
       and: []
   encounter: {fileID: 0}
   rect:
     serializedVersion: 2
-    x: 1151
-    y: 344
+    x: 1205
+    y: 367
     width: 200
     height: 100
   onEnterAction: 
   onExitAction: 
   statToAdjust: 03000000
+  isAdjustmentValueRandom: 0
+  randomDiceToRoll: 1
   adjustmentValue: feffffff
   items: []
+  statsToTest: 
 --- !u!114 &3223018125788489861
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -418,28 +513,16 @@ MonoBehaviour:
   m_Name: c8524b7f-38bc-490a-88ca-511fdcdf7681
   m_EditorClassIdentifier: 
   title: East/West Corridor
-  storyText: You are in a corridor that runs from East to West. In the south wall
-    is a door. Will you go West? East? Or open the door and enter the room beyond?
+  storyText: You are in a corridor that runs from East to West. Will you go West?
+    East? Or search for secret doors? If you search, Test Your Luck, not forgetting
+    that you lose a luck point in doing so.
   children:
   - childID: 2eabc1ad-2fa3-441a-b7e0-153feb8e167e
     optionText: Go West
     condition:
       and: []
   - childID: 5325bfe3-c605-427a-89de-f035a7dd89ca
-    optionText: Open Door
-    condition:
-      and:
-      - or:
-        - predicate: HasVisited
-          parameters:
-          - d9de8653-80f3-4529-956b-ae2fce25f8c8
-          negate: 1
-  - childID: 1fbf09ab-32c3-4f9b-9be6-2933d70676be
-    optionText: Go East
-    condition:
-      and: []
-  - childID: d9de8653-80f3-4529-956b-ae2fce25f8c8
-    optionText: Open Door
+    optionText: Search
     condition:
       and:
       - or:
@@ -447,18 +530,42 @@ MonoBehaviour:
           parameters:
           - d9de8653-80f3-4529-956b-ae2fce25f8c8
           negate: 0
+        - predicate: HasPassedTest
+          parameters:
+          - d9de8653-80f3-4529-956b-ae2fce25f8c8
+          negate: 0
+  - childID: 1fbf09ab-32c3-4f9b-9be6-2933d70676be
+    optionText: Go East
+    condition:
+      and: []
+  - childID: 7f33aa4f-c442-4333-9340-7bb07cd0bb03
+    optionText: Search
+    condition:
+      and:
+      - or:
+        - predicate: HasVisited
+          parameters:
+          - 5325bfe3-c605-427a-89de-f035a7dd89ca
+          negate: 1
+      - or:
+        - predicate: HasPassedTest
+          parameters: []
+          negate: 1
   encounter: {fileID: 0}
   rect:
     serializedVersion: 2
-    x: 312
-    y: 145
+    x: 263
+    y: 317
     width: 200
     height: 100
-  onEnterAction: 
+  onEnterAction: TestStat
   onExitAction: 
   statToAdjust: 
+  isAdjustmentValueRandom: 0
+  randomDiceToRoll: 1
   adjustmentValue: 
   items: []
+  statsToTest: 05000000
 --- !u!114 &6228723894619933840
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -491,8 +598,88 @@ MonoBehaviour:
   onEnterAction: 
   onExitAction: 
   statToAdjust: 
+  isAdjustmentValueRandom: 0
+  randomDiceToRoll: 1
   adjustmentValue: 
   items: []
+  statsToTest: 
+--- !u!114 &7326662085701974665
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc9cbbaf9a74462499b5b12c1eef8149, type: 3}
+  m_Name: 3e76fe33-d370-4f90-beb6-d6ab0b51381c
+  m_EditorClassIdentifier: 
+  title: Musty Room
+  storyText: You enter a musty room. As you walk in, 3 skeletons turn to face you.
+    Will you fight or flee?
+  children:
+  - childID: d1361813-dc59-45c9-b2c7-17401b3b8906
+    optionText: Fight
+    condition:
+      and: []
+  - childID: 52c4eebb-73ca-4e9d-931c-834acbc9496a
+    optionText: Flee
+    condition:
+      and: []
+  encounter: {fileID: 0}
+  rect:
+    serializedVersion: 2
+    x: 642
+    y: 275
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  statToAdjust: 
+  isAdjustmentValueRandom: 0
+  randomDiceToRoll: 1
+  adjustmentValue: 
+  items: []
+  statsToTest: 
+--- !u!114 &7375302116890723889
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc9cbbaf9a74462499b5b12c1eef8149, type: 3}
+  m_Name: 7f33aa4f-c442-4333-9340-7bb07cd0bb03
+  m_EditorClassIdentifier: 
+  title: You find nothing
+  storyText: You don't find anything.
+  children:
+  - childID: c8524b7f-38bc-490a-88ca-511fdcdf7681
+    optionText: Next...
+    condition:
+      and:
+      - or:
+        - predicate: HasPassedTest
+          parameters: []
+          negate: 1
+  encounter: {fileID: 0}
+  rect:
+    serializedVersion: 2
+    x: 679
+    y: 108
+    width: 200
+    height: 100
+  onEnterAction: AdjustStats
+  onExitAction: 
+  statToAdjust: 05000000
+  isAdjustmentValueRandom: 0
+  randomDiceToRoll: 1
+  adjustmentValue: ffffffff
+  items: []
+  statsToTest: 
 --- !u!114 &7446158044931808451
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -529,8 +716,11 @@ MonoBehaviour:
   onEnterAction: 
   onExitAction: 
   statToAdjust: 
+  isAdjustmentValueRandom: 0
+  randomDiceToRoll: 1
   adjustmentValue: 
   items: []
+  statsToTest: 
 --- !u!114 &7733823561967924079
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -557,15 +747,18 @@ MonoBehaviour:
   encounter: {fileID: 11400000, guid: ce26e903adb3e75489099dbad73b5ea9, type: 2}
   rect:
     serializedVersion: 2
-    x: 929
-    y: 221
+    x: 899
+    y: 420
     width: 200
     height: 100
   onEnterAction: 
   onExitAction: 
   statToAdjust: 
+  isAdjustmentValueRandom: 0
+  randomDiceToRoll: 1
   adjustmentValue: 
   items: []
+  statsToTest: 
 --- !u!114 &7841855673386165830
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -599,8 +792,11 @@ MonoBehaviour:
   onEnterAction: 
   onExitAction: 
   statToAdjust: 
+  isAdjustmentValueRandom: 0
+  randomDiceToRoll: 1
   adjustmentValue: 
   items: []
+  statsToTest: 
 --- !u!114 &8543803293885566499
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -683,8 +879,11 @@ MonoBehaviour:
   onEnterAction: 
   onExitAction: 
   statToAdjust: 
+  isAdjustmentValueRandom: 0
+  randomDiceToRoll: 1
   adjustmentValue: 
   items: []
+  statsToTest: 
 --- !u!114 &8645553494954972355
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -717,8 +916,11 @@ MonoBehaviour:
   onEnterAction: 
   onExitAction: 
   statToAdjust: 03000000
+  isAdjustmentValueRandom: 0
+  randomDiceToRoll: 1
   adjustmentValue: 
   items: []
+  statsToTest: 
 --- !u!114 &8752234957805619625
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -749,6 +951,9 @@ MonoBehaviour:
   onEnterAction: PickUpItem
   onExitAction: 
   statToAdjust: 
+  isAdjustmentValueRandom: 0
+  randomDiceToRoll: 1
   adjustmentValue: 
   items:
   - {fileID: 11400000, guid: 854eb30d844ea8c40bebfaddac10bb95, type: 2}
+  statsToTest: 

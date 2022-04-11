@@ -50,7 +50,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentStory: {fileID: 11400000, guid: f7a2d2772c9007349b1b9ff01802f482, type: 2}
-  combatPrefab: {fileID: 4155832721561863188, guid: c4d7efac45f55da438ec81626b5779b6, type: 3}
 --- !u!114 &226297674
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -172,4 +171,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: abd728376cf226346a35ec8434bec823, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inventorySize: 16
+  inventorySize: 18

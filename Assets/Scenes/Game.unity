@@ -277,34 +277,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 3649845002808113827, guid: e566f54b0ffe1c646bd4f0e46c1ee334, type: 3}
   m_PrefabInstance: {fileID: 3649845002594532842}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &516235741
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 516235740}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0b2f56647b0cc7448968d9af9bf0660b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  action: AdjustStats
-  onTrigger:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 516235743}
-        m_TargetAssemblyTypeName: Adventure.Main.StoryPresenter, Assembly-CSharp
-        m_MethodName: AdjustStats
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!114 &516235743 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3649845002808113824, guid: e566f54b0ffe1c646bd4f0e46c1ee334, type: 3}
@@ -316,6 +288,34 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c7529a28a9698f84c815f9e3bedee3b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &516235750
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 516235740}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b2f56647b0cc7448968d9af9bf0660b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  action: TestStat
+  onTrigger:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 516235743}
+        m_TargetAssemblyTypeName: Adventure.Main.StoryPresenter, Assembly-CSharp
+        m_MethodName: TestStat
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -1001,7 +1001,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2077710535269151480, guid: 34bb732838dd8c045b537b28986768e8, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -0.00024414062
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2077710535386306041, guid: 34bb732838dd8c045b537b28986768e8, type: 3}
       propertyPath: m_AnchorMax.y

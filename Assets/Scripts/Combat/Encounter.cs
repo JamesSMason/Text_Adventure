@@ -48,14 +48,23 @@ namespace Adventure.Combat
         {
             encounterLookup.Clear();
             Monster[] monsters = encounterSO.GetMonsters();
-            for (int i = 0; i < monsters.Length; i++)
+
+            if (encounterSO.GetIsRandom)
             {
-                encounterLookup[i] = new Opponent(monsters[i]);
+                int randomIndex = Random.Range(0, monsters.Length);
+                encounterLookup[0] = new Opponent(monsters[randomIndex]);
             }
-            if (encounterSO.GetCanEscape)
+            else
             {
-                canEscape = true;
-                escapeRound = encounterSO.GetEscapeRound;
+                for (int i = 0; i < monsters.Length; i++)
+                {
+                    encounterLookup[i] = new Opponent(monsters[i]);
+                }
+                if (encounterSO.GetCanEscape)
+                {
+                    canEscape = true;
+                    escapeRound = encounterSO.GetEscapeRound;
+                }
             }
         }
 

@@ -1,4 +1,3 @@
-using System;
 using UnityEngine;
 
 namespace Adventure.Combat
@@ -9,11 +8,14 @@ namespace Adventure.Combat
         [SerializeField] Monster[] monsters;
         [SerializeField] bool canEscape = false;
         [SerializeField] int escapeRound = 0;
+        [SerializeField] bool isRandom = false;
 
         public Monster[] GetMonsters() { return monsters; }
 
         public bool GetCanEscape { get { return canEscape; } }
 
         public int GetEscapeRound { get { return escapeRound; } }
+
+        public bool GetIsRandom { get { return isRandom; } }
     }
 }

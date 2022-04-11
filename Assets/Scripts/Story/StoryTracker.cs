@@ -36,7 +36,7 @@ namespace Adventure.Story
             switch (predicate)
             {
                 case "HasVisited":
-                return CheckForNode(parameters[0]);
+                    return CheckForNode(parameters[0]);
             }    
 
             return null;

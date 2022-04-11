@@ -35,3 +35,4 @@ MonoBehaviour:
     monsterImage: {fileID: 21300000, guid: 9b28c55489ce02345bb6bc2d1059afe5, type: 3}
   canEscape: 1
   escapeRound: 3
+  isRandom: 1

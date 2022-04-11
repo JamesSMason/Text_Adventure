@@ -36,7 +36,7 @@ Restoring Skill, Stamina and Luck
 Skill
 Your SKILL score will not change much during your adventure. Occasionally, a page may give instructions to increase or decrease your SKILL score. A Magic Weapon may increase your SKILL, but remember that only one weapon can be used at a time! You cannot claim 2 SKILL bonuses for carrying two Magic Swords. Your SKILL score can never exceed its Initial value unless specifically instructed. Drinking the Potion of Skill (see later) will restore your SKILL to its Initial level at any time.
 Stamina and Provisions
-Your STA MIN A score will change a lot during your adventure as you fight monsters and undertake arduous tasks. As you near your goal, your ST AMINA level may be dangerously low and battles may be particularly risky, so be careful!
+Your STAMINA score will change a lot during your adventure as you fight monsters and undertake arduous tasks. As you near your goal, your ST AMINA level may be dangerously low and battles may be particularly risky, so be careful!
 Your haversack contains enough Provisions for ten meals. You may rest and eat only when allowed by the instructions on a page, and you may eat only one meal at a time. Eating a meal restores 4 14 STAMINA points. When you eat a meal, add 4 points to your STAMINA score and deduct 1 point from your Provisions. A separate Provisions Remaining box is provided on the Adventure Sheet for recording details of Provisions. Remember that you have a long way to go, so use your Provisions wisely!
 Remember also that your STAMINA score may never exceed its Initial value unless specifically instructed on a page. Drinking the Potion of Strength (see later) will restore your STA MINA to its Initial level at any time.
 Luck
@@ -62,58 +62,84 @@ There seemed to be some truth in the rumour that the Warlock's treasure was stor
 The entrance to the mountain was guarded by a pack of warty-faced Goblins, stupid creatures, fond of their food and drink. Towards the inner chambers, the creatures became more fearsome. To reach the inner chambers you would have to cross a river. The ferry service was regular, but the ferryman enjoyed a good barter, so you should save a Gold Piece for the trip. The locals also encouraged you to keep a good map of your wanderings, for without a map you would end up hopelessly lost within the mountain.
 When it finally came to your day of leaving, the whole village turned out to wish you a safe journey. Tears came to the eyes of many of the women, young and old alike. You couldn't help wondering whether they were tears of sorrow shed by eyes which would never see you alive again...
 Now turn over.
+
 1
 At last your two-day hike is over. You unsheathe your sword, lay it on the ground and sigh with relief as you lower yourself down on to the mossy rocks to sit for a moment's rest. You stretch, rub your eyes and finally look up at Firetop Mountain.
 The very mountain itself looks menacing. The steep face in front of you looks to have been savaged by the claws of some gargantuan beast. Sharp rocky crags jut out at unnatural angles. At the top of the mountain you can see the eerie red colouring — probably some strange vegetation —which has given the mountain its name. Perhaps no one will ever know exactly what grows up there, as climbing the peak must surely be impossible.
 Your quest lies ahead of you. Across the clearing is a dark cave entrance. You pick up your sword, get to your feet and consider what dangers may lie ahead of you. But with determination, you thrust the sword home into its scabbard and approach the cave.
 You peer into the gloom to see dark, slimy walls with pools of water on the stone floor in front of you. The air is cold and dank. You light your lantern and step warily into the blackness. Cobwebs brush your face and you hear the scurrying of tiny feet: rats, most likely. You set off into the cave. After a few yards you arrive at a junction. Will you turn west (turn to 71) or east (turn to 278)?
+
 2
 Test Your Luck. If you are Lucky, you escape without attracting the Ogre's attention. If you are Unlucky, you curse as you kick a small stone which goes skidding across the cavern floor. You draw your sword in case the Ogre has heard it — turn to 16. If you were Lucky, you creep down the corridor back to the crossroads. Turn to 269.
+
 3
 The bell gives a dull clang and after a few moments you see a withered old man climb into a small rowing boat moored on the north bank. He rows slowly across to you, moors the boat and limps towards you. He asks you for 3 Gold Pieces. When you protest at the price he mumbles some flimsy excuse about 'inflation'. He begins to get angry at your protestations. Do you pay him the 3 Gold Pieces (turn to 272) or threaten him (turn to 127)?
-4
-You find yourself in a north—south corridor. To the north the passage turns east some metres ahead. To investigate, turn to 46. To the south, the passageway also turns east. Turn to 332 to go south.
-5
-A rough timber doorway is on the east wall of the passage. You listen at the door and can hear a jolly sort of humming sound. DO you want to knock on the door and go in (turn to 97) or will you continue northwards (turn to 292)?
+
 6
-The large solid door has no handle. You charge it, but to no avail. The door is not going to budge. You decide to give up and go through the opening you passed in the east—west passageway some way back. Turn to 89.
+The large solid door has no handle. You charge it, but to no avail. The door is not going to budge. You decide to give up and go through the opening you passed in the east—west passageway some way back. You climb through the opening and find yourself at the top of a narrow staircase leading downwards. Cautiously, you descend the stairs...
+The narrow staircase is cut into the rock and there are about twenty steps leading down. At the bottom of the steps a passageway leads you into a large open chamber. This chamber stinks of putrefying flesh. The smell is so bad that you are tempted to turn back. Three bodies lie in the chamber. You may either search the bodies, or tiptoe quietly through the room. What will you do:
+Search the first body?	Turn to 294
+Search the second body?	Turn to 275
+Search the third body?	Turn to 148
+Tiptoe through the room?	Turn to 107
+
 7
-You are on the north bank of a fast-flowing river in a large underground cavern. Turn to 214.
-8
-The passage ahead ends at a sturdy door. You listen but hear nothing. You try the handle, it turns, and you enter the room. As you look around you hear a loud cry from behind you and swing round to see a wild man leaping towards you wielding a large battle axe. He is a mad BARBARIAN and you must fight him!
-BARBARIAN SKILL 7 STAMINA 6
-There is a door in the north wall opposite, through which you may Escape during the battle (turn to 189). If you defeat the Barbarian, turn to 273.
+You are on the north bank of a fast-flowing river in a large underground cavern. Facing northwards, the rock face is smooth and glistening with moisture. Moss of many different hues grows on the surface. There is an eerie silence punctuated only by the splashings of the river as it flows behind you. You have three options:
+A passage runs off to the north-west. 	If you take this route	Turn to 271
+A large timber door is directly in front of you in the middle of the rock face. If you open the door Turn to 104
+Another passage runs out along the river eastwards. To follow this along the riverbank Turn to 99
+
 9
 Amazed at the success of your bluff, you decide to push your luck a little further. You can either examine the Skeletons' tools or pretend you're looking for work-sheets and look through the drawers of the various benches. If you choose the tools, turn to 34. If you search the drawers, turn to 322. You hear a noise from behind the north door and realize you will have to hurry!
+
 10
-You arrive back at the junction and turn northwards. Turn to 77.
+You arrive back at the junction and turn northwards. 
+Several metres up the passageway you arrive at a junction where you may turn either west or east. Set in the rock on the north wall is a small recess where you may rest and eat Provisions without being seen. If you wish to take Provisions here, do so. Afterwards you may set off either eastwards (turn to 345) or westwards (turn to 18).
+
 11
 You follow the passage westwards until it turns round a corner to the south. Just before the bend is a signpost which reads 'Under Construction'. In front of you is the beginning of a stairway leading downwards. Only three steps have been built so far. A number of shovels, picks and other tools were lying on the ground by the steps but, as you turned the corner, they suddenly flurried into action and began working on the steps. You are now watching various tools digging and hammering as if being handled by invisible workers. A humming chant becomes louder and you recognize it as: 'Heigh-ho, Heigh-ho, It's off to work we go...’ As you stand watching you start to chuckle — the scene is quite amusing. You sit and watch and even manage to chat to some of the magical tools. Gain 2 STAMINA points and SKILL point whilst you relax. Then turn back up the passageway to the crossroads where you may go either northwards (turn to 366) or southwards (turn to 250).
+
 12
 As you pull the knob, a deafening clanging noise rings through the passageways. You frantically push the knob back to stop the alarm, but it has effect. You can hear footsteps coming closer down the corridor. Turn to 161 to find what you have attracted. Note down the number 12 so that you may return to this section after fighting your battle.
 When you have defeated this creature, you may either return to the junction (turn to 256) or you may push the knob (turn to 364).
+
 13
-Your head hurts and you feel dizzy as you rise to your feet. The four men stir into action and move towards you in single file with their weapons ready. You grope your way down the wall for the south door but it will be touch and go whether you make it. Your foot slips on a loose pebble and you fall to the ground. Before you can regain your footing, the creatures are upon you. Turn to 282.
+Your head hurts and you feel dizzy as you rise to your feet. The four men stir into action and move towards you in single file with their weapons ready. You grope your way down the wall for the south door but it will be touch and go whether you make it. Your foot slips on a loose pebble and you fall to the ground. Before you can regain your footing, the creatures are upon you.
+The four creatures shuffling towards you are mindless ZOMBIES. Their vacant eyes suggest that their actions are controlled by a will which is not their own. You are still too dizzy to think properly, but you must act quickly. The first Zombie reaches you and prepares to swing his club. You must fight him.
+ZOMBIE	SKILL 7	STAMINA 6
+If you defeat the first Zombie, add 2 LUCK points and turn to face the other three (fight each in turn):
+SKILL STAMINA
+ZOMBIE with scythe 6 6
+ZOMBIE with pick 6 6
+ZOMBIE with axe 6 5
+If you defeat all four, turn to 115.
+
 14
 There are no signs of any secret passages, but you suddenly hear footsteps coming towards you. To find out what is coming, turn to 161. You must fight this creature.
 If you defeat the monster, turn to 117. Note this reference so you know where to return to.
+
 15
-As you sit on the bench and eat your food, you begin to feel deeply relaxed and the aches from your body seem to be soothing themselves away. This resting place is enchanted. You may restore 2 additional STAMINA points as well as the normal amount (but only if this does not exceed your Initial STAMINA score) and restore SKILL point if any have been lost. When you are ready to continue, move along the passage and turn to 367.
+As you sit on the bench and eat your food, you begin to feel deeply relaxed and the aches from your body seem to be soothing themselves away. This resting place is enchanted. You may restore 2 additional STAMINA points as well as the normal amount (but only if this does not exceed your Initial STAMINA score) and restore SKILL point if any have been lost. When you are ready to continue, move along the passage and soon arrive at another junction in the passageway. If you would like to turn westwards, turn to 235. If you wish to go east, turn to 323.
+
 16
 You draw your sword, and as you do so the Ogre hears you and prepares to attack:
 OGRE	SKILL 8	STAMINA 10
 If you defeat him, turn to 50. After the second Attack Round, you may Escape down the passage (turn to 269),
+
 17
 Using the wooden stake and mallet (or makeshift mallet if you aren't carrying one), you form a cross and move towards the Vampire, backing it into a corner, It hisses and snatches at you but cannot come near you. However, it is going to be tricky getting the stake through its heart.
 As you advance, you stumble and fall forwards. As luck would have it, the stake flies forward and plunges into the shrieking creature. Test Your Luck. If you are Lucky, the stake pierces the Vampire's heart. If you are Unlucky, the Vampire is merely grazed by the wound (deduct 3 points from its STAMINA) and it flings you backwards across the room towards the west door. To Escape through it, turn to 380. To keep on fighting, turn to 144. If you were Lucky and killed the Vampire, you may look for its treasure— turn to 327.
+
 18
 You walk westwards along the passageway. After fifty metres or so, the way turns northwards. Two or three paces up the passage, you hear a crumbling beneath your feet and you try to leap back as the ground gives way. Test Your Luck. If you are Lucky, you manage to leap quickly backwards before a pit opens. If you are Unlucky, you are too slow and you fall over two metres down into a pit — lose STA MIN A point. If you were Lucky, you had better return to the junction (turn to 261). If you were Unlucky, turn to 348.
+
 19
 These two evil creatures are GOBLINS. They attack you one at a time.
 SKILL STAMINA
 First GOBLIN 5 5
 Second GOBLIN 5 6
 If you kill the Goblins, turn to 317.
+
 20
 The skirmish commences. You have your sword, they have their axes. They come at you one at a time:
 SKILL STAMINA
@@ -122,17 +148,24 @@ Second DWARF 6 6
 Third DWARF 7 5
 Fourth DWARF 7 5
 If you win, turn to 376. If the battle is going badly, you may Escape through the door. Turn to 291 — but don't forget your Escaping penalty.
+
 21
 The green blood of the dead Orcs smells foul as it seeps from their bodies. You step around the corpses and investigate the chest. It is a sturdy affair, made of strong oak and iron, and it is firmly locked. You may try to smash the lock with your sword (turn to 339) or leave it alone and go through the open door (turn to 293).
+
 22
-You poke around looking for signs of secret doors but can find none. You pause to ponder your situation and a small jet of gas hisses from the ceiling. You cough and choke to clear your lungs, but collapse to your knees. Your head spins and you flop to the floor in an unconscious heap. When you come to, you look around in an unfamiliar place. Turn to 4.
+You poke around looking for signs of secret doors but can find none. You pause to ponder your situation and a small jet of gas hisses from the ceiling. You cough and choke to clear your lungs, but collapse to your knees. Your head spins and you flop to the floor in an unconscious heap. When you come to, you look around in an unfamiliar place.
+You find yourself in a north—south corridor. To the north the passage turns east some metres ahead. To investigate, turn to 46. To the south, the passageway also turns east. Turn to 332 to go south.
+
 23
 The passageway ends in a solid doorway and you are surprised to see a leather skirt tacked along the bottom of the door. You Listen but hear nothing. Will you enter the room (turn to 326) or return to the junction (turn to 229)?
+
 24
 After you have suffered your third wound, you 25—26 notice that your strength is ebbing. Lose 1 SKILL point. You deduce that this is yet another magical power of this foul creature and you feel a shiver of panic. Will you continue or run? If you want to Escape, pay the penalty and turn to 360 to flee through the north door. Otherwise the fight goes on.
 If you defeat the creature, turn to 135. But from now on every third wound that the beast inflicts takes 1 point from your SKILL.
+
 25
 The paintings are portraits of men. Your spine shivers as you read the nameplate under the one on the west wall — it is that of Zagor, the Warlock whose treasure you are seeking. You look at his portrait and realize you are pitting yourself against an awesome adversary. You have the feeling that you are being watched and notice the piercing eyes following you as you move. You find yourself drawn towards his portrait and your fear rises. Lose SKILL point. Do you have the courage to try to combat the Warlock? You may either leave through the north door straightaway (turn to 90) — but treat this as an Escape. Or you may look through your pack for a weapon to use against the Warlock's power — turn to 340
+
 26
 You remember Di Maggio's small, leather-bound book, and silently mouth the spell contained within its pages.
 You shout loudly at the Dragon and it stops in its tracks. It cocks its head to one side and eves you suspiciously. You fling a stone at its head, and the rock bounces off its nose. The beast lets out an angry cry and breathes deeply, a roaring sound being created from within its throat. The Dragon exhales, and from between its teeth you can see another fireball building up. You prepare yourself, and as the ball of flame comes from its mouth, you cry:
@@ -141,34 +174,59 @@ Ekam Erif
 Erif Erif
 Di Maggio'
 The fireball continues no further. With an agonized scream, the Dragon tries to shake the flames from its snout. But there the burning continues.
-Squealing in agony, the Dragon turns its back and leaps into the blackness, flailing its head from side to side. Turn to 371.
+Squealing in agony, the Dragon turns its back and leaps into the blackness, flailing its head from side to side. 
+Safe for the moment, you investigate the cavern and find a passageway which continues to the west. Turn to 274. You may rest and eat Provisions before you continue, and add 3 LUCK points for defeating the Dragon.
+
 27
-The sword is enchanted and will aid you in battle. As long as you use this sword, you may increase your Initial SKILL by 2 points. You may also add 2 points to your current SKILL value. Add 2 points to your LUCK for finding this sword, Throw your old sword away and turn to 319. If you would rather keep your own sword, leave your SKILL as it is and just take the LUCK bonus.
+The sword is enchanted and will aid you in battle. As long as you use this sword, you may increase your Initial SKILL by 2 points. You may also add 2 points to your current SKILL value. Add 2 points to your LUCK for finding this sword. Throw your old sword away. If you would rather keep your own sword, leave your SKILL as it is and just take the LUCK bonus.
+To find the secret of the second item you have collected, turn to 221 and investigate. If you have already investigated both items, turn to 81.
+
 28
-The mighty Giant lies dead! You search his cavern and find little of use, although a purse in his belt contains 8 Gold Pieces. You are a little concerned about the second chair; to whom does it belong? You decide to leave the cavern the way you came. Turn to 351. But add 2 LUCK and 2 SKILL points for your victory.
+The mighty Giant lies dead! You search his cavern and find little of use, although a purse in his belt contains 8 Gold Pieces. You are a little concerned about the second chair; to whom does it belong? You decide to leave the cavern the way you came. But add 2 LUCK and 2 SKILL points for your victory.
+You arrive back at the junction and turn eastwards.
+You arrive at another junction. An arrow on the wall points northwards and you decide to proceed in this direction, Turn to 244.
+
 29
-Apart from the boots, which you decide to ignore, there appears to be little of value in the cavern. You decide to head back the way you came. Turn to 375.
+Apart from the boots, which you decide to ignore, there appears to be little of value in the cavern. You decide to head back the way you came.
+You arrive back at the junction and this time turn northwards.
+A rough timber doorway is on the east wall of the passage. You listen at the door and can hear a jolly sort of humming sound. DO you want to knock on the door and go in (turn to 97) or will you continue northwards (turn to 292)?
+
 30
 A loose stone falls out to reveal a rope in the rock. If you wish to pull it, turn to 67. If you feel it would be wiser to leave it alone, you can return to the crossroads (turn to 267).
+
 31
-If you have the jewel from the Eye of the Cyclops, you hold it in front of the Warlock. His intimidating stare turns to an expression of pain. He obviously feels the jewel's power. Suddenly his eyes turn white and his expression goes limp. Your confidence gains as you realize you have won your first real battle. Gain 2 SKILL points. Put the jewel into your pack and leave through the north door. Turn to 90.
+If you have the jewel from the Eye of the Cyclops, you hold it in front of the Warlock. His intimidating stare turns to an expression of pain. He obviously feels the jewel's power. Suddenly his eyes turn white and his expression goes limp. Your confidence gains as you realize you have won your first real battle. Gain 2 SKILL points. Put the jewel into your pack and leave through the north door. 
+You open the door into a narrow passage and follow it northwards. Some metres up the passageway, it turns to the east, then turns to the north. However, at this second bend, there is a small alcove in the rock. It seems a convenient hiding place and a large rock forms a comfortable seat. You may stop here and eat Provisions if you wish. When you have rested, continue northwards. Turn to 253.
+
 32
-You toss the Cheese across the room at the Rats and they scramble for it, nipping and scratching each other as they fight for it. Having distracted them, you pass through the room and leave by the door in the north wall. Turn to 124. Add 2 LUCK points for your good fortune.
+You toss the Cheese across the room at the Rats and they scramble for it, nipping and scratching each other as they fight for it. Having distracted them, you pass through the room and leave by the door in the north wall. Add 2 LUCK points for your good fortune.
+The door opens into a wide passageway and you follow this for some distance before reaching a junction. Here you may either go northwards (turn to 138) or turn to the east (turn to 76).
+
 33
 The sleeping creature awakens startled. He jumps up and rushes at you, unarmed. With your sword you should be able to defeat him, but his sharp teeth look rather vicious. You may Escape through the door (turn to 320) or stand and fight the ORC who is attacking you.
 ORC	SKILL 6	STAMINA 4
 If you defeat the creature, you may take the box. Turn to 147.
+
 34
-Looking through the tools you come across a mallet with a hardwood head and a chisel with a solid silver blade. You may keep either of these if you are prepared to forfeit one of the items of equipment you are carrying. If you wish to do so, make the appropriate adjustments to your Equipment List. The noise from the north door gets louder and you move up to investigate. Turn to 96
+Looking through the tools you come across a mallet with a hardwood head and a chisel with a solid silver blade. You may keep either of these if you are prepared to forfeit one of the items of equipment you are carrying. If you wish to do so, make the appropriate adjustments to your Equipment List. The noise from the north door gets louder and you move up to investigate.
+The door opens into a short corridor about fifteen metres long. There are two doors, one at each end. You now realize what the noise was. More Skeletons! Four of them, armed with swords, are running down the corridor towards you. They don't appear to have seen you and you notice a slight recess in the wall which may be a useful hiding place. You decide to try it.
+The Skeletons do not notice you and disappear through the door into the Boat House. Breathing a sigh of relief, you press on to try the door at the north end of the passage. But before you go, you may eat some Provisions and you may add 2 LUCK points for evading the Skeletons.
+Going through the door you enter a large room. Various bits of wooden debris are strewn untidily across the floor. Apart from your entrance door, there is also a door in the north wall. In one corner is a crude wooden desk with a box on it. In another corner, apparently asleep (or dead), is a hideous looking man-sized creature with warty skin, wild hair and long claws for fingernails. Will you tiptoe out through the north door (turn to 83) or tiptoe across to the desk to look at the box (turn to 154)?
+
 35
 As you step into the room, the door swings shut behind you. As it closes, there is a click and a hiss. From the centre of the ceiling, a jet of gas is filling the room with an acrid vapour. You breathe and cough deeply. You look at the door and then the key. Will you return to the door and escape quickly (turn to 136) or hold your breath and dash for the key first (turn to 361)?
+
 36
 The locked door bursts open and a nauseating stench hits your nostrils. Inside the room the floor is covered with bones, rotting vegetation and slime. A wild-haired old man, clothed in rags, rushes at you screaming. His beard is long and grey, and he is waving an old wooden chair-leg. Is he simply insane as he appears, or has this been some kind of trap? You may either shout at him to try to calm him down (turn to 263) or draw your sword and attack him (turn to 353).
+
 37
 Standing at the crossroads you may go either north (turn to 366), west (turn to 11) or south (turn to 277).
+
 38
 You open the door to find the Werewolf's larder, a miscellaneous collection of bones and decaying meats. The smell is nauseating, although a jar of pickled eggs seems to offer fairly palatable food. If 39 you wish to take these, there will be enough for two meals; add 2 points to your Provisions.
-Back in the room you may now go out through the south door. Turn to 66.
+Back in the room you may now go out through the south door.
+The door opens and you find yourself in the passage leading back to the riverbank. You return to the river and may now either go for the door in the middle of the rockface (turn to 104) or go down the passage running off eastwards along the riverbank (turn to 99).
+
 39
 Your opponent is surprised as you disappear in front of him, but he raises his hands as if to cover his eyes and he scans the room with an intense glare. He can sense your presence but cannot make out exactly where you are. You draw your sword and advance. He tilts his head and sniffs the air. You will have to fight him from a distance as, if he gets his hands on you, your invisibility will be no advantage. But whilst you remain invisible, you have the following advantages:
 You may add 2 to your dice roll when determining your Attack Strength.
@@ -177,34 +235,60 @@ Each time he inflicts a wound on you, throw one die. If the number is odd, he wo
 Resolve the battle:
 WARLOCK SKILL 11 STAMINA 18 
 If you win, turn to 396.
+
 40
 The ear-piercing sound gets louder and louder. The pain is unbearable. Reduce your SKILL score by for the agony. You begin to grope in the dark for a wall. Do you head for:
 The west wall?	Turn to 355
 The north wall?	Turn to 265
 The east wall?	Turn to 181
+
 41
 He is a powerful adversary—a WIGHT! He is large, strong and evil. The battle commences:
 WIGHT	SKILL 9	STAMINA 6
 You fight with your sword. After you have inflicted your first wound on him, turn to 310
+
 42
 You eventually arrive at the end of the passage, at a three-way junction. You may turn either to the west (turn to 257) or to the east (turn to 113).
+
 43
 You are in a north—south passageway. To go north turn to 354. To go south, turn to 52.
-44 Panting after the struggle, you sit down to collect yourself and finish the Provisions you started. Eventually you pack your bag and wade into the stream. Turn to 399
+
+44
+Panting after the struggle, you sit down to collect yourself and finish the Provisions you started. Eventually you pack your bag and wade into the stream.
+The current is strong and takes you swiftly downstream. You are washed along through a narrow opening and out into a large cavern with banks on both sides. The current washes you on to the south bank.
+You are on the south bank of an underground river facing across its black depths. There appear to be four ways of crossing. To your left, a rusted bell bears the sign: 'Ferry Service 2 Gold Pieces — Please 219—221 Ring.' There is a small raft in front of you on the bank with a long stick resting beside it: you could punt across the river. A rickety old bridge crosses on the right. If you don't trust any of these, you may swim. Which will you choose?
+Ring the bell	Turn to 3
+Punt the raft across	Turn to 386
+Risk the bridge	Turn to 209
+Swim	Turn to 316
+
 45
-The Cheese hits the portrait and bounces off. You hear an evil laugh coming from the walls and realize the Warlock is mocking you. You decide to leave the room by the north door. Turn to 90
+The Cheese hits the portrait and bounces off. You hear an evil laugh coming from the walls and realize the Warlock is mocking you. You decide to leave the room by the north door.
+You open the door into a narrow passage and follow it northwards. Some metres up the passageway, it turns to the east, then turns to the north. However, at this second bend, there is a small alcove in the rock. It seems a convenient hiding place and a large rock forms a comfortable seat. You may stop here and eat Provisions if you wish. When you have rested, continue northwards. Turn to 253.
+
 46
 You are standing in a short east—west passageway, with a door blocking the way to the east. To the west, the passage turns southwards after several met-res. To go round this bend turn to 4. To go through the door, turn to 206.
+
 47
 In the middle of the river, the bridge swings to and fro as it strains to take your weight. The handrail comes away suddenly as you lean on it. Roll one die. A roll of 6 sends you plunging into the river below— turn to 158. A roll of means you regain your balance. To go on, turn to 298
-48
-You are in an east—west corridor. If you go east, you will turn a corner northwards. To go this way, turn to 391. To go west, turn to 60
+
 49
-The door squeaks open on rusty hinges. The room is dark and your eyes begin to adjust themselves as you close the door behind you. You hear a shuffling in the room but before you can react, a blow to your head knocks you senseless. Lose 2 STAMINA points and turn to 122.
+The door squeaks open on rusty hinges. The room is dark and your eyes begin to adjust themselves as you close the door behind you. You hear a shuffling in the room but before you can react, a blow to your head knocks you senseless. Lose 2 STAMINA points.
+You awake with a throbbing head and look around. The room is about eight metres square, with doors to the north and south. You have been dumped in the south-west corner. Standing motionless in the centre of the room are four men. At least, they appear to be men. Their skin is a greeny-grey colour. Their clothes are tattered and torn — and they are all staring vacantly at the ceiling. One carries a club, one a scythe, one an axe and one a pick. They are ignoring you completely.
+Around the room are various peasant-style weapons (pitchforks, axe-handles, pointed sticks, etc.), one or two shields, and several barrels. In the north-east corner is a human corpse with a sword in one hand and a shield in the other. You move your hand up to your head to feel for signs of blood and you are relieved to find you are not bleeding. But as your hand moves, the strange creatures in the centre of the room turn their eyes down towards you. Do you:
+Try to talk to them?	Turn to 268
+Jump to your feet and charge them with your sword?	Turn to 282
+Scramble for an exit through the south door?	Turn to 13
+
 50
-The slain creature crashes to the ground. You go through his garments and find nothing, but a small pouch hangs around his neck. Inside this pouch is a small bronze key, with the number9 cast into it. You may take this if you wish. Nothing else is of value in the cavern so you leave and head back to the junction. Turn to 269
+The slain creature crashes to the ground. You go through his garments and find nothing, but a small pouch hangs around his neck. Inside this pouch is a small bronze key, with the number9 cast into it. You may take this if you wish. Nothing else is of value in the cavern so you leave and head back to the junction.
+You arrive back at the junction and turn westwards.
+The passageway continues westwards and then turns due north. Some way up, you reach a junction where a narrow passage runs off to the west. Will you continue northwards (turn to 77) or take the west way (turn to 63)?
+
 51
-You drink the Potion and can see the look of astonishment spread across the Troll's face. He comes up to you and feels for you, but you step aside and he gropes the air fruitlessly. He thrashes around, clutching for you, but you are easily able to sidestep him. Eventually he gives up and returns to his chamber, just in time, as you feel yourself reappearing. Add 2 LUCK points. You may leave along the passage to the north. Turn to 287.
+You drink the Potion and can see the look of astonishment spread across the Troll's face. He comes up to you and feels for you, but you step aside and he gropes the air fruitlessly. He thrashes around, clutching for you, but you are easily able to sidestep him. Eventually he gives up and returns to his chamber, just in time, as you feel yourself reappearing. Add 2 LUCK points. You may leave along the passage to the north.
+The passage continues for quite some time, then you reach the foot of a staircase cut into the rock. You ascend the stairs and they end at a wooden door with rusty hinges. Listening at the door, you can hear some scratching sounds. You try the handle and the door creaks open. You step into a bare room scattered with bones. There is a door on the wall opposite. Gnawing at the bones are three GIANT RATS which stop to look at you as you enter. Each is at least one metre long and their tatty coats indicate that they are fighters. You will have to take them on if you are going to get through the room, as they no doubt see you as a tasty meal. If you have collected any Cheese during your adventure, turn to 32. Otherwise, turn to 309.
+
 52
 You are standing at a T-junction where a passage to the east comes off a north—south corridor.
 To go south	Turn to 391
@@ -212,124 +296,188 @@ To check for secret passages on the way southwards	Turn to 362
 To go north	Turn to 354
 To check for secret passages on the way northwards	Turn to 234
 To go east	Turn to 291
+
 53
 You charge the door, hitting it squarely with your shoulder. Roll 2 dice. If the number rolled is equal to or less than your SKI LL score, the door opens (turn to 155). If the number exceeds your SKI LL score, the door shudders but does not budge, and you wince In pain as you hit the door — lose STAMINA point and continue up the corridor (turn to 300).
+
 54
 You are standing outside a door at the north end of a north—south passage. To go south, turn to 308. To go through the door, turn to 179.
+
 55
 Roll two dice. If the total rolled is less than or equal to your LUCK score and is also less than or equal to your STAMINA score, then you manage to hold on and manoeuvre the raft across to the north bank (do not deduct a LUCK point). You arrive safely but as you step on to the bank, the raft drifts away and makes its own wav across the river to the south bank. Turn to 7.
 If you exceed your LUCK and/or STAMINA totals, the raft throws you into the water and you start to swim back to the south bank. Turn to 166.
+
 56
-As your sword splashes into the water, a bubbly voice says, 'Thank you!' It now seems that the only way onwards is to swim downstream to the east. You plunge into the water. Turn to 399.
+As your sword splashes into the water, a bubbly voice says, 'Thank you!' It now seems that the only way onwards is to swim downstream to the east. You plunge into the water.
+You are on the south bank of an underground river facing across its black depths. There appear to be four ways of crossing. To your left, a rusted bell bears the sign: 'Ferry Service 2 Gold Pieces — Please 219—221 Ring.' There is a small raft in front of you on the bank with a long stick resting beside it: you could punt across the river. A rickety old bridge crosses on the right. If you don't trust any of these, you may swim. Which will you choose?
+Ring the bell	Turn to 3
+Punt the raft across	Turn to 386
+Risk the bridge	Turn to 209
+Swim	Turn to 316
+
 57
 As you enter the cavern you hear loud footsteps behind you, crunching heavily on the rocky floor. You crouch down beside the entrance in a small alcove in the rock. The steps get louder and you see a great O GRE enter the cavern! He stands over two metres tall and is dressed in ill-fitting garments made from some sort of hide. He carries a large wooden club. You may:
 Attack him as he enters	Turn to 16
 Try to creep out without him noticing you Turn to 2
 Try to distract him by throwing something into a far corner of the cavern Turn to 119
+
 58
 Cautiously you creep along the passageway. After a short time it turns sharply to the north. At the corner there is a bench of solid wood and above the bench a sign reads 'Rest Ye Here Weary Traveller'. Here you may stop and eat Provisions if you wish (turn to 15) or continue (turn to 367).
+
 59
-You walk westwards for some time, then north round a peculiar bend which hairpins straight round to the south. Eventually you wind up at a three-way junction. Turn to 150.
+You walk westwards for some time, then north round a peculiar bend which hairpins straight round to the south. Eventually you wind up at a three-way junction.
+You are at a three-way junction.
+To go north	Turn to 222
+To go east	Turn to 297
+To go south	Turn to 133
+
 60
-You walk along the corridor, only to find that the way westwards is blocked by a heavy portcullis. You walk back to where you were. Turn to 48.
+You walk along the corridor, only to find that the way westwards is blocked by a heavy portcullis. You walk back to where you were.
+You are in an east—west corridor. If you go east, you will turn a corner northwards. To go this way, turn to 391. To go west, turn to 60
+
 61
 As you investigate the cavern, you suddenly hear a scurry of steps behind you and swing round to face the grotesque black shape of a GIANT SPIDER which has been stalking you. The Spider's body is at least a metre across and you quickly draw your sword to defend yourself
 GIANT SPIDER SKILL7	STAMINA 8
 If you win the battle, turn to 29. You may Escape from the fight down the passageway after two Attack Rounds and will end up at the junction— turn to 375.
+
 62
 You continue along the passageway to the east. After some thirty metres it turns to the south. Following it round the bend you eventually come to a stop at a large armoured door. To try the door, turn to 6. If you would prefer to return along the passage and go through the narrow opening, turn to 89.
+
 63
 As you walk along the corridor, you can see ahead that it is getting narrower. At one point you stoop, and as you do so, a deep, resonating laugh starts up around you. Do you wish to continue? If so, turn to 281. If you wish to turn back, turn to 10.
+
 64
 The Ghoul dances with glee around your body, lays it next to the others on the ground, turns you over and sinks its teeth into your rump. It is not often it gets fresh meat to feed on.
 Your adventure is over.
+
 65
 As you spring at the Chieftain, his servant rises to his feet, picks up a hefty wooden stick and joins the melee. But to your disappointment he attacks you! Ungrateful wretch! Seeing this, you may Escape through the door down the corridor (turn to 293) or continue the fight (turn to 372). If you choose to Escape, you suffer normal escaping penalties.
-66
-The door opens and you find yourself in the passage leading back to the riverbank. You return to the river and may now either go for the door in the middle of the rockface (turn to 104) or go down the passage running off eastwards along the riverbank (turn to 99).
+
 67
 You pull on the rope and a small door swings open revealing a passage into a north—south corridor. Will you return to the crossroads (turn to 267) or go through the secret door (turn to 177)?
+
 68
-The two GOBLIN torturers look at each other amazed, then look at you. They chatter to themselves and then indicate for you to wait while they go off and get another Dwarf to give them some more fun. They disappear out of the room and you cut down the Dwarf who is, as you guessed, quite dead. You decide it best to leave and press on northwards up the corridor. Turn to 303.
+The two GOBLIN torturers look at each other amazed, then look at you. They chatter to themselves and then indicate for you to wait while they go off and get another Dwarf to give them some more fun. They disappear out of the room and you cut down the Dwarf who is, as you guessed, quite dead. You decide it best to leave and press on northwards up the corridor.
+You arrive at the end of the passage, where it meets another going east—west. But an iron portcullis blocks your way and no amount of charging is going to budge it. On the wall to your right are two levers and it seems likely that these levers have something to do with raising the portcullis. Do you wish to pull the right lever or the left lever?
+Right	Turn to 128
+Left	Turn to 243
+
 69
-Some way along the passage, the corridor bends round to the north and you follow it until you reach another junction. At this junction you see an arrow cut into the rock, pointing to the north, and you decide to try this direction. Turn to 244
+Some way along the passage, the corridor bends round to the north and you follow it until you reach another junction. At this junction you see an arrow cut into the rock, pointing to the north, and you decide to try this direction.
+The passage runs northwards, and ahead you can hear the splashings of an underground river. The air becomes cool and fresh. You soon reach a wide opening of a river bank but despair as you look across to see no way through on the other side. To the east the river flows through a cave in the rock. You may either sit, rest and eat Provisions (turn to 143) or continue by what seems to be the only way forward, jumping into the river and swimming downstream (turn to 399).
+
 70
-You follow the cobbled corridor east, then north, then east again and finally north until you wind up at a crossroads. Turn to 267.
-71
-There is a right-hand turn to the north in the passage. Cautiously you approach a sentry post on the corner and, as you look in, you can see a strange Goblin-like creature in leather armour asleep at his post. You try to tiptoe past him. Test Your Luck. If you are Lucky, he does not wake up and remains snoring loudly— turn to 301. If you are Unlucky, you step with a crunch on some loose ground and his eyes flick open — turn to 248,
+You follow the cobbled corridor east, then north, then east again and finally north until you wind up at a crossroads.
+You now stand at a crossroads.
+To go north	Turn to 312
+To go south	Turn to 246
+To go west	Turn to 79
+To go east	Turn to 349
+
 72
-You now have a fresh set of armour, equivalent to your own. Decide which of the two you wish to keep, throw the other away, and turn to 319,
+You now have a fresh set of armour, equivalent to your own. Decide which of the two you wish to keep, throw the other away.
+To find the secret of the second item you have collected, turn to 221 and investigate. If you have already investigated both items, turn to 81.
+
 73
-The passage ahead leads you northwards. The rocky floor becomes sandy until eventually you are walking on a sort of coarse sand. You notice the passage is widening and ahead you can hear a flowing river. You continue until you find yourself in a large cavern through which a river flows, Turn to 218.
+The passage ahead leads you northwards. The rocky floor becomes sandy until eventually you are walking on a sort of coarse sand. You notice the passage is widening and ahead you can hear a flowing river. You continue until you find yourself in a large cavern through which a river flows.
+You are on the south bank of an underground river facing across its black depths. There appear to be four ways of crossing. To your left, a rusted bell bears the sign: 'Ferry Service 2 Gold Pieces — Please 219—221 Ring.' There is a small raft in front of you on the bank with a long stick resting beside it: you could punt across the river. A rickety old bridge crosses on the right. If you don't trust any of these, you may swim. Which will you choose?
+Ring the bell	Turn to 3
+Punt the raft across	Turn to 386
+Risk the bridge	Turn to 209
+Swim	Turn to 316
+
 74
 Test Your Luck. If you are Lucky, you break his gaze and can prepare to attack. Turn to 279. If you are Unlucky, you are under his control and drop your sword at his command — turn to 118.
+
 75
-You sit back and rest from the exhausting battle. You may eat Provisions here. You prise the jewel from the still statue. It is heavy in your hand and is worth 50 Gold Pieces. You put it in your pack. As you explore the room and the statue, you notice that one of its breastplate sections is loose. When you open this, a small key is inside. You examine this and notice the number on it. With a smile you put the jewel and the key in your pack and set off back to the junction. Turn to 93, after adding 3 LUCK points — you have a valuable artefact here.
-76
-You arrive at another junction. An arrow on the wall points northwards and you decide to proceed in this direction, Turn to 244
-77
-Several metres up the passageway you arrive at a junction where you may turn either west or east. Set in the rock on the north wall is a small recess where you may rest and eat Provisions without being seen. If you wish to take Provisions here, do so. Afterwards you may set off either eastwards (turn to 345) or westwards (turn to 18).
+You sit back and rest from the exhausting battle. You may eat Provisions here. You prise the jewel from the still statue. It is heavy in your hand and is worth 50 Gold Pieces. You put it in your pack. As you explore the room and the statue, you notice that one of its breastplate sections is loose. When you open this, a small key is inside. You examine this and notice the number on it. With a smile you put the jewel and the key in your pack and set off back to the junction. Add 3 LUCK points — you have a valuable artefact here.
+You arrive back at the junction and this time you turn northwards.
+The passage ahead ends at a sturdy door. You listen but hear nothing. You try the handle, it turns, and you enter the room. As you look around you hear a loud cry from behind you and swing round to see a wild man leaping towards you wielding a large battle axe. He is a mad BARBARIAN and you must fight him!
+BARBARIAN SKILL 7 STAMINA 6
+There is a door in the north wall opposite, through which you may Escape during the battle (turn to 189). If you defeat the Barbarian, turn to 273.
+
 78
 The passage ends at a solid wooden door with metal 79-80 hinges. Listening at the door, you hear strange mutterings and the clatter of what could be pots and pans. Whatever is in there, there are several of them. Do you want to go through the door (turn to 159) or turn back (turn to 237)?
+
 79
 The passageway ends in front of you in a dead end. If you wish to search for secret passageways, turn to 137. If not, return to the crossroads at 267.
+
 80
 The key fits the lock and opens the door. You find yourself in a large boathouse. Various boats, in different stages of construction, are lying around. Apart from the door behind you, there is another in the north wall. As you enter, the Skeletons stop their work and crane their bony necks around to look at you. They pick up planks of wood and hammers and advance towards you. There are five of them. Do you:
 Smile nervously and back out of the door into the passage? Turn to 129
 Tell them you've come about buying a boat? Turn to 123
 Tell them you're their new boss and order them back to work? Turn to 195
 Draw your sword and prepare for battle?	Turn to 140
+
 81
-A noise startles you, prompting you to leave the room quickly. You walk up to investigate the north door. Turn to 205.
+A noise startles you, prompting you to leave the room quickly. You walk up to investigate the north door.
+The door opens and you find yourself in a dark crypt of some kind. The room is very large. At one end is an altar, and various coffins are strewn about the room. There is a door behind you in the south wall, and also one in the west wall. If you want to investigate the room further, turn to 254. If the place gives you the creeps, you can leave via the west door (turn to 380).
+
 82
 The door opens to reveal a small, smelly room. In the centre of the room is a rickety wooden table on which stands a lit candle. Underneath the table is a small wooden box. Asleep on a straw mattress in the far corner of the room is a short, stocky creature with an ugly, warty face; the same sort of creature that you found asleep at the sentry post. He must be the guard for the night watch. You may either return to the corridor and press on northwards (turn to 208) or creep into the room and try to take the box without waking the creature. If you want to try to steal the box, Test Your Luck. If you are Lucky, he does not wake up — turn to 147. If you are Unlucky, turn to 33
+
 83
 Test Your Luck. If you are Lucky, you make it out through the north door — turn to 360. If you are Unlucky, turn to 154.
+
 84
 The door opens into a small room, comfortably furnished with a table, several chairs and a large bookcase which covers one wall. Seated at the table is an old man with a long grey beard, and squatting on the old man's shoulder is a small winged beast. This 85-86 creature is no more than six centimetres tall. It has two arms and legs; its skin is a dusty grey colour. It has tiny sharp white teeth and its wings are folded behind its back. The old man says nothing as you walk in through the door, but he beckons you over to sit down at the table. He is tossing in his hand two small white objects. Will you:
 Sit down as he tells you? Turn to 204
 Leave the room and return to the junction? Turn to 280
 Draw your sword and rush forward? Turn to 377
+
 85
 You are at a crossroads.
 To go north	Turn to 106
 To go south	Turn to 373
 To go east	Turn to 318
 To go west	Turn to 59
+
 86
 A huge jaw yawns open in front of you. By the size of it, the CROCODILE you are swimming towards must be at least three metres long. The beast slaps its tail in the water and glides towards you. You must fight two Attack Rounds.
 CROCODILE	SKILL 7	STAMINA 6
 Your combined thrashings attract a 'turbulence' in the water that you had noticed before and this now makes its way towards your part of the river. Out of the corner of your eye you notice this and must decide what to do. If you believe that the Crocodile is on its last legs and you wish to continue the battle, then do so. If you win, turn to 259. Otherwise you can keep the beast occupied in the faint hope that this mysterious visitor will help you in some way. Have one more Attack Round and turn to 350
+
 87
-You arrive back at the junction and this time turn northwards. Turn to 262.
+You arrive back at the junction and this time turn northwards.
+Some way up the passage, you reach another junction where you may either go eastwards (turn to 199) or turn westwards (turn to 251).
+
 88
 You enter another small room, bare except for a fountain in the middle. Not a particularly grand affair, the fountain is a small carved fish, and a short jet of water comes from its mouth. A wooden sign hangs from the fish and this bears a message. It is written in Goblin tongue, at which you are not very proficient. The first word you cannot understand, but the others read: ‘… NOT DRINK'. But you are extremely thirsty. Will you drink from the fountain? If so, turn to 216. Otherwise you can pass it by and leave through a door in the north wall (turn to 384)
-89
-You climb through the opening and find yourself at the top of a narrow staircase leading downwards. Cautiously, you descend the stairs. . . Turn to 286.
+
 90
-You open the door into a narrow passage and follow it northwards. Some metres up the passageway, it turns to the east, then turns to the north. However, at this second bend, there is a small alcove in the rock. It seems a convenient hiding place and a large rock forms a comfortable seat. You may stop here and eat Provisions if you wish. When you have rested, continue northwards. Turn to 253.
+You open the door into a narrow passage and follow it northwards. Some metres up the passageway, it turns to the east, then turns to the north. However, at this second bend, there is a small alcove in the rock. It seems a convenient hiding place and a large rock forms a comfortable seat. You may stop here and eat Provisions if you wish. When you have rested, continue northwards.
+The passageway ends in another wooden door, this time a small one with a carved bone handle. You listen but hear nothing coming from inside. You try the handle and the door opens into a pear-shaped room with a rough stone floor, making walking across it somewhat awkward. In one corner of the room is a pile of rubble, mainly stones and dust, but 254—255 there are also two odd-shaped pieces of wood and a length of rope. A door in the north wall leads on. Will you:
+Examine the bits of wood?	Turn to 328
+Study the length of rope?	Turn to 125
+Leave through the north door?	Turn to 73
+
 91
 If you are lucky, your cheating will not be discovered. Test Your Luck. If you are Lucky, you get away with it. Roll two dice to see how many Gold Pieces you win. Mark these on your Adventure Sheet and turn to 131.
 If you are Unlucky, the four notice you are dealing from the bottom of the deck. They pick up axes from behind their chairs and turn on you, Turn to 20.
+
 92
-You arrive back at the junction in the passage. You look left to see the cave entrance in the dim distance but walk straight on, Turn to 71.
-93
-You arrive back at the junction and this time you turn northwards. Turn to 8.
+You arrive back at the junction in the passage. You look left to see the cave entrance in the dim distance but walk straight on.
+There is a right-hand turn to the north in the passage. Cautiously you approach a sentry post on the corner and, as you look in, you can see a strange Goblin-like creature in leather armour asleep at his post. You try to tiptoe past him. Test Your Luck. If you are Lucky, he does not wake up and remains snoring loudly— turn to 301. If you are Unlucky, you step with a crunch on some loose ground and his eyes flick open — turn to 248.
+
 94
 You walk along a passageway that runs due south, 95—96 then turns west. After several metres, it ends at a three-way junction. You can check for secret passages along the way (turn to 260) or go straight to the junction (turn to 329).
+
 95
-You find nothing remarkable about the weapons, in fact not a single weapon looks more useful than your sword. As you search the debris, you hear a deep thumping from the north followed by a scream which sends a shiver down your spine. You rush to the north door to investigate. Turn to 205.
-96
-The door opens into a short corridor about fifteen met-res long. There are two doors, one at each end. You now realize what the noise was. More Skeletons! Four of them, armed with swords, are running down the corridor towards you. They don't appear to have seen you and you notice a slight recess in the wall which may be a useful hiding place. You decide to try it. Turn to 374.
+You find nothing remarkable about the weapons, in fact not a single weapon looks more useful than your sword. As you search the debris, you hear a deep thumping from the north followed by a scream which sends a shiver down your spine. You rush to the north door to investigate.
+The door opens and you find yourself in a dark crypt of some kind. The room is very large. At one end is an altar, and various coffins are strewn about the room. There is a door behind you in the south wall, and also one in the west wall. If you want to investigate the room further, turn to 254. If the place gives you the creeps, you can leave via the west door (turn to 380).
+
 97
 A voice bids you 'Come in!' and you walk into a small room furnished with a table and chair, shelves, cupboards and the like, all of which have seen better days. Plates, bowls, cups and hundreds of old books line the shelves. In the midst of all this clutter, you see a little old man in a grubby white gown swaying to and fro in a rocking chair, still humming happily to himself, his eyes fixed on you, but seeming at peace with the world. He bids you 'Good day.' Do you:
 Start to make conversation with	 him? Turn to 334
 Draw your sword and charge at him? Turn to 247
 Decide not to waste time with him and leave, going northwards? Turn to 292
+
 98
 As you crawl into the room, a voice booms out: 'Welcome, adventurer. I have been expecting you. You stop, look around and rise to your feet. The little old man has changed. He is not so old and grey any more, and he's of an imposing height. His eyes are deep and black and they are fixed on you relentlessly. Turn to 358.
+
 99
 The passageway runs eastwards. Ahead of you, you can see that a solid-looking door blocks the passage. You step up to investigate, Turn to 383
+
 100
 Hesitantly, they agree to let you join in. As you play and chat, they loosen up and eventually you are all laughing and exchanging stories.
 They seem quite harmless. You may play cards either fairly or you may try to cheat. If you wish to play fairly, turn to 346. If you wish to cheat, turn to 91.
@@ -399,18 +547,12 @@ You open your pack and reach inside for something suitable to throw across the c
 You leave the chamber, walk down a short passage and reach a staircase going up. You climb the stairs and arrive at the top in a passageway. Turn to 197.
 121
 The corridor goes east for several metres, then south, then east again, where it finally ends. Will you investigate the dead end (turn to 103) or return to the crossroads 359)?
-122
-You awake with a throbbing head and look around. The room is about eight metres square, with doors to the north and south. You have been dumped in the south-west corner. Standing motionless in the centre of the room are four men. At least, they appear to be men. Their skin is a greeny-grey colour. Their clothes are tattered and torn — and they are all staring vacantly at the ceiling. One carries a club, one a scythe, one an axe and one a pick. They are ignoring you completely.
-Around the room are various peasant-style weapons (pitchforks, axe-handles, pointed sticks, etc.), one or two shields, and several barrels. In the north-east corner is a human corpse with a sword in one hand and a shield in the other. You move your hand up to your head to feel for signs of blood and you are relieved to find you are not bleeding. But as your hand moves, the strange creatures in the centre of the room turn their eyes down towards you. Do you:
-Try to talk to them?	Turn to 268
-Jump to your feet and charge them with your sword?	Turn to 282
-Scramble for an exit through the south door?	Turn to 13
+
 123
 Will they believe your story about buying a boat? Skeletons are pretty simple-minded, so roll one die. A 1, 2 or 3 means they believe you, and they all go 124—125 running through the door in the north wall, leaving you alone in the Boat House. Add 2 LUCK points and turn to 184
 A 4 or 5 means they're not sure. They send two of their members through the north door whilst the other three watch you with their makeshift weapons. Turn to 164
 A roll of 6 means they definitely don't believe you and keep on advancing. Turn to 140.
-124
-The door opens into a wide passageway and you follow this for some distance before reaching a junction. Here you may either go northwards (turn to 138) or turn to the east (turn to 76).
+
 125
 You pick up the rope. It looks normal. In fact it looks as if it might be quite useful. You open your pack to put it in. Suddenly, it comes alive in your fingers, snakes quickly up your arm and attempts to wrap itself around your neck. You struggle to cut the rope with your sword before its grip tightens. Test Your Luck. If you are Lucky, you cut the rope and it drops to the ground. If you are not, the rope tightens—lose 1 STA MINA point. You must Test Your Luck again to try to cut the rope, and keep trying until you do. Each time you fail, you lose another STAMINA point (and reduce your LUCK score). If you finally defeat the rope, you may leave through the north door, Turn to 73.
 126
@@ -484,11 +626,7 @@ As you watch the living mural, you are unaware of the speed with which your cand
 The east wall?	Turn to 181
 The north wall?	Turn to 265
 The west wall?	Turn to 355
-150
-You are at a three-way junction.
-To go north	Turn to 222
-To go east	Turn to 297
-To go south	Turn to 133
+
 151
 You gain ground on the 'turbulence' in the water but a few metres from the north bank you notice two sinister reptilian eyes on the surface of the water watching you. You are swimming straight for them. If you decide you'd rather not face the owner of the eyes, you may turn round and head straight back to the south bank at full speed — you arrive exhausted, lose 1 STAMINA point and turn to 218. Alternatively you can risk the eyes ahead — turn to 86. You may try a detour which will send you nearer the 'turbulence' — turn to 158.
 152
@@ -645,12 +783,10 @@ You place the helmet on your head. It fits well. Suddenly a searing pain flashes
 Add 1 point to your LUCK for defeating the Werewolf. You may rest and eat Provisions if you wish. As you look around the room there appears to be little of use, although the bunch of keys looks interesting, particularly the one marked 'Boat House'. None are numbered. You may take the keys if you wish. There are doors to the west and south. If you open the west door, go to 38. If you want to go south, turn to 66.
 204
 The old man does not look up from the table, but his devilish little pet eyes you suspiciously and starts chattering in a small squeaky voice. The old man grunts and asks you whether you are game for a wager. Will you accept (you may only do so if you have at least one Gold Piece with you)? If so, turn to 130. If not, you may either leave the room (turn to 280) or attack the man (turn to 377).
-205
-The door opens and you find yourself in a dark crypt of some kind. The room is very large. At one end is an altar, and various coffins are strewn about the room. There is a door behind you in the south wall, and also one in the west wall. If you want to investigate the room further, turn to 254. If the place gives you the creeps, you can leave via the west door (turn to 380).
+
 206
 You enter a large square room. In the centre of the room is a grey-haired old man sitting at a desk. His desk is covered in papers and parchments of various sorts and he holds a long quill pen. He is surrounded by books. Thousands of them line the shelves around the walls, from floor to ceiling. As you enter he looks up at you. Will he recognize you? If you have been in this room before, turn to 284; if not, turn to 341.
-207
-Going through the door you enter a large room. Various bits of wooden debris are strewn untidily across the floor. Apart from your entrance door, there is also a door in the north wall. In one corner is a crude wooden desk with a box on it. In another corner, apparently asleep (or dead), is a hideous looking man-sized creature with warty skin, wild hair and long claws for fingernails. Will you tiptoe out through the north door (turn to 83) or tiptoe across to the desk to look at the box (turn to 154)?
+
 208
 Further up the passage along the west wall you see another door. You listen at it but hear nothing. If you want to try opening the door, turn to 397. If you want to continue northwards, turn to 363.
 209
@@ -665,11 +801,7 @@ The parchment is well worn and almost illegible. It is a map of some sort, heade
 You fold up the map and put it in your pocket. If you have not yet tested the liquid and wish to do so, turn to 369. Otherwise, you can make your way northwards (turn to 120).
 213
 The door is locked. You may try to charge it down by rolling two dice. If the number rolled is equal to or less than your SKILL score, the door bursts open — turn to 36. If the number is greater than your SKILL score, the door remains locked, you lose 1 ST AM IN A point for your bruised shoulder and you must progress up the passage — turn to 314.
-214
-Facing northwards, the rock face is smooth and glistening with moisture. Moss of many different hues grows on the surface. There is an eerie silence punctuated only by the splashings of the river as it flows behind you. You have three options:
-A passage runs off to the north-west. 	If you take this route	Turn to 271
-A large timber door is directly in front of you in the middle of the rock face. If you open the door Turn to 104
-Another passage runs out along the river eastwards. To follow this along the riverbank Turn to 99
+
 215
 You reach into your pack for the stick only to find it split in two pieces! It has broken during your adventure. What else can you try:
 Draw your sword and advance?	Turn to 142
@@ -678,12 +810,6 @@ Try something else from your pack?	Turn to 105
 The water is refreshing. As you drink more you feel a glow spreading through your body as if you were drinking at the fountain of life, Add 4 STAMINA points, and restore your SKILL and LU c K scores to their Initial levels. The fountain of life for you must be the fountain of death for the evil Goblins. You may eat Provisions here. When you have rested, leave through the north door. Turn to 384
 217
 The stake narrowly misses the Vampire's head. As you watch it travel, you pick up the creature's gaze again. He beckons you towards him once more. Your will has gone. Turn to 118
-218
-You are on the south bank of an underground river facing across its black depths. There appear to be four ways of crossing. To your left, a rusted bell bears the sign: 'Ferry Service 2 Gold Pieces — Please 219—221 Ring.' There is a small raft in front of you on the bank with a long stick resting beside it: you could punt across the river. A rickety old bridge crosses on the right. If you don't trust any of these, you may swim. Which will you choose?
-Ring the bell	Turn to 3
-Punt the raft across	Turn to 386
-Risk the bridge	Turn to 209
-Swim	Turn to 316
 219
 Turn to 182.
 220
@@ -701,8 +827,6 @@ You walk up a long corridor, round a sharp hairpin bend at the top and finally a
 The door is firmly locked. You may try to force it open (turn to 53) or you may continue along the corridor (turn to 300).
 224
 As your eyes watch the creature's movements, they suddenly make contact with its piercing stare. You are mesmerized and, as it beckons you towards it, your will disappears. Turn to 118.
-225
-The passageway continues westwards and then turns due north. Some way up, you reach a junction where a narrow passage runs off to the west. Will you continue northwards (turn to 77) or take the west way (turn to 63)?
 226
 You walk a short distance south and find yourself at a crossroads. Turn to 267
 227
@@ -761,8 +885,7 @@ Search through your bags to see if you can find keys to fit? Turn to 139
 243
 To your horror, you realize that this dummy lever was a trap! Although it looked like a handle, it was in fact a wax-coated sword blade and it has now cut your hand badly. Did you use your right or your left hand?
 Roll one die. If the number you roll is odd, this was your sword hand and your fighting prowess has been severely hampered. Lose 3 SKILL points and 1 STAMIN A. If you rolled an even number, you used your other hand, and so the injury is not quite so important. Lose 1 SKILL point and 2 STAMINA. If you now wish to pull the right lever, turn to 128. If you don't wish to pull the right lever, you won't be getting much further — and remember which hand you will use!
-244
-The passage runs northwards, and ahead you can hear the splashings of an underground river. The air becomes cool and fresh. You soon reach a wide opening of a river bank but despair as you look across to see no way through on the other side. To the east the river flows through a cave in the rock. You may either sit, rest and eat Provisions (turn to 143) or continue by what seems to be the only way forward, jumping into the river and swimming downstream (turn to 399).
+
 245
 Turn to 198.
 246
@@ -789,11 +912,7 @@ GIANT BATS	SKILL 6	STAMINA 6
 If you win, turn to 344. You may Escape by jumping into the river (turn to 399).
 252
 You pull the lever and, with a great groaning noise, the rock face in front of you and the ground you are standing on start to move, As if you were on a giant rotating table, you spin round until you stand on the other side of a rock face in a north—south passage. Will you go north (turn to 312) or south (turn to 226)?
-253
-The passageway ends in another wooden door, this time a small one with a carved bone handle. You listen but hear nothing coming from inside. You try the handle and the door opens into a pear-shaped room with a rough stone floor, making walking across it somewhat awkward. In one corner of the room is a pile of rubble, mainly stones and dust, but 254—255 there are also two odd-shaped pieces of wood and a length of rope. A door in the north wall leads on. Will you:
-Examine the bits of wood?	Turn to 328
-Study the length of rope?	Turn to 125
-Leave through the north door?	Turn to 73
+
 254
 The silence is deathly. A slow drip startles you as you creep around the coffins. The altar is ornately carved and studded with jewels. Beautifully woven drapes hang from the walls although they are threadbare in places. There are three coffins in the room. A creaking noise makes you whirl round and the light from your lantern falls on the largest coffin. It is opening!
 As you watch, a tall man with a white face sits upright. His eyes open and fall on you. His expression changes from one of tranquillity to one of abject hate. His mouth opens and a terrifying hiss comes from his throat. His teeth are wolf-like. He beckons you to come over. Do you;
@@ -817,8 +936,7 @@ As you swim to the bank away from the Crocodile you look back to see the mysteri
 You find no secret passages. If you are on your way north, turn to 359. If you are going south, turn to 329.
 261
 You reach the junction and continue eastwards, Turn to 345.
-262
-Some way up the passage, you reach another junction where you may either go eastwards (turn to 199) or turn westwards (turn to 251).
+
 263
 You shout: 'You are freed, old man!' at the top of your voice. Instantly, his rantings cease. He stops dead in his tracks and sinks to the floor, weeping loudly. As he gradually composes himself, he thanks you many times. You talk with him in the hope of discovering some of the secrets of the mountain and he begins to tell his story. Many years ago he was an adventurer like you in search of the 264 Warlock's treasure. He was captured by the Orcs and thrown into his solitary cell as a sort of pet for the creatures. You ask whether he would like to accompany you into the mountain, but he simply wants to leave and see the world again. You ask him for advice but he says he knows little. He advises you to pay your respects to the boatman. He tells you that you must pull the right-hand lever on the wall ahead to open the iron gate at the end of the passage. He has also learned that the keys to the Boat House are guarded by a man and his dog. You shake hands, leave the room and go your separate ways. Add 1 LUCK. Turn to 314.
 264
@@ -827,16 +945,9 @@ There is no way you are going to charge the door down, as it is twelve centimetr
 You grope around the length of the wall and find a door. Quickly you fumble with the handle. It opens! Turn to 88.
 266
 The case opens easily and inside you find a magnificent bow and one silver arrow. An inscription on the case says: 'The giver of sleep to those who never can'. You put the bow, arrow and case in your pack and leave the room, but you may eat Provisions first — and add 1 LUCK point. Turn to 237.
-267
-You now stand at a crossroads.
-To go north	Turn to 312
-To go south	Turn to 246
-To go west	Turn to 79
-To go east	Turn to 349
+
 268
 Their vocabulary is limited to a series of moans and groans. They appear not to be intelligent at all. Furthermore your conversation merely serves to attract their attention to you. They grip their weapons and it looks as though you will have to fight them. However, there is a slim chance that you could make it to the door you came in through. If you want to try for that door, turn to 13. If you have resigned yourself to a battle, turn to 282.
-269
-You arrive back at the junction and turn westwards. Turn to 225.
 270
 You enter the cavern and look around to see dozens of beautifully coloured stalactites and stalagmites bordering the perimeter. Numerous drips can be heard, but the whole place seems like a magic grotto. Near the back of the cavern, you come across a pair of boots, which seem to have been made quite recently. Will you:
 Continue investigating the cavern? 	Turn to 61
@@ -868,29 +979,14 @@ The creature you are facing is a VAMPIRE! You have various lines of attack. Your
 You arrive back at the junction and this time take the passageway to the east. The passageway runs for several paces eastwards, then turns north. Turn to 311.
 281
 The narrow passageway eventually becomes too small for you to walk along. You get down on your hands and knees, and crawl. Eventually, you will get no further and there seems to be no way through, so you decide to return to the main passage. You head for the junction Turn to 10.
-282
-The four creatures shuffling towards you are mindless ZOMBIES. Their vacant eyes suggest that their actions are controlled by a will which is not their own. You are still too dizzy to think properly, but you must act quickly. The first Zombie reaches you and prepares to swing his club. You must fight him.
-ZOMBIE	SKILL 7	STAMINA 6
-If you defeat the first Zombie, add 2 LUCK points and turn to face the other three (fight each in turn):
-SKILL STAMINA
-ZOMBIE with scythe 6 6
-ZOMBIE with pick 6 6
-ZOMBIE with axe 6 5
-If you defeat all four, turn to 115.
+
 283
 You arrive back at the junction and progress westwards. Turn to 251.
 284
 'You again?' says the Mazemaster, obviously annoyed at being disturbed. 'You are disturbing my concentration. Be off with you!' You begin to explain that you only returned by mistake, but as you open your mouth, an icy glare from the old man silences you. You decide to leave him to it. To leave by the west door, turn to 46. To leave by the south door, turn to 392.
 285
 You see a welt-used door on the right-hand (east) side of the passageway. With your ear to the keyhole, you listen and hear a man screaming for help from inside. Will you open the door (turn to 213) or walk on (turn to 314)? 
-286
-The narrow staircase is cut into the rock and there are about twenty steps leading down. At the bottom of the steps a passageway leads you into a large open chamber. This chamber stinks of putrefying flesh. The smell is so bad that you are tempted to turn back. Three bodies lie in the chamber. You may either search the bodies, or tiptoe quietly through the room. What will you do:
-Search the first body?	Turn to 294
-Search the second body?	Turn to 275
-Search the third body?	Turn to 148
-Tiptoe through the room?	Turn to 107
-287
-The passage continues for quite some time, then you reach the foot of a staircase cut into the rock. You ascend the stairs and they end at a wooden door with rusty hinges. Listening at the door, you can hear some scratching sounds. You try the handle and the door creaks open. You step into a bare room scattered with bones. There is a door on the wall opposite. Gnawing at the bones are three GIANT RATS which stop to look at you as you enter. Each is at least one metre long and their tatty coats indicate that they are fighters. You will have to take them on if you are going to get through the room, as they no doubt see you as a tasty meal. If you have collected any Cheese during your adventure, turn to 32. Otherwise, turn to 309.
+
 288
 Turn to 182.
 289
@@ -935,10 +1031,7 @@ On the east wall of the passage you see another door, this time made of solid me
 To your left, on the west face of the passage, there is a rough-cut wooden door. You listen at the door and can hear a rasping sound which may be some sort of creature snoring. Do you want to open the door? If so, turn to 82. If you wish to press on northwards, turn to 208.
 302
 Turn to 198.
-303
-You arrive at the end of the passage, where it meets another going east—west. But an iron portcullis blocks your way and no amount of charging is going to budge it. On the wall to your right are two levers and it seems likely that these levers have something to do with raising the portcullis. Do you wish to pull the right lever or the left lever?
-Right	Turn to 128
-Left	Turn to 243
+
 304
 The old man is furious at your killing his dog! His eyes turn white with anger. He slowly rises from his seat and as he stands he appears to gain in size and stature. He is changing in front of your eves. He sprouts hair on his face and forearms. His nose lengthens and becomes dog-like. His teeth are pointed. He is a WEREWOLF and he advances towards you.
 You can Escape only through the door behind you to the south (turn to 66). Otherwise you must fight him:
@@ -986,8 +1079,6 @@ The water is icy cold. You start to swim and notice that your splashings are att
 You cut down the Dwarf. He is, as you guessed, dead. Going through the pockets of the two Goblins, you find a large piece of Cheese. If you wish to take this with you, put it in your pack and leave the room northwards. Turn to 303.
 318
 The passageway ends in a dead end. You may either return to the crossroads (turn to 85) or search for secret passageways (turn to 228).
-319
-To find the secret of the second item you have collected, turn to 221 and investigate. If you have already investigated both items, turn to 81.
 320
 You run out of the room and slam the door shut behind you. You turn northwards up the passageway passing a similar-looking door further up. Turn to 363.
 321
@@ -1077,9 +1168,8 @@ Treat the Piranhas as a single creature. If, as a result of the above, the major
 PIRANHAS	SKILL 5	STAMINA 5
 If, as a result of the above, the majority attack the Crocodile and the remainder attack you, they have:
 PIRANHAS	SKILL 5	STAMINA 1
-If you win you can swim to shore. Turn to 7. You may eat Provisions here—and restore LU c K point.
-351
-You arrive back at the junction and turn eastwards. Turn to 76.
+If you win you can swim to shore. Turn to 7. You may eat Provisions here—and restore LUCK point.
+
 352
 As you approach you feel his eyes burn into you with considerable power. You begin to weaken under his gaze. Lose 1 STAMINA point. You are gradually losing your own will, Will you try to draw your sword and fight him (turn to 74) or look for some other means of attack in your bag (turn to 279)?
 353
@@ -1129,8 +1219,7 @@ Fifth ORC	4	4
 If you win, turn to 183. If you wish to Escape during the battle (don't forget your penalty for this), turn to 237
 366
 You are following a passageway which leads ahead to the north. After several metres it bends sharply to the east, You continue eastwards until you eventually come across a narrow opening in the north wall You may go through this opening (turn to 89) or continue eastwards (turn to 62).
-367
-You arrive at another junction in the passageway. If you would like to turn westwards, turn to 235. If you wish to go east, turn to 323.
+
 368
 The Warlock's laugh resonates in his chamber. 'We will see which of us is the mouse!' he cries, and he holds his hand in the air. As he snaps his fingers, a blue flame streams from his hand at you. Lose 3 STAMINA points. You will have to try something else:
 Draw your sword and advance	Turn to 142
@@ -1139,8 +1228,7 @@ Try something else from your rucksack	Turn to 105
 You swallow some of the liquid (turn to 109).
 370
 The door opens to reveal a small room. The room is dirty and unkempt. A straw mattress lies in one corner. In the centre of the room is a wooden table upon which a candle burns, lighting the room with its flickering flame. A small box rests under the table. Seated around the table are two small creatures with warty skin, dressed in leather armour. They are drinking some sort of grog and, by the way they stagger to their feet on your arrival, you assume they are very drunk. You may either draw your sword and leap forward at them (turn to 116) or slam the door quickly and run on up the passage (turn to 42).
-371
-Safe for the moment, you investigate the cavern and find a passageway which continues to the west. Turn to 274. You may rest and eat Provisions before you continue, and add 3 LUCK points for defeating the Dragon.
+
 372
 The battle commences!
 SKILL STAMINA
@@ -1149,10 +1237,7 @@ SERVANT	5	3
 Fight them one at a time. If you defeat them both, turn to 21.
 373
 You are at the south end of a north—south passageway —at a dead end. If you go northwards you will reach a crossroads. Turn to 85
-374
-The Skeletons do not notice you and disappear through the door into the Boat House. Breathing a sigh of relief, you press on to try the door at the 375-378 north end of the passage. But before you go, you may eat some Provisions and you may add 2 LUCK points for evading the Skeletons. Turn to 207.
-375
-You arrive back at the junction and this time turn northwards. Turn to 5.
+
 376
 You may collect all the copper pieces on the table. They are worth a total of 4 Gold Pieces. Then you can leave through the door. Turn to 291. You may pause to eat Provisions, and you may add 3 LUCK points.
 377
@@ -1211,7 +1296,6 @@ With the Warlock now defeated, you know your quest is almost over. You approach 
 The door opens to reveal a small room with a stone floor and dirty walls. There is a stale smell in the air. In the centre of the room is a makeshift wooden table on which is standing a lit candle. Under the table is a small box. In the far corner of the room is a straw mattress. You may either open the box (turn to 240) or leave the room (turn to 363)
 398
 You feel around the rock face at the end of the passage. One rock comes free and reveals a small knob with a handle on the end. Will you push it (turn to 364) or pull it (turn to 12)?
-399
-The current is strong and takes you swiftly downstream. You are washed along through a narrow opening and out into a large cavern with banks on both sides. The current washes you on to the south bank. Turn to 218
+
 400
 The Warlock of Firetop Mountain is no more and you are now the owner of the Sorcerer's riches. At least a thousand Gold Pieces, jewellery, diamonds, rubies and pearls are in the chest. Hidden under these you find the Warlock's spell book and as you leaf through the pages, you realize that this tome is probably more valuable than all the treasure. Instructions are given for the control of all the secrets — and the creatures — of Firetop Mountain. With this book, unlimited power is yours and the safety of your return to the village is ensured. Or, if you would prefer, you could remain as master of the domain of Firetop Mountain.

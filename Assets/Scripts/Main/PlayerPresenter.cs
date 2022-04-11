@@ -57,7 +57,16 @@ namespace Adventure.Main
         public bool TestStat(Stats stat, bool decrementStat)
         {
             bool hasPassed = statTest.TestStat(player, stat, decrementStat);
-            RefreshStats();
+            if (decrementStat)
+            {
+                RefreshStats();
+            }
+            return hasPassed;
+        }
+
+        public bool TestStat(Stats stat1, Stats stat2)
+        {
+            bool hasPassed = statTest.TestStat(player, stat1, stat2);
             return hasPassed;
         }
     }
